@@ -1,0 +1,11 @@
+C:\EliasPrograms\adventofcode\2019\1\bin\Debug\netcoreapp2.2\1.deps.json
+C:\EliasPrograms\adventofcode\2019\1\bin\Debug\netcoreapp2.2\1.runtimeconfig.json
+C:\EliasPrograms\adventofcode\2019\1\bin\Debug\netcoreapp2.2\1.runtimeconfig.dev.json
+C:\EliasPrograms\adventofcode\2019\1\bin\Debug\netcoreapp2.2\1.dll
+C:\EliasPrograms\adventofcode\2019\1\bin\Debug\netcoreapp2.2\1.pdb
+C:\EliasPrograms\adventofcode\2019\1\obj\Debug\netcoreapp2.2\1.csprojAssemblyReference.cache
+C:\EliasPrograms\adventofcode\2019\1\obj\Debug\netcoreapp2.2\1.csproj.CoreCompileInputs.cache
+C:\EliasPrograms\adventofcode\2019\1\obj\Debug\netcoreapp2.2\1.AssemblyInfoInputs.cache
+C:\EliasPrograms\adventofcode\2019\1\obj\Debug\netcoreapp2.2\1.AssemblyInfo.cs
+C:\EliasPrograms\adventofcode\2019\1\obj\Debug\netcoreapp2.2\1.dll
+C:\EliasPrograms\adventofcode\2019\1\obj\Debug\netcoreapp2.2\1.pdb
