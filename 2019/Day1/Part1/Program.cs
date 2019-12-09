@@ -5,7 +5,7 @@ namespace _1
 {
     class Program {
 		static void Main(string[] args) {
-			string input = File.ReadAllText(@"./input.txt");
+			string input = File.ReadAllText(@"../../input.txt");
 
 			string[] inputs = input.Split( Environment.NewLine, StringSplitOptions.None ); 
 			int[] output = new int[100];
