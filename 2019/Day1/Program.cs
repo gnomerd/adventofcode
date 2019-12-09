@@ -3,8 +3,6 @@ using System.IO;
 
 namespace Day1 {
     class Program {
-
-		
 		static void Main(string[] args) {
 			string input = File.ReadAllText(@"../input.txt"); // get the input
 
