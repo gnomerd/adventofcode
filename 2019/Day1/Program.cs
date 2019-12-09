@@ -4,7 +4,7 @@ using System.IO;
 namespace Day1 {
     class Program {
 		static void Main(string[] args) {
-			string input = File.ReadAllText(@"../input.txt"); // get the input
+			string input = File.ReadAllText(@"./input.txt"); // get the input
 
 			string[] inputs = input.Split( Environment.NewLine, StringSplitOptions.None ); 
 			int[] modules = new int[100];
