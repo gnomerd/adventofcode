@@ -5,7 +5,7 @@ namespace Part1 {
 
 	public class Get {
 		public int[] FuelModules( string[] inputs ) {
-			int[] output = new int[100];
+			int[] output = new int[inputs.Length];
 			double input_;
 			for ( int i = 0; i < inputs.Length; i++ ) {
 				input_ = Convert.ToDouble(inputs[i]);

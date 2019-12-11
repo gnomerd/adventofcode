@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Collections.Generic;
 
 namespace Day1 {
     class Program {
@@ -7,11 +8,21 @@ namespace Day1 {
 			string input = File.ReadAllText(@"./input.txt"); // get the input
 
 			string[] inputs = input.Split( Environment.NewLine, StringSplitOptions.None ); 
-			int[] modules = new int[100];
+			int[] modules = new int[inputs.Length];
 
-			Part1.Get get = new Part1.Get();
-			modules = get.FuelModules( inputs ); // get the fuel for the mass'es
-			Console.WriteLine( get.FuelSum( modules ) );
+
+			Part1.Get get1 = new Part1.Get();
+			modules = get1.FuelModules( inputs ); // get the fuel for the mass'es
+			Console.WriteLine( get1.FuelSum( modules ) );
+
+			List<int[]> modulesOfModules = new List<int[]>();
+			Part2.Get get2 = new Part2.Get();
+			modulesOfModules = get2.AllFuelModules( modules );
+
+			Console.Write( "Real sum of fuel: " );
+			Console.Write( get2.RealFuelSum(modulesOfModules) );
+			Console.Write( "\n" );
+
 		}
 	}
 }
