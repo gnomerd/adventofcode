@@ -15,13 +15,11 @@ namespace Day1 {
 			modules = get1.FuelModules( inputs ); // get the fuel for the mass'es
 			Console.WriteLine( get1.FuelSum( modules ) );
 
-			List<int[]> modulesOfModules = new List<int[]>();
+			//int[,] modulesOfModules = new int[,];
 			Part2.Get get2 = new Part2.Get();
-			modulesOfModules = get2.AllFuelModules( modules );
-
-			Console.Write( "Real sum of fuel: " );
-			Console.Write( get2.RealFuelSum(modulesOfModules) );
-			Console.Write( "\n" );
+			Console.Write( "Real sum: " );
+			Console.Write( get2.addAllArray( get2.AllFuelModules( modules ) ) );
+			Console.WriteLine("");
 
 		}
 	}
