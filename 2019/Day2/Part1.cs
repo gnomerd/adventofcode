@@ -11,7 +11,7 @@ namespace Part1 {
 	}
 	public class compile {
 		public const int NEXT = 4; // steps per opcode
-		public bool writedebug = true;
+		public bool writedebug = !false;
 
 		public vars.intcode getOpcode( int opcode ) {
 			return (vars.intcode)opcode; // return the opcode, if 1 then return "ADD" etc
@@ -29,15 +29,15 @@ namespace Part1 {
 			if( opcode == vars.intcode.ADD ) {
 
 				int sum = array[array[i+1]] + array[array[i+2]]; // get the two values
-				writepos = array[i+3]; // get the write pos
+				writepos = Math.Clamp( array[i+3], 0, array.Length - 1 ); // get the write pos
 				Debug( "ADD (" + i.ToString() + "/" + array.Length.ToString() + ") " + "Sum=" + sum.ToString() + " at i=" + writepos.ToString() );
 
 				array[writepos] = sum; // write the value
 				
 			} else if( opcode == vars.intcode.MULT ) {
 				
-				int product = array[array[i+1]] * array[array[i+2]]; // get the two values
-				writepos = array[i+3];
+				int product = array[array[i+1]] * array[array[i+2]]; // get the product
+				writepos = Math.Clamp( array[i+3], 0, array.Length - 1 );
 				Debug( "MULT (" + i.ToString() + "/" + array.Length.ToString() + ") " + "Product=" + product.ToString() + " at i=" + writepos.ToString() );
 
 				array[writepos] = product; // write the value
@@ -51,13 +51,13 @@ namespace Part1 {
 
 		public int[] intcode( int[] input ) {
 			int[] output = input; // make an instanse of the input where we can change stuff
-			Console.WriteLine( "\n----Running Intcode----" );
+			Debug( "\n----Running Intcode----" );
 			for( int i = 0; i < output.Length; i+= NEXT ) {	
 				vars.intcode opcode = getOpcode(input[i]);
 				output = runopcode( output, i, opcode );
 				if( (int)output[i] == 99 ) { break; }
 			}
-			Console.WriteLine( "----Intcode finished----\n" );
+			Debug( "----Intcode finished----\n" );
 			return output;
 		}
 	}

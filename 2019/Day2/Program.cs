@@ -30,6 +30,12 @@ namespace Day2 {
 			Console.WriteLine( "--End of Intcode result--\n" );
 
 			Console.WriteLine( "Part 1 result: " + output[0].ToString() ); // get the pos 0
+
+
+
+			//// Part 2 stuff ////
+			Part2.calcInputs calcInputs = new Part2.calcInputs();
+			calcInputs.bruteforce( intcodes, 9801 );
 		}
 	}
 }
