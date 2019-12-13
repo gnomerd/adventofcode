@@ -688,24 +688,30 @@
     ]
   },
   "packageFolders": {
-    "/home/elal/.nuget/packages/": {}
+    "C:\\Users\\elias.almqvist\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/elal/Projects/adventofcode/2019/Day2/Day2.csproj",
+      "projectUniqueName": "c:\\EliasPrograms\\adventofcode\\2019\\Day2\\Day2.csproj",
       "projectName": "Day2",
-      "projectPath": "/home/elal/Projects/adventofcode/2019/Day2/Day2.csproj",
-      "packagesPath": "/home/elal/.nuget/packages/",
-      "outputPath": "/home/elal/Projects/adventofcode/2019/Day2/obj/",
+      "projectPath": "c:\\EliasPrograms\\adventofcode\\2019\\Day2\\Day2.csproj",
+      "packagesPath": "C:\\Users\\elias.almqvist\\.nuget\\packages\\",
+      "outputPath": "c:\\EliasPrograms\\adventofcode\\2019\\Day2\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/home/elal/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\elias.almqvist\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
