@@ -12,8 +12,24 @@ namespace Day2 {
 			int[] output = new int[intcodes.Length];
 
 			Part1.compile compile = new Part1.compile();
-			compile.intcode( intcodes );
 
+			//// Part 1 stuff ////
+			intcodes[1] = 12;
+			intcodes[2] = 2;
+
+			output = compile.intcode( intcodes ); // run the intcode program
+
+			Console.WriteLine("\n--Intcode result--");
+			for( int i = 0; i < output.Length; i++ ) {
+				if( i != output.Length - 1 ) {
+					Console.Write( output[i].ToString() + "," );
+				} else {
+					Console.Write( output[i].ToString() + "\n" );
+				}
+			}
+			Console.WriteLine( "--End of Intcode result--\n" );
+
+			Console.WriteLine( "Part 1 result: " + output[0].ToString() ); // get the pos 0
 		}
 	}
 }

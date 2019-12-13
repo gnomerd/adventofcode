@@ -10,30 +10,40 @@ namespace Part1 {
 		}
 	}
 	public class compile {
-		public int NEXT = 4; // steps per opcode
+		public const int NEXT = 4; // steps per opcode
+		public bool writedebug = true;
 
 		public vars.intcode getOpcode( int opcode ) {
 			return (vars.intcode)opcode; // return the opcode, if 1 then return "ADD" etc
 		}
 
-		public bool isOpcode( int i ) {
-			return false;
+		public void Debug( string txt ) {
+			if( writedebug == true ) {
+				Console.WriteLine( txt );
+			}
 		}
 
-		public int[] runopcode( int[] array, int i, vars.intcode opcode ) {
-			int writepos = array[array[i+3]]; // get the write pos
+		public dynamic runopcode( int[] array, int i, vars.intcode opcode ) {
+			int writepos; 
 
 			if( opcode == vars.intcode.ADD ) {
+
 				int sum = array[array[i+1]] + array[array[i+2]]; // get the two values
-				Console.WriteLine( "ADD (" + i.ToString() + ") " + "Sum=" + sum.ToString() + " at i=" + array[i+3].ToString() );
+				writepos = array[i+3]; // get the write pos
+				Debug( "ADD (" + i.ToString() + "/" + array.Length.ToString() + ") " + "Sum=" + sum.ToString() + " at i=" + writepos.ToString() );
+
 				array[writepos] = sum; // write the value
 				
 			} else if( opcode == vars.intcode.MULT ) {
+				
 				int product = array[array[i+1]] * array[array[i+2]]; // get the two values
-				Console.WriteLine( "MULT (" + i.ToString() + ") " + "Product=" + product.ToString() + " at i=" + array[i+3].ToString() );
-				array[writepos] = product; // write the value
-			} else if ( opcode == vars.intcode.STOP ) {
+				writepos = array[i+3];
+				Debug( "MULT (" + i.ToString() + "/" + array.Length.ToString() + ") " + "Product=" + product.ToString() + " at i=" + writepos.ToString() );
 
+				array[writepos] = product; // write the value
+
+			} else if ( opcode == vars.intcode.STOP ) {
+				Debug( "STOP (" + i.ToString() + "/" + array.Length.ToString() + ")" );
 			}
 
 			return array;
@@ -41,15 +51,13 @@ namespace Part1 {
 
 		public int[] intcode( int[] input ) {
 			int[] output = input; // make an instanse of the input where we can change stuff
-			//int opcode_count = 0;
-			for( int i = 0; i < output.Length; i+= NEXT ) {
-				
-				Console.WriteLine(i);
+			Console.WriteLine( "\n----Running Intcode----" );
+			for( int i = 0; i < output.Length; i+= NEXT ) {	
 				vars.intcode opcode = getOpcode(input[i]);
 				output = runopcode( output, i, opcode );
-				
-				//Console.WriteLine( getOpcode(output[i]).ToString() + " | " + i.ToString() );
+				if( (int)output[i] == 99 ) { break; }
 			}
+			Console.WriteLine( "----Intcode finished----\n" );
 			return output;
 		}
 	}
