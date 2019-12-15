@@ -24,40 +24,50 @@ namespace Part1 {
 		}
 
 		public dynamic runopcode( int[] array, int i, vars.intcode opcode ) {
-			int writepos; 
+			int[] output = array;					// CREATE NEW INSTANCE 
+			int writepos = output[i+3];
+			int mod1 = output[ output[i+1] ];
+			int mod2 = output[ output[i+2] ];
+
+			if( writepos >= output.Length ) {
+				Console.WriteLine( "[Warning] Tried to write at non-existent address ({0}/{1})", writepos, output.Length );
+				writepos = output.Length - 1; // just write it at the end of the program
+			}
+
+			Console.WriteLine( "Mod1: {0}, Mod2: {1}, Writepos: {2}, mod1loc: {3}, mod2loc: {4}", mod1, mod2, writepos, output[i+1], output[i+2] );
 
 			if( opcode == vars.intcode.ADD ) {
 
-				int sum = array[array[i+1]] + array[array[i+2]]; // get the two values
-				writepos = Math.Clamp( array[i+3], 0, array.Length - 1 ); // get the write pos
-				Debug( "ADD (" + i.ToString() + "/" + array.Length.ToString() + ") " + "Sum=" + sum.ToString() + " at i=" + writepos.ToString() );
-
-				array[writepos] = sum; // write the value
+				Debug( "ADD (" + i.ToString() + "/" + output.Length.ToString() + ") " + "Sum=" + (mod1 + mod2).ToString() + " at i=" + writepos.ToString() );
+				output[writepos] = mod1 + mod2; // write the value
 				
 			} else if( opcode == vars.intcode.MULT ) {
-				
-				int product = array[array[i+1]] * array[array[i+2]]; // get the product
-				writepos = Math.Clamp( array[i+3], 0, array.Length - 1 );
-				Debug( "MULT (" + i.ToString() + "/" + array.Length.ToString() + ") " + "Product=" + product.ToString() + " at i=" + writepos.ToString() );
 
-				array[writepos] = product; // write the value
+				Debug( "MULT (" + i.ToString() + "/" + output.Length.ToString() + ") " + "Product=" + (mod1 * mod2).ToString() + " at i=" + writepos.ToString() );
+				output[writepos] = mod1 * mod2; // write the value
 
 			} else if ( opcode == vars.intcode.STOP ) {
-				Debug( "STOP (" + i.ToString() + "/" + array.Length.ToString() + ")" );
+				Debug( "STOP (" + i.ToString() + "/" + output.Length.ToString() + ")" );
 			}
 
-			return array;
+			return output;
 		}
 
 		public int[] intcode( int[] input ) {
 			int[] output = input; // make an instanse of the input where we can change stuff
-			Debug( "\n----Running Intcode----" );
+
+			Console.Write( "\nRunning: " );
+			for( int c = 0; c < input.Length; c++ ){ Console.Write( input[c].ToString() + "," ); }
+
+			Debug( "\n----DEBUG----" );
 			for( int i = 0; i < output.Length; i+= NEXT ) {	
-				vars.intcode opcode = getOpcode(input[i]);
-				output = runopcode( output, i, opcode );
+				if( i+3 < output.Length ) {
+					vars.intcode opcode = getOpcode(input[i]);
+					output = runopcode( output, i, opcode );
+				}
 				if( (int)output[i] == 99 ) { break; }
 			}
-			Debug( "----Intcode finished----\n" );
+			Debug( "----END-OF-DEBUG----\n" );
 			return output;
 		}
 	}

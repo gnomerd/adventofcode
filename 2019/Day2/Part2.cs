@@ -4,29 +4,28 @@ namespace Part2 {
 	public class calcInputs {
 		public void bruteforce( int[] input, int find ) {
 			int noun, verb;
-			int[] input_c = input; // keep a version of the original
-			int[] output = new int[input_c.Length];
+			int[] input_c; // keep a version of the original
+			int[] output = new int[input.Length];
 
 			bool success = false;
 
 			int min = 0;	// min and max for the input values
-			int max = 99;	//
+			int max = 6;	//
 
 			Part1.compile compile = new Part1.compile();
 
 			for( int i = 0; i < max + 1; i++ ) {
-				input = input_c; // reset the intcode
+				input_c = input; // reset the intcode
 
 				noun = Math.Clamp( i, min, max );
 				verb = Math.Clamp( i, min, max );
 
-				input[1] = noun;
-				input[2] = verb;
+				input_c[1] = noun;
+				input_c[2] = verb;
 
-				Console.WriteLine( "Checking: {0}, {1} for {2}", noun, verb, find );
-				output = compile.intcode( input );
+				output = compile.intcode( input_c );
 
-				Console.WriteLine( input[0] );
+				Console.WriteLine( input_c[0] );
 				if( output[0] == find ) {
 					Console.WriteLine( "({0}) Found: {1}, {2}", find, noun, verb );
 					success = true;
