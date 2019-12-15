@@ -13,34 +13,32 @@ namespace Day2 {
 
 			Part1.compile compile = new Part1.compile();
 
-			// //// Part 1 stuff ////
-			// intcodes[1] = 12;
-			// intcodes[2] = 2;
+			//// Part 1 stuff ////
+			intcodes[1] = 12;
+			intcodes[2] = 2;
 
-			// output = compile.intcode( intcodes ); // run the intcode program
+			output = compile.intcode( intcodes, false ); // run the intcode program
 
-			// Console.WriteLine("\n--Intcode result--");
-			// for( int i = 0; i < output.Length; i++ ) {
-			// 	if( i != output.Length - 1 ) {
-			// 		Console.Write( output[i].ToString() + "," );
-			// 	} else {
-			// 		Console.Write( output[i].ToString() + "\n" );
-			// 	}
-			// }
-			// Console.WriteLine( "--End of Intcode result--\n" );
+			Console.WriteLine("\n--Intcode result--");
+			for( int i = 0; i < output.Length; i++ ) {
+				if( i != output.Length - 1 ) {
+					Console.Write( output[i].ToString() + "," );
+				} else {
+					Console.Write( output[i].ToString() + "\n" );
+				}
+			}
+			Console.WriteLine( "--End of Intcode result--\n" );
 
-			// Console.WriteLine( "Part 1 result: " + output[0].ToString() ); // get the pos 0
+			Console.WriteLine( "Part 1 result: " + output[0].ToString() ); // get the pos 0
 
 
 
 			//// Part 2 stuff ////
 			Part2.calcInputs calcInputs = new Part2.calcInputs();
 			int[] intcodes2 = intcodes; // make a new instance of it
-			for( int c = 0; c < intcodes2.Length; c++ ){
-				Console.Write( intcodes2[c].ToString() + "," );
-			}
-			Console.WriteLine("");
-			calcInputs.bruteforce( intcodes2, 16 );
+			int res;
+			res = calcInputs.bruteforce( intcodes2, 19690720, false );
+			Console.WriteLine( "Part 2 Result: {0}", res );
 		}
 	}
 }

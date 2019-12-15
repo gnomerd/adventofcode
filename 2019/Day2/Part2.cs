@@ -2,7 +2,7 @@ using System;
 
 namespace Part2 {
 	public class calcInputs {
-		public void bruteforce( int[] input, int find ) {
+		public int bruteforce( int[] input, int find, bool debug ) {
 			int noun, verb;
 			int[] input_c; // keep a version of the original
 			int[] output = new int[input.Length];
@@ -10,36 +10,41 @@ namespace Part2 {
 			bool success = false;
 
 			int min = 0;	// min and max for the input values
-			int max = 6;	//
+			int max = 99;	//
+			int maxcombos = Convert.ToInt16( Math.Pow( (double)(max + 1), 2.0 ) );
 
 			Part1.compile compile = new Part1.compile();
 
-			for( int i = 0; i < max + 1; i++ ) {
-				input_c = input; // reset the intcode
+			Console.WriteLine("Bruteforcing...");
+			for( int c = 0; c < max + 1; c++ ) {
+				noun = Math.Clamp( c, min, max );
+				// check every verb with c (the noun)
+				for( int i = 0; i < max + 1; i++ ) {
+					input_c = input; // reset the intcode
+					verb = Math.Clamp( i, min, max );
 
-				noun = Math.Clamp( i, min, max );
-				verb = Math.Clamp( i, min, max );
+					input_c[1] = noun;
+					input_c[2] = verb;
 
-				input_c[1] = noun;
-				input_c[2] = verb;
+					output = compile.intcode( input_c, debug );
 
-				output = compile.intcode( input_c );
-
-				Console.WriteLine( input_c[0] );
-				if( output[0] == find ) {
-					Console.WriteLine( "({0}) Found: {1}, {2}", find, noun, verb );
-					success = true;
-					break;
+					if( output[0] == find ) {
+						Console.WriteLine( "\n({0}) Found: {1}, {2}", find, noun, verb );
+						success = true;
+						return (100 * noun) + verb;
+					}
 				}
-				
+
+				if( success == true ) { break; }
 			}
 
 			Console.WriteLine("");
 
 			if( success == false ) {
 				Console.WriteLine( "Nothing found :(" );
-				return;
+				return -1;
 			}
+			return -1;
 		}
 	}
 }
