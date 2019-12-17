@@ -37,7 +37,7 @@ namespace Day2 {
 			Part2.calcInputs calcInputs = new Part2.calcInputs();
 			int[] intcodes2 = intcodes; // make a new instance of it
 			int res;
-			res = calcInputs.bruteforce( intcodes2, 19690720, false );
+			res = calcInputs.bruteforce( intcodes2, 8, false );
 			Console.WriteLine( "Part 2 Result: {0}", res );
 		}
 	}

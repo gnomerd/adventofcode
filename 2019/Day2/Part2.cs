@@ -10,7 +10,7 @@ namespace Part2 {
 			bool success = false;
 
 			int min = 0;	// min and max for the input values
-			int max = 99;	//
+			int max = 16;	//
 			int maxcombos = Convert.ToInt16( Math.Pow( (double)(max + 1), 2.0 ) );
 
 			Part1.compile compile = new Part1.compile();

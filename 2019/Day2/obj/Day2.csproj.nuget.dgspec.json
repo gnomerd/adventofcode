@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\EliasPrograms\\adventofcode\\2019\\Day2\\Day2.csproj": {}
+    "C:\\EliasPrograms\\AdventOfCode\\2019\\Day2\\Day2.csproj": {}
   },
   "projects": {
-    "C:\\EliasPrograms\\adventofcode\\2019\\Day2\\Day2.csproj": {
+    "C:\\EliasPrograms\\AdventOfCode\\2019\\Day2\\Day2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\EliasPrograms\\adventofcode\\2019\\Day2\\Day2.csproj",
+        "projectUniqueName": "C:\\EliasPrograms\\AdventOfCode\\2019\\Day2\\Day2.csproj",
         "projectName": "Day2",
-        "projectPath": "C:\\EliasPrograms\\adventofcode\\2019\\Day2\\Day2.csproj",
+        "projectPath": "C:\\EliasPrograms\\AdventOfCode\\2019\\Day2\\Day2.csproj",
         "packagesPath": "C:\\Users\\elias.almqvist\\.nuget\\packages\\",
-        "outputPath": "C:\\EliasPrograms\\adventofcode\\2019\\Day2\\obj\\",
+        "outputPath": "C:\\EliasPrograms\\AdventOfCode\\2019\\Day2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
