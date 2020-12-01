@@ -1,5 +1,6 @@
 .vscode/
 2020/session.txt
+2020/data
 *.py[cod]
 *.o
 *.so
