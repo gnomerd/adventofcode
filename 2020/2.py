@@ -1,11 +1,7 @@
 #!/usr/bin/env python
 from aoc import get_input
 
-#data = get_input(2).splitlines()
-#print(data)
-
-inp = open("input.2", "r")
-inp = inp.read().splitlines()
+inp = get_input(2).splitlines()
 
 def getOper(inp):
     ops = []
