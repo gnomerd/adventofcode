@@ -32,7 +32,7 @@ def countChar(string, char):
 ops, passw = getOper(inp)
 validsum = 0
 
-PART 1
+#PART 1
 
 for i in range(len(ops)):
     op = getRng(ops[i])
