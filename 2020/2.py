@@ -43,7 +43,6 @@ for i in range(len(ops)):
 
     count = countChar(pas, char)
     if( count >= rng[0] and count <= rng[1] ):
-        print("true", pas)
         validsum += 1
 
 print(validsum)
@@ -58,20 +57,14 @@ for i in range(len(ops)):
     char = op[1]
     rng = op[0]
 
-    pas = split(passw[i])
-    print(pas)
+    pas = passw[i]
 
     r1 = int(rng[0])
     r2 = int(rng[1])
-    print("###", r1, r2)
     fch = str(pas[r1])
     sch = str(pas[r2])
-    print("###", fch, sch)
-
-    print(pas, "|", fch, sch, op, not fch == sch, fch == char or sch == char)
 
     if( fch != sch and (fch == char or sch == char) ):
         valid2 += 1
-        print("valid")
 
 print(valid2)
