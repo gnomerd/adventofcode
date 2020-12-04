@@ -1,0 +1,6743 @@
+#### ['pid:827837505', 'byr:1976', 'hgt:187cm', 'iyr:2016', 'hcl:#fffffd', 'eyr:2024']
+# pid:827837505
+# byr:1976
+# hgt:187cm
+# iyr:2016
+# hcl:#fffffd
+# eyr:2024
+FALSE: pid:827837505 byr:1976
+hgt:187cm
+iyr:2016
+hcl:#fffffd
+eyr:2024 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: pid:827837505 byr:1976
+hgt:187cm
+iyr:2016
+hcl:#fffffd
+eyr:2024 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: pid:827837505 byr:1976
+hgt:187cm
+iyr:2016
+hcl:#fffffd
+eyr:2024 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: pid:827837505 byr:1976
+hgt:187cm
+iyr:2016
+hcl:#fffffd
+eyr:2024 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: pid:827837505 byr:1976
+hgt:187cm
+iyr:2016
+hcl:#fffffd
+eyr:2024 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: pid:827837505 byr:1976
+hgt:187cm
+iyr:2016
+hcl:#fffffd
+eyr:2024 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+pid 827837505 9 827837505 True
+False
+byr 1976 True
+False
+hgt cm 187 True
+False
+iyr 2016 True
+False
+hcl #fffffd 6 True <re.Match object; span=(0, 6), match='fffffd'>
+False
+eyr 2024 True
+False
+
+newport
+#### ['hgt:189cm', 'byr:1987', 'pid:572028668', 'iyr:2014', 'hcl:#623a2f', 'eyr:2028', 'ecl:amb']
+# hgt:189cm
+# byr:1987
+# pid:572028668
+# iyr:2014
+# hcl:#623a2f
+# eyr:2028
+# ecl:amb
+hgt cm 189 True
+True
+byr 1987 True
+True
+pid 572028668 9 572028668 True
+True
+iyr 2014 True
+True
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+eyr 2028 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['pid:#e9bf38', 'hcl:z', 'iyr:2029', 'byr:2028', 'ecl:#18f71a', 'hgt:174in', 'eyr:2036']
+# pid:#e9bf38
+# hcl:z
+# iyr:2029
+# byr:2028
+# ecl:#18f71a
+# hgt:174in
+# eyr:2036
+True
+True
+iyr 2029 False
+True
+byr 2028 False
+True
+ecl #18f71a ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+hgt in 174 False
+True
+eyr 2036 False
+True
+
+newport
+#### ['hcl:#cfa07d', 'byr:1982', 'pid:573165334', 'ecl:gry', 'eyr:2022', 'iyr:2012', 'hgt:180cm']
+# hcl:#cfa07d
+# byr:1982
+# pid:573165334
+# ecl:gry
+# eyr:2022
+# iyr:2012
+# hgt:180cm
+hcl #cfa07d 6 True <re.Match object; span=(0, 6), match='cfa07d'>
+True
+byr 1982 True
+True
+pid 573165334 9 573165334 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2022 True
+True
+iyr 2012 True
+True
+hgt cm 180 True
+True
+
+newport
+#### ['cid:151', 'hcl:#c0946f', 'ecl:brn', 'hgt:66cm', 'iyr:2013', 'pid:694421369', 'byr:1980', 'eyr:2029']
+# cid:151
+# hcl:#c0946f
+# ecl:brn
+# hgt:66cm
+# iyr:2013
+# pid:694421369
+# byr:1980
+# eyr:2029
+True
+hcl #c0946f 6 True <re.Match object; span=(0, 6), match='c0946f'>
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 66 False
+True
+iyr 2013 True
+True
+pid 694421369 9 694421369 True
+True
+byr 1980 True
+True
+eyr 2029 True
+True
+
+newport
+#### ['ecl:brn', 'pid:9337568136', 'eyr:2026', 'hcl:#6b5442', 'hgt:69cm', 'iyr:2019', 'byr:2025']
+# ecl:brn
+# pid:9337568136
+# eyr:2026
+# hcl:#6b5442
+# hgt:69cm
+# iyr:2019
+# byr:2025
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 9337568136 10 9337568136 False
+True
+eyr 2026 True
+True
+hcl #6b5442 6 True <re.Match object; span=(0, 6), match='6b5442'>
+True
+hgt cm 69 False
+True
+iyr 2019 True
+True
+byr 2025 False
+True
+
+newport
+#### ['cid:66', 'hcl:#efcc98', 'pid:791118269', 'iyr:2013', 'eyr:2020', 'ecl:grn', 'hgt:183cm', 'byr:1993']
+# cid:66
+# hcl:#efcc98
+# pid:791118269
+# iyr:2013
+# eyr:2020
+# ecl:grn
+# hgt:183cm
+# byr:1993
+True
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+True
+pid 791118269 9 791118269 True
+True
+iyr 2013 True
+True
+eyr 2020 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 183 True
+True
+byr 1993 True
+True
+
+newport
+#### ['eyr:2022', 'hgt:160cm', 'iyr:2016', 'byr:1969', 'pid:767606888', 'ecl:gry', 'hcl:#6b5442']
+# eyr:2022
+# hgt:160cm
+# iyr:2016
+# byr:1969
+# pid:767606888
+# ecl:gry
+# hcl:#6b5442
+eyr 2022 True
+True
+hgt cm 160 True
+True
+iyr 2016 True
+True
+byr 1969 True
+True
+pid 767606888 9 767606888 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #6b5442 6 True <re.Match object; span=(0, 6), match='6b5442'>
+True
+
+newport
+#### ['hgt:157cm', 'eyr:2026', 'ecl:oth', 'hcl:#efcc98', 'byr:1938', 'iyr:2014']
+# hgt:157cm
+# eyr:2026
+# ecl:oth
+# hcl:#efcc98
+# byr:1938
+# iyr:2014
+FALSE: hgt:157cm eyr:2026 ecl:oth hcl:#efcc98 byr:1938 iyr:2014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hgt:157cm eyr:2026 ecl:oth hcl:#efcc98 byr:1938 iyr:2014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hgt:157cm eyr:2026 ecl:oth hcl:#efcc98 byr:1938 iyr:2014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hgt:157cm eyr:2026 ecl:oth hcl:#efcc98 byr:1938 iyr:2014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hgt:157cm eyr:2026 ecl:oth hcl:#efcc98 byr:1938 iyr:2014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hgt:157cm eyr:2026 ecl:oth hcl:#efcc98 byr:1938 iyr:2014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+hgt cm 157 True
+False
+eyr 2026 True
+False
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+False
+byr 1938 True
+False
+iyr 2014 True
+False
+
+newport
+#### ['byr:1931', 'iyr:2015', 'ecl:gry', 'hgt:76in', 'cid:227', 'hcl:#09592c', 'eyr:2024', 'pid:276365391']
+# byr:1931
+# iyr:2015
+# ecl:gry
+# hgt:76in
+# cid:227
+# hcl:#09592c
+# eyr:2024
+# pid:276365391
+byr 1931 True
+True
+iyr 2015 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt in 76 True
+True
+True
+hcl #09592c 6 True <re.Match object; span=(0, 6), match='09592c'>
+True
+eyr 2024 True
+True
+pid 276365391 9 276365391 True
+True
+
+newport
+#### ['ecl:gry', 'hgt:170cm', 'iyr:2014', 'cid:285', 'pid:870052514', 'hcl:#866857', 'byr:1925', 'eyr:2025']
+# ecl:gry
+# hgt:170cm
+# iyr:2014
+# cid:285
+# pid:870052514
+# hcl:#866857
+# byr:1925
+# eyr:2025
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 170 True
+True
+iyr 2014 True
+True
+True
+pid 870052514 9 870052514 True
+True
+hcl #866857 6 True <re.Match object; span=(0, 6), match='866857'>
+True
+byr 1925 True
+True
+eyr 2025 True
+True
+
+newport
+#### ['eyr:2021', 'byr:1960', 'pid:569950896', 'iyr:2010', 'hgt:179cm', 'hcl:#888785', 'cid:167']
+# eyr:2021
+# byr:1960
+# pid:569950896
+# iyr:2010
+# hgt:179cm
+# hcl:#888785
+# cid:167
+FALSE: eyr:2021
+byr:1960 pid:569950896
+iyr:2010 hgt:179cm hcl:#888785 cid:167 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2021
+byr:1960 pid:569950896
+iyr:2010 hgt:179cm hcl:#888785 cid:167 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2021
+byr:1960 pid:569950896
+iyr:2010 hgt:179cm hcl:#888785 cid:167 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2021
+byr:1960 pid:569950896
+iyr:2010 hgt:179cm hcl:#888785 cid:167 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2021
+byr:1960 pid:569950896
+iyr:2010 hgt:179cm hcl:#888785 cid:167 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2021
+byr:1960 pid:569950896
+iyr:2010 hgt:179cm hcl:#888785 cid:167 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2021
+byr:1960 pid:569950896
+iyr:2010 hgt:179cm hcl:#888785 cid:167 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+eyr 2021 True
+False
+byr 1960 True
+False
+pid 569950896 9 569950896 True
+False
+iyr 2010 True
+False
+hgt cm 179 True
+False
+hcl #888785 6 True <re.Match object; span=(0, 6), match='888785'>
+False
+False
+
+newport
+#### ['hgt:154in', 'cid:194', 'pid:8142023665', 'byr:2010', 'hcl:7d22ff', 'ecl:utc', 'iyr:2026', 'eyr:1976']
+# hgt:154in
+# cid:194
+# pid:8142023665
+# byr:2010
+# hcl:7d22ff
+# ecl:utc
+# iyr:2026
+# eyr:1976
+hgt in 154 False
+True
+True
+pid 8142023665 10 8142023665 False
+True
+byr 2010 False
+True
+True
+ecl utc ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+iyr 2026 False
+True
+eyr 1976 False
+True
+
+newport
+#### ['ecl:blu', 'eyr:2030', 'hgt:192cm', 'pid:363860866', 'iyr:2019', 'hcl:#ceb3a1', 'byr:1963']
+# ecl:blu
+# eyr:2030
+# hgt:192cm
+# pid:363860866
+# iyr:2019
+# hcl:#ceb3a1
+# byr:1963
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2030 True
+True
+hgt cm 192 True
+True
+pid 363860866 9 363860866 True
+True
+iyr 2019 True
+True
+hcl #ceb3a1 6 True <re.Match object; span=(0, 6), match='ceb3a1'>
+True
+byr 1963 True
+True
+
+newport
+#### ['byr:1947', 'hgt:167cm', 'hcl:#7d3b0c', 'ecl:amb', 'cid:70', 'eyr:2022', 'iyr:2019', 'pid:756932371']
+# byr:1947
+# hgt:167cm
+# hcl:#7d3b0c
+# ecl:amb
+# cid:70
+# eyr:2022
+# iyr:2019
+# pid:756932371
+byr 1947 True
+True
+hgt cm 167 True
+True
+hcl #7d3b0c 6 True <re.Match object; span=(0, 6), match='7d3b0c'>
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+eyr 2022 True
+True
+iyr 2019 True
+True
+pid 756932371 9 756932371 True
+True
+
+newport
+#### ['hgt:185cm', 'pid:871945454', 'iyr:2020', 'hcl:#866857', 'ecl:amb', 'byr:1989', 'cid:184', 'eyr:2030']
+# hgt:185cm
+# pid:871945454
+# iyr:2020
+# hcl:#866857
+# ecl:amb
+# byr:1989
+# cid:184
+# eyr:2030
+hgt cm 185 True
+True
+pid 871945454 9 871945454 True
+True
+iyr 2020 True
+True
+hcl #866857 6 True <re.Match object; span=(0, 6), match='866857'>
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1989 True
+True
+True
+eyr 2030 True
+True
+
+newport
+#### ['byr:1935', 'pid:322117407', 'hgt:153cm', 'iyr:2011', 'cid:244', 'eyr:2022', 'hcl:#efcc98', 'ecl:hzl']
+# byr:1935
+# pid:322117407
+# hgt:153cm
+# iyr:2011
+# cid:244
+# eyr:2022
+# hcl:#efcc98
+# ecl:hzl
+byr 1935 True
+True
+pid 322117407 9 322117407 True
+True
+hgt cm 153 True
+True
+iyr 2011 True
+True
+True
+eyr 2022 True
+True
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['ecl:blu', 'hcl:#5e6c12', 'eyr:2029', 'iyr:2011', 'hgt:191cm', 'byr:1992']
+# ecl:blu
+# hcl:#5e6c12
+# eyr:2029
+# iyr:2011
+# hgt:191cm
+# byr:1992
+FALSE: ecl:blu hcl:#5e6c12
+eyr:2029 iyr:2011 hgt:191cm byr:1992 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:blu hcl:#5e6c12
+eyr:2029 iyr:2011 hgt:191cm byr:1992 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:blu hcl:#5e6c12
+eyr:2029 iyr:2011 hgt:191cm byr:1992 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:blu hcl:#5e6c12
+eyr:2029 iyr:2011 hgt:191cm byr:1992 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:blu hcl:#5e6c12
+eyr:2029 iyr:2011 hgt:191cm byr:1992 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:blu hcl:#5e6c12
+eyr:2029 iyr:2011 hgt:191cm byr:1992 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+hcl #5e6c12 6 True <re.Match object; span=(0, 6), match='5e6c12'>
+False
+eyr 2029 True
+False
+iyr 2011 True
+False
+hgt cm 191 True
+False
+byr 1992 True
+False
+
+newport
+#### ['hcl:#7d3b0c', 'eyr:2029', 'hgt:163cm', 'pid:625292172', 'byr:1932', 'ecl:brn', 'iyr:2020']
+# hcl:#7d3b0c
+# eyr:2029
+# hgt:163cm
+# pid:625292172
+# byr:1932
+# ecl:brn
+# iyr:2020
+hcl #7d3b0c 6 True <re.Match object; span=(0, 6), match='7d3b0c'>
+True
+eyr 2029 True
+True
+hgt cm 163 True
+True
+pid 625292172 9 625292172 True
+True
+byr 1932 True
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2020 True
+True
+
+newport
+#### ['hgt:158cm', 'eyr:2030', 'iyr:2016', 'byr:1969', 'cid:173', 'pid:092921211', 'hcl:#602927', 'ecl:grn']
+# hgt:158cm
+# eyr:2030
+# iyr:2016
+# byr:1969
+# cid:173
+# pid:092921211
+# hcl:#602927
+# ecl:grn
+hgt cm 158 True
+True
+eyr 2030 True
+True
+iyr 2016 True
+True
+byr 1969 True
+True
+True
+pid 92921211 9 092921211 True
+True
+hcl #602927 6 True <re.Match object; span=(0, 6), match='602927'>
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['hcl:#733820', 'iyr:2016', 'eyr:2029', 'ecl:hzl', 'hgt:180cm', 'pid:292904469', 'byr:1984']
+# hcl:#733820
+# iyr:2016
+# eyr:2029
+# ecl:hzl
+# hgt:180cm
+# pid:292904469
+# byr:1984
+hcl #733820 6 True <re.Match object; span=(0, 6), match='733820'>
+True
+iyr 2016 True
+True
+eyr 2029 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 180 True
+True
+pid 292904469 9 292904469 True
+True
+byr 1984 True
+True
+
+newport
+#### ['ecl:amb', 'pid:901224456', 'hgt:190cm', 'iyr:2013', 'hcl:#733820', 'byr:1922']
+# ecl:amb
+# pid:901224456
+# hgt:190cm
+# iyr:2013
+# hcl:#733820
+# byr:1922
+FALSE: ecl:amb pid:901224456 hgt:190cm
+iyr:2013
+hcl:#733820
+byr:1922 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:amb pid:901224456 hgt:190cm
+iyr:2013
+hcl:#733820
+byr:1922 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:amb pid:901224456 hgt:190cm
+iyr:2013
+hcl:#733820
+byr:1922 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:amb pid:901224456 hgt:190cm
+iyr:2013
+hcl:#733820
+byr:1922 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:amb pid:901224456 hgt:190cm
+iyr:2013
+hcl:#733820
+byr:1922 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:amb pid:901224456 hgt:190cm
+iyr:2013
+hcl:#733820
+byr:1922 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+pid 901224456 9 901224456 True
+False
+hgt cm 190 True
+False
+iyr 2013 True
+False
+hcl #733820 6 True <re.Match object; span=(0, 6), match='733820'>
+False
+byr 1922 True
+False
+
+newport
+#### ['pid:262285164', 'iyr:2010', 'byr:2018', 'eyr:2026', 'hcl:#602927', 'hgt:179cm', 'ecl:gmt', 'cid:349']
+# pid:262285164
+# iyr:2010
+# byr:2018
+# eyr:2026
+# hcl:#602927
+# hgt:179cm
+# ecl:gmt
+# cid:349
+pid 262285164 9 262285164 True
+True
+iyr 2010 True
+True
+byr 2018 False
+True
+eyr 2026 True
+True
+hcl #602927 6 True <re.Match object; span=(0, 6), match='602927'>
+True
+hgt cm 179 True
+True
+ecl gmt ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+True
+
+newport
+#### ['byr:1956', 'eyr:2027', 'pid:351551997', 'hgt:71in', 'cid:277', 'hcl:#cfa07d', 'iyr:2010', 'ecl:grn']
+# byr:1956
+# eyr:2027
+# pid:351551997
+# hgt:71in
+# cid:277
+# hcl:#cfa07d
+# iyr:2010
+# ecl:grn
+byr 1956 True
+True
+eyr 2027 True
+True
+pid 351551997 9 351551997 True
+True
+hgt in 71 True
+True
+True
+hcl #cfa07d 6 True <re.Match object; span=(0, 6), match='cfa07d'>
+True
+iyr 2010 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['eyr:2027', 'hcl:#602927', 'hgt:157cm', 'ecl:gry', 'cid:128', 'byr:1953', 'pid:231551549', 'iyr:2012']
+# eyr:2027
+# hcl:#602927
+# hgt:157cm
+# ecl:gry
+# cid:128
+# byr:1953
+# pid:231551549
+# iyr:2012
+eyr 2027 True
+True
+hcl #602927 6 True <re.Match object; span=(0, 6), match='602927'>
+True
+hgt cm 157 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+byr 1953 True
+True
+pid 231551549 9 231551549 True
+True
+iyr 2012 True
+True
+
+newport
+#### ['iyr:2011', 'pid:771266976', 'cid:264', 'byr:1955', 'hcl:#b6652a', 'hgt:189cm', 'ecl:blu', 'eyr:2030']
+# iyr:2011
+# pid:771266976
+# cid:264
+# byr:1955
+# hcl:#b6652a
+# hgt:189cm
+# ecl:blu
+# eyr:2030
+iyr 2011 True
+True
+pid 771266976 9 771266976 True
+True
+True
+byr 1955 True
+True
+hcl #b6652a 6 True <re.Match object; span=(0, 6), match='b6652a'>
+True
+hgt cm 189 True
+True
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2030 True
+True
+
+newport
+#### ['eyr:2026', 'pid:698455242', 'byr:1949', 'ecl:gry', 'hgt:190cm', 'iyr:2013', 'hcl:#efcc98', 'cid:139']
+# eyr:2026
+# pid:698455242
+# byr:1949
+# ecl:gry
+# hgt:190cm
+# iyr:2013
+# hcl:#efcc98
+# cid:139
+eyr 2026 True
+True
+pid 698455242 9 698455242 True
+True
+byr 1949 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 190 True
+True
+iyr 2013 True
+True
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+True
+True
+
+newport
+#### ['ecl:blu', 'hgt:181cm', 'byr:1977', 'iyr:2011', 'eyr:2022', 'pid:454163967', 'hcl:#b6652a']
+# ecl:blu
+# hgt:181cm
+# byr:1977
+# iyr:2011
+# eyr:2022
+# pid:454163967
+# hcl:#b6652a
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 181 True
+True
+byr 1977 True
+True
+iyr 2011 True
+True
+eyr 2022 True
+True
+pid 454163967 9 454163967 True
+True
+hcl #b6652a 6 True <re.Match object; span=(0, 6), match='b6652a'>
+True
+
+newport
+#### ['pid:534506872', 'hgt:155cm', 'iyr:2012', 'byr:1968', 'cid:333', 'eyr:2024', 'hcl:#623a2f', 'ecl:amb']
+# pid:534506872
+# hgt:155cm
+# iyr:2012
+# byr:1968
+# cid:333
+# eyr:2024
+# hcl:#623a2f
+# ecl:amb
+pid 534506872 9 534506872 True
+True
+hgt cm 155 True
+True
+iyr 2012 True
+True
+byr 1968 True
+True
+True
+eyr 2024 True
+True
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['hgt:162cm', 'iyr:2020', 'hcl:#733820', 'eyr:2027', 'byr:1995', 'ecl:gry', 'pid:084994685']
+# hgt:162cm
+# iyr:2020
+# hcl:#733820
+# eyr:2027
+# byr:1995
+# ecl:gry
+# pid:084994685
+hgt cm 162 True
+True
+iyr 2020 True
+True
+hcl #733820 6 True <re.Match object; span=(0, 6), match='733820'>
+True
+eyr 2027 True
+True
+byr 1995 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 84994685 9 084994685 True
+True
+
+newport
+#### ['iyr:2016', 'byr:1990', 'ecl:amb', 'pid:185689022', 'eyr:2025', 'hgt:184cm', 'hcl:#866857']
+# iyr:2016
+# byr:1990
+# ecl:amb
+# pid:185689022
+# eyr:2025
+# hgt:184cm
+# hcl:#866857
+iyr 2016 True
+True
+byr 1990 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 185689022 9 185689022 True
+True
+eyr 2025 True
+True
+hgt cm 184 True
+True
+hcl #866857 6 True <re.Match object; span=(0, 6), match='866857'>
+True
+
+newport
+#### ['byr:2016', 'hcl:z', 'iyr:2022', 'hgt:166in', 'eyr:2040']
+# byr:2016
+# hcl:z
+# iyr:2022
+# hgt:166in
+# eyr:2040
+FALSE: byr:2016 hcl:z iyr:2022 hgt:166in
+eyr:2040 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:2016 hcl:z iyr:2022 hgt:166in
+eyr:2040 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:2016 hcl:z iyr:2022 hgt:166in
+eyr:2040 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:2016 hcl:z iyr:2022 hgt:166in
+eyr:2040 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:2016 hcl:z iyr:2022 hgt:166in
+eyr:2040 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+byr 2016 False
+False
+False
+iyr 2022 False
+False
+hgt in 166 False
+False
+eyr 2040 False
+False
+
+newport
+#### ['byr:1943', 'hgt:152cm', 'hcl:#cfa07d', 'ecl:hzl', 'iyr:2016', 'cid:300', 'pid:376088014']
+# byr:1943
+# hgt:152cm
+# hcl:#cfa07d
+# ecl:hzl
+# iyr:2016
+# cid:300
+# pid:376088014
+FALSE: byr:1943 hgt:152cm hcl:#cfa07d ecl:hzl iyr:2016 cid:300 pid:376088014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:1943 hgt:152cm hcl:#cfa07d ecl:hzl iyr:2016 cid:300 pid:376088014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:1943 hgt:152cm hcl:#cfa07d ecl:hzl iyr:2016 cid:300 pid:376088014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:1943 hgt:152cm hcl:#cfa07d ecl:hzl iyr:2016 cid:300 pid:376088014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:1943 hgt:152cm hcl:#cfa07d ecl:hzl iyr:2016 cid:300 pid:376088014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:1943 hgt:152cm hcl:#cfa07d ecl:hzl iyr:2016 cid:300 pid:376088014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:1943 hgt:152cm hcl:#cfa07d ecl:hzl iyr:2016 cid:300 pid:376088014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+byr 1943 True
+False
+hgt cm 152 True
+False
+hcl #cfa07d 6 True <re.Match object; span=(0, 6), match='cfa07d'>
+False
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+iyr 2016 True
+False
+False
+pid 376088014 9 376088014 True
+False
+
+newport
+#### ['iyr:2020', 'eyr:2026', 'hcl:#602927', 'ecl:gry', 'byr:1962', 'pid:453907789', 'hgt:172cm']
+# iyr:2020
+# eyr:2026
+# hcl:#602927
+# ecl:gry
+# byr:1962
+# pid:453907789
+# hgt:172cm
+iyr 2020 True
+True
+eyr 2026 True
+True
+hcl #602927 6 True <re.Match object; span=(0, 6), match='602927'>
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1962 True
+True
+pid 453907789 9 453907789 True
+True
+hgt cm 172 True
+True
+
+newport
+#### ['eyr:2023', 'hgt:185cm', 'hcl:#623a2f', 'pid:963767258', 'byr:1977', 'iyr:2019', 'ecl:oth']
+# eyr:2023
+# hgt:185cm
+# hcl:#623a2f
+# pid:963767258
+# byr:1977
+# iyr:2019
+# ecl:oth
+eyr 2023 True
+True
+hgt cm 185 True
+True
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+pid 963767258 9 963767258 True
+True
+byr 1977 True
+True
+iyr 2019 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['hgt:159cm', 'byr:1965', 'cid:349', 'ecl:blu', 'pid:962908167', 'iyr:2013', 'eyr:2024', 'hcl:#fffffd']
+# hgt:159cm
+# byr:1965
+# cid:349
+# ecl:blu
+# pid:962908167
+# iyr:2013
+# eyr:2024
+# hcl:#fffffd
+hgt cm 159 True
+True
+byr 1965 True
+True
+True
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 962908167 9 962908167 True
+True
+iyr 2013 True
+True
+eyr 2024 True
+True
+hcl #fffffd 6 True <re.Match object; span=(0, 6), match='fffffd'>
+True
+
+newport
+#### ['eyr:2026', 'pid:912822238', 'hgt:66in', 'byr:1985', 'iyr:2018', 'hcl:#c0946f', 'ecl:hzl']
+# eyr:2026
+# pid:912822238
+# hgt:66in
+# byr:1985
+# iyr:2018
+# hcl:#c0946f
+# ecl:hzl
+eyr 2026 True
+True
+pid 912822238 9 912822238 True
+True
+hgt in 66 True
+True
+byr 1985 True
+True
+iyr 2018 True
+True
+hcl #c0946f 6 True <re.Match object; span=(0, 6), match='c0946f'>
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['hgt:167cm', 'hcl:#ceb3a1', 'byr:1990', 'eyr:2027', 'ecl:grn', 'iyr:2011', 'pid:642877667']
+# hgt:167cm
+# hcl:#ceb3a1
+# byr:1990
+# eyr:2027
+# ecl:grn
+# iyr:2011
+# pid:642877667
+hgt cm 167 True
+True
+hcl #ceb3a1 6 True <re.Match object; span=(0, 6), match='ceb3a1'>
+True
+byr 1990 True
+True
+eyr 2027 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2011 True
+True
+pid 642877667 9 642877667 True
+True
+
+newport
+#### ['hcl:#7d3b0c', 'byr:1921', 'pid:976412756', 'hgt:192cm', 'iyr:2013', 'ecl:gry']
+# hcl:#7d3b0c
+# byr:1921
+# pid:976412756
+# hgt:192cm
+# iyr:2013
+# ecl:gry
+FALSE: hcl:#7d3b0c byr:1921 pid:976412756 hgt:192cm
+iyr:2013 ecl:gry #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#7d3b0c byr:1921 pid:976412756 hgt:192cm
+iyr:2013 ecl:gry #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#7d3b0c byr:1921 pid:976412756 hgt:192cm
+iyr:2013 ecl:gry #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#7d3b0c byr:1921 pid:976412756 hgt:192cm
+iyr:2013 ecl:gry #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#7d3b0c byr:1921 pid:976412756 hgt:192cm
+iyr:2013 ecl:gry #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#7d3b0c byr:1921 pid:976412756 hgt:192cm
+iyr:2013 ecl:gry #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+hcl #7d3b0c 6 True <re.Match object; span=(0, 6), match='7d3b0c'>
+False
+byr 1921 True
+False
+pid 976412756 9 976412756 True
+False
+hgt cm 192 True
+False
+iyr 2013 True
+False
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+
+newport
+#### ['iyr:2030', 'pid:283599139', 'eyr:2039', 'cid:203', 'hcl:f943cb', 'hgt:111']
+# iyr:2030
+# pid:283599139
+# eyr:2039
+# cid:203
+# hcl:f943cb
+# hgt:111
+FALSE: iyr:2030 pid:283599139
+eyr:2039 cid:203
+hcl:f943cb
+hgt:111 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2030 pid:283599139
+eyr:2039 cid:203
+hcl:f943cb
+hgt:111 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2030 pid:283599139
+eyr:2039 cid:203
+hcl:f943cb
+hgt:111 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2030 pid:283599139
+eyr:2039 cid:203
+hcl:f943cb
+hgt:111 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2030 pid:283599139
+eyr:2039 cid:203
+hcl:f943cb
+hgt:111 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2030 pid:283599139
+eyr:2039 cid:203
+hcl:f943cb
+hgt:111 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+iyr 2030 False
+False
+pid 283599139 9 283599139 True
+False
+eyr 2039 False
+False
+False
+False
+False
+
+newport
+#### ['hgt:190cm', 'iyr:2027', 'ecl:blu', 'hcl:z', 'byr:2004', 'eyr:2039', 'pid:734570034']
+# hgt:190cm
+# iyr:2027
+# ecl:blu
+# hcl:z
+# byr:2004
+# eyr:2039
+# pid:734570034
+hgt cm 190 True
+True
+iyr 2027 False
+True
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+byr 2004 False
+True
+eyr 2039 False
+True
+pid 734570034 9 734570034 True
+True
+
+newport
+#### ['hcl:#6b5442', 'hgt:191cm', 'ecl:oth', 'byr:1989', 'pid:669414669', 'cid:196', 'iyr:2016', 'eyr:2023']
+# hcl:#6b5442
+# hgt:191cm
+# ecl:oth
+# byr:1989
+# pid:669414669
+# cid:196
+# iyr:2016
+# eyr:2023
+hcl #6b5442 6 True <re.Match object; span=(0, 6), match='6b5442'>
+True
+hgt cm 191 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1989 True
+True
+pid 669414669 9 669414669 True
+True
+True
+iyr 2016 True
+True
+eyr 2023 True
+True
+
+newport
+#### ['ecl:brn', 'eyr:2028', 'byr:1965', 'pid:630674502', 'hcl:#602927', 'iyr:2020', 'hgt:61in']
+# ecl:brn
+# eyr:2028
+# byr:1965
+# pid:630674502
+# hcl:#602927
+# iyr:2020
+# hgt:61in
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2028 True
+True
+byr 1965 True
+True
+pid 630674502 9 630674502 True
+True
+hcl #602927 6 True <re.Match object; span=(0, 6), match='602927'>
+True
+iyr 2020 True
+True
+hgt in 61 True
+True
+
+newport
+#### ['iyr:2016', 'eyr:2022', 'cid:225', 'hcl:#733820', 'ecl:hzl', 'hgt:166cm', 'byr:1934', 'pid:232742206']
+# iyr:2016
+# eyr:2022
+# cid:225
+# hcl:#733820
+# ecl:hzl
+# hgt:166cm
+# byr:1934
+# pid:232742206
+iyr 2016 True
+True
+eyr 2022 True
+True
+True
+hcl #733820 6 True <re.Match object; span=(0, 6), match='733820'>
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 166 True
+True
+byr 1934 True
+True
+pid 232742206 9 232742206 True
+True
+
+newport
+#### ['ecl:amb', 'hcl:#602927', 'eyr:2029', 'pid:897535300', 'hgt:189cm', 'byr:1952', 'iyr:2017']
+# ecl:amb
+# hcl:#602927
+# eyr:2029
+# pid:897535300
+# hgt:189cm
+# byr:1952
+# iyr:2017
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #602927 6 True <re.Match object; span=(0, 6), match='602927'>
+True
+eyr 2029 True
+True
+pid 897535300 9 897535300 True
+True
+hgt cm 189 True
+True
+byr 1952 True
+True
+iyr 2017 True
+True
+
+newport
+#### ['pid:853604345', 'hgt:161cm', 'cid:269', 'hcl:#fffffd', 'eyr:2030', 'iyr:2011', 'ecl:grn', 'byr:1966']
+# pid:853604345
+# hgt:161cm
+# cid:269
+# hcl:#fffffd
+# eyr:2030
+# iyr:2011
+# ecl:grn
+# byr:1966
+pid 853604345 9 853604345 True
+True
+hgt cm 161 True
+True
+True
+hcl #fffffd 6 True <re.Match object; span=(0, 6), match='fffffd'>
+True
+eyr 2030 True
+True
+iyr 2011 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1966 True
+True
+
+newport
+#### ['hgt:151cm', 'hcl:#18171d', 'eyr:2026', 'ecl:grn', 'iyr:2016', 'pid:176cm', 'byr:2000']
+# hgt:151cm
+# hcl:#18171d
+# eyr:2026
+# ecl:grn
+# iyr:2016
+# pid:176cm
+# byr:2000
+hgt cm 151 True
+True
+hcl #18171d 6 True <re.Match object; span=(0, 6), match='18171d'>
+True
+eyr 2026 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2016 True
+True
+True
+byr 2000 True
+True
+
+newport
+#### ['hcl:#341e13', 'eyr:2022', 'pid:536989527', 'cid:73', 'byr:1971', 'ecl:hzl']
+# hcl:#341e13
+# eyr:2022
+# pid:536989527
+# cid:73
+# byr:1971
+# ecl:hzl
+FALSE: hcl:#341e13
+eyr:2022
+pid:536989527 cid:73 byr:1971
+ecl:hzl #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#341e13
+eyr:2022
+pid:536989527 cid:73 byr:1971
+ecl:hzl #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#341e13
+eyr:2022
+pid:536989527 cid:73 byr:1971
+ecl:hzl #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#341e13
+eyr:2022
+pid:536989527 cid:73 byr:1971
+ecl:hzl #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#341e13
+eyr:2022
+pid:536989527 cid:73 byr:1971
+ecl:hzl #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#341e13
+eyr:2022
+pid:536989527 cid:73 byr:1971
+ecl:hzl #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+hcl #341e13 6 True <re.Match object; span=(0, 6), match='341e13'>
+False
+eyr 2022 True
+False
+pid 536989527 9 536989527 True
+False
+False
+byr 1971 True
+False
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+
+newport
+#### ['pid:739005658', 'hcl:#b6652a', 'eyr:2026', 'hgt:154cm', 'ecl:hzl', 'iyr:2019', 'byr:1935']
+# pid:739005658
+# hcl:#b6652a
+# eyr:2026
+# hgt:154cm
+# ecl:hzl
+# iyr:2019
+# byr:1935
+pid 739005658 9 739005658 True
+True
+hcl #b6652a 6 True <re.Match object; span=(0, 6), match='b6652a'>
+True
+eyr 2026 True
+True
+hgt cm 154 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2019 True
+True
+byr 1935 True
+True
+
+newport
+#### ['pid:373465835', 'ecl:oth', 'byr:1932', 'cid:333', 'hgt:165cm', 'hcl:#b6652a', 'eyr:2021', 'iyr:2014']
+# pid:373465835
+# ecl:oth
+# byr:1932
+# cid:333
+# hgt:165cm
+# hcl:#b6652a
+# eyr:2021
+# iyr:2014
+pid 373465835 9 373465835 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1932 True
+True
+True
+hgt cm 165 True
+True
+hcl #b6652a 6 True <re.Match object; span=(0, 6), match='b6652a'>
+True
+eyr 2021 True
+True
+iyr 2014 True
+True
+
+newport
+#### ['byr:1967', 'pid:486658617', 'hcl:#18171d', 'hgt:174cm', 'eyr:2021', 'iyr:2015', 'ecl:gry', 'cid:53']
+# byr:1967
+# pid:486658617
+# hcl:#18171d
+# hgt:174cm
+# eyr:2021
+# iyr:2015
+# ecl:gry
+# cid:53
+byr 1967 True
+True
+pid 486658617 9 486658617 True
+True
+hcl #18171d 6 True <re.Match object; span=(0, 6), match='18171d'>
+True
+hgt cm 174 True
+True
+eyr 2021 True
+True
+iyr 2015 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+
+newport
+#### ['eyr:2024', 'cid:124', 'iyr:2017', 'hgt:152cm', 'pid:095649305', 'hcl:#341e13', 'byr:1920', 'ecl:oth']
+# eyr:2024
+# cid:124
+# iyr:2017
+# hgt:152cm
+# pid:095649305
+# hcl:#341e13
+# byr:1920
+# ecl:oth
+eyr 2024 True
+True
+True
+iyr 2017 True
+True
+hgt cm 152 True
+True
+pid 95649305 9 095649305 True
+True
+hcl #341e13 6 True <re.Match object; span=(0, 6), match='341e13'>
+True
+byr 1920 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['hcl:#623a2f', 'byr:1951', 'pid:993284548', 'cid:106', 'hgt:186cm', 'ecl:amb', 'iyr:2017', 'eyr:2029']
+# hcl:#623a2f
+# byr:1951
+# pid:993284548
+# cid:106
+# hgt:186cm
+# ecl:amb
+# iyr:2017
+# eyr:2029
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+byr 1951 True
+True
+pid 993284548 9 993284548 True
+True
+True
+hgt cm 186 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2017 True
+True
+eyr 2029 True
+True
+
+newport
+#### ['cid:308', 'pid:080673934', 'hgt:193cm', 'byr:1967', 'hcl:#623a2f', 'iyr:2016', 'ecl:hzl', 'eyr:2021']
+# cid:308
+# pid:080673934
+# hgt:193cm
+# byr:1967
+# hcl:#623a2f
+# iyr:2016
+# ecl:hzl
+# eyr:2021
+True
+pid 80673934 9 080673934 True
+True
+hgt cm 193 True
+True
+byr 1967 True
+True
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+iyr 2016 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2021 True
+True
+
+newport
+#### ['iyr:2010', 'eyr:2024', 'byr:1946', 'hgt:156cm', 'cid:199', 'ecl:blu', 'hcl:#866857']
+# iyr:2010
+# eyr:2024
+# byr:1946
+# hgt:156cm
+# cid:199
+# ecl:blu
+# hcl:#866857
+FALSE: iyr:2010 eyr:2024 byr:1946 hgt:156cm
+cid:199
+ecl:blu hcl:#866857 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2010 eyr:2024 byr:1946 hgt:156cm
+cid:199
+ecl:blu hcl:#866857 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2010 eyr:2024 byr:1946 hgt:156cm
+cid:199
+ecl:blu hcl:#866857 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2010 eyr:2024 byr:1946 hgt:156cm
+cid:199
+ecl:blu hcl:#866857 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2010 eyr:2024 byr:1946 hgt:156cm
+cid:199
+ecl:blu hcl:#866857 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2010 eyr:2024 byr:1946 hgt:156cm
+cid:199
+ecl:blu hcl:#866857 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2010 eyr:2024 byr:1946 hgt:156cm
+cid:199
+ecl:blu hcl:#866857 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+iyr 2010 True
+False
+eyr 2024 True
+False
+byr 1946 True
+False
+hgt cm 156 True
+False
+False
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+hcl #866857 6 True <re.Match object; span=(0, 6), match='866857'>
+False
+
+newport
+#### ['ecl:blu', 'byr:1955', 'eyr:2022', 'cid:95', 'pid:139391569', 'iyr:2019', 'hgt:180cm', 'hcl:#efcc98']
+# ecl:blu
+# byr:1955
+# eyr:2022
+# cid:95
+# pid:139391569
+# iyr:2019
+# hgt:180cm
+# hcl:#efcc98
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1955 True
+True
+eyr 2022 True
+True
+True
+pid 139391569 9 139391569 True
+True
+iyr 2019 True
+True
+hgt cm 180 True
+True
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+True
+
+newport
+#### ['ecl:brn', 'pid:579889368', 'eyr:2023', 'hgt:158cm', 'byr:1935', 'iyr:2018', 'hcl:#cfa07d']
+# ecl:brn
+# pid:579889368
+# eyr:2023
+# hgt:158cm
+# byr:1935
+# iyr:2018
+# hcl:#cfa07d
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 579889368 9 579889368 True
+True
+eyr 2023 True
+True
+hgt cm 158 True
+True
+byr 1935 True
+True
+iyr 2018 True
+True
+hcl #cfa07d 6 True <re.Match object; span=(0, 6), match='cfa07d'>
+True
+
+newport
+#### ['byr:1920', 'pid:90919899', 'hcl:#18171d', 'hgt:152cm', 'eyr:2029', 'ecl:oth', 'iyr:2014']
+# byr:1920
+# pid:90919899
+# hcl:#18171d
+# hgt:152cm
+# eyr:2029
+# ecl:oth
+# iyr:2014
+byr 1920 True
+True
+pid 90919899 8 90919899 False
+True
+hcl #18171d 6 True <re.Match object; span=(0, 6), match='18171d'>
+True
+hgt cm 152 True
+True
+eyr 2029 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2014 True
+True
+
+newport
+#### ['byr:1961', 'eyr:2024', 'ecl:#d401e3', 'iyr:2011', 'hgt:172cm', 'pid:919145070', 'cid:100', 'hcl:#efcc98']
+# byr:1961
+# eyr:2024
+# ecl:#d401e3
+# iyr:2011
+# hgt:172cm
+# pid:919145070
+# cid:100
+# hcl:#efcc98
+byr 1961 True
+True
+eyr 2024 True
+True
+ecl #d401e3 ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+iyr 2011 True
+True
+hgt cm 172 True
+True
+pid 919145070 9 919145070 True
+True
+True
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+True
+
+newport
+#### ['ecl:gry', 'hgt:168cm', 'hcl:#888785', 'byr:1942', 'pid:731032830', 'iyr:2014', 'eyr:2028']
+# ecl:gry
+# hgt:168cm
+# hcl:#888785
+# byr:1942
+# pid:731032830
+# iyr:2014
+# eyr:2028
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 168 True
+True
+hcl #888785 6 True <re.Match object; span=(0, 6), match='888785'>
+True
+byr 1942 True
+True
+pid 731032830 9 731032830 True
+True
+iyr 2014 True
+True
+eyr 2028 True
+True
+
+newport
+#### ['hcl:#6b5442', 'pid:265747619', 'hgt:191cm', 'cid:217', 'eyr:2028', 'iyr:2019', 'ecl:amb', 'byr:1948']
+# hcl:#6b5442
+# pid:265747619
+# hgt:191cm
+# cid:217
+# eyr:2028
+# iyr:2019
+# ecl:amb
+# byr:1948
+hcl #6b5442 6 True <re.Match object; span=(0, 6), match='6b5442'>
+True
+pid 265747619 9 265747619 True
+True
+hgt cm 191 True
+True
+True
+eyr 2028 True
+True
+iyr 2019 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1948 True
+True
+
+newport
+#### ['iyr:2011', 'ecl:brn', 'hgt:183cm', 'hcl:#fffffd', 'cid:258', 'byr:1983', 'pid:835909246']
+# iyr:2011
+# ecl:brn
+# hgt:183cm
+# hcl:#fffffd
+# cid:258
+# byr:1983
+# pid:835909246
+FALSE: iyr:2011 ecl:brn
+hgt:183cm hcl:#fffffd cid:258 byr:1983
+pid:835909246 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2011 ecl:brn
+hgt:183cm hcl:#fffffd cid:258 byr:1983
+pid:835909246 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2011 ecl:brn
+hgt:183cm hcl:#fffffd cid:258 byr:1983
+pid:835909246 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2011 ecl:brn
+hgt:183cm hcl:#fffffd cid:258 byr:1983
+pid:835909246 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2011 ecl:brn
+hgt:183cm hcl:#fffffd cid:258 byr:1983
+pid:835909246 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2011 ecl:brn
+hgt:183cm hcl:#fffffd cid:258 byr:1983
+pid:835909246 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2011 ecl:brn
+hgt:183cm hcl:#fffffd cid:258 byr:1983
+pid:835909246 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+iyr 2011 True
+False
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+hgt cm 183 True
+False
+hcl #fffffd 6 True <re.Match object; span=(0, 6), match='fffffd'>
+False
+False
+byr 1983 True
+False
+pid 835909246 9 835909246 True
+False
+
+newport
+#### ['byr:2030', 'iyr:2024', 'ecl:#f66808', 'hcl:fd548d', 'cid:183', 'pid:#fced33', 'hgt:160in']
+# byr:2030
+# iyr:2024
+# ecl:#f66808
+# hcl:fd548d
+# cid:183
+# pid:#fced33
+# hgt:160in
+FALSE: byr:2030
+iyr:2024 ecl:#f66808
+hcl:fd548d cid:183
+pid:#fced33
+hgt:160in #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:2030
+iyr:2024 ecl:#f66808
+hcl:fd548d cid:183
+pid:#fced33
+hgt:160in #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:2030
+iyr:2024 ecl:#f66808
+hcl:fd548d cid:183
+pid:#fced33
+hgt:160in #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:2030
+iyr:2024 ecl:#f66808
+hcl:fd548d cid:183
+pid:#fced33
+hgt:160in #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:2030
+iyr:2024 ecl:#f66808
+hcl:fd548d cid:183
+pid:#fced33
+hgt:160in #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:2030
+iyr:2024 ecl:#f66808
+hcl:fd548d cid:183
+pid:#fced33
+hgt:160in #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:2030
+iyr:2024 ecl:#f66808
+hcl:fd548d cid:183
+pid:#fced33
+hgt:160in #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+byr 2030 False
+False
+iyr 2024 False
+False
+ecl #f66808 ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+False
+False
+False
+False
+hgt in 160 False
+False
+
+newport
+#### ['ecl:utc', 'hgt:183in', 'hcl:a92c31', 'pid:0394222041', 'iyr:2008', 'eyr:1976', 'byr:2020']
+# ecl:utc
+# hgt:183in
+# hcl:a92c31
+# pid:0394222041
+# iyr:2008
+# eyr:1976
+# byr:2020
+ecl utc ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+hgt in 183 False
+True
+True
+pid 394222041 10 0394222041 False
+True
+iyr 2008 False
+True
+eyr 1976 False
+True
+byr 2020 False
+True
+
+newport
+#### ['pid:126195650', 'iyr:2019', 'hcl:#341e13', 'ecl:blu', 'hgt:150cm', 'eyr:2025', 'byr:1964']
+# pid:126195650
+# iyr:2019
+# hcl:#341e13
+# ecl:blu
+# hgt:150cm
+# eyr:2025
+# byr:1964
+pid 126195650 9 126195650 True
+True
+iyr 2019 True
+True
+hcl #341e13 6 True <re.Match object; span=(0, 6), match='341e13'>
+True
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 150 True
+True
+eyr 2025 True
+True
+byr 1964 True
+True
+
+newport
+#### ['cid:71', 'iyr:2016', 'hgt:157', 'ecl:grt', 'hcl:#18171d', 'pid:#1ab5ea', 'eyr:2027']
+# cid:71
+# iyr:2016
+# hgt:157
+# ecl:grt
+# hcl:#18171d
+# pid:#1ab5ea
+# eyr:2027
+FALSE: cid:71 iyr:2016 hgt:157 ecl:grt
+hcl:#18171d pid:#1ab5ea eyr:2027 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:71 iyr:2016 hgt:157 ecl:grt
+hcl:#18171d pid:#1ab5ea eyr:2027 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:71 iyr:2016 hgt:157 ecl:grt
+hcl:#18171d pid:#1ab5ea eyr:2027 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:71 iyr:2016 hgt:157 ecl:grt
+hcl:#18171d pid:#1ab5ea eyr:2027 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:71 iyr:2016 hgt:157 ecl:grt
+hcl:#18171d pid:#1ab5ea eyr:2027 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:71 iyr:2016 hgt:157 ecl:grt
+hcl:#18171d pid:#1ab5ea eyr:2027 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:71 iyr:2016 hgt:157 ecl:grt
+hcl:#18171d pid:#1ab5ea eyr:2027 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+False
+iyr 2016 True
+False
+False
+ecl grt ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+False
+hcl #18171d 6 True <re.Match object; span=(0, 6), match='18171d'>
+False
+False
+eyr 2027 True
+False
+
+newport
+#### ['eyr:2026', 'hcl:#b5266f', 'byr:1971', 'cid:269', 'hgt:192cm', 'iyr:2012', 'pid:736578840', 'ecl:amb']
+# eyr:2026
+# hcl:#b5266f
+# byr:1971
+# cid:269
+# hgt:192cm
+# iyr:2012
+# pid:736578840
+# ecl:amb
+eyr 2026 True
+True
+hcl #b5266f 6 True <re.Match object; span=(0, 6), match='b5266f'>
+True
+byr 1971 True
+True
+True
+hgt cm 192 True
+True
+iyr 2012 True
+True
+pid 736578840 9 736578840 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['pid:152109472', 'hcl:#ceb3a1', 'ecl:grn', 'hgt:188cm', 'eyr:2027', 'byr:1923']
+# pid:152109472
+# hcl:#ceb3a1
+# ecl:grn
+# hgt:188cm
+# eyr:2027
+# byr:1923
+FALSE: pid:152109472 hcl:#ceb3a1 ecl:grn hgt:188cm eyr:2027
+byr:1923 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: pid:152109472 hcl:#ceb3a1 ecl:grn hgt:188cm eyr:2027
+byr:1923 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: pid:152109472 hcl:#ceb3a1 ecl:grn hgt:188cm eyr:2027
+byr:1923 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: pid:152109472 hcl:#ceb3a1 ecl:grn hgt:188cm eyr:2027
+byr:1923 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: pid:152109472 hcl:#ceb3a1 ecl:grn hgt:188cm eyr:2027
+byr:1923 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: pid:152109472 hcl:#ceb3a1 ecl:grn hgt:188cm eyr:2027
+byr:1923 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+pid 152109472 9 152109472 True
+False
+hcl #ceb3a1 6 True <re.Match object; span=(0, 6), match='ceb3a1'>
+False
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+hgt cm 188 True
+False
+eyr 2027 True
+False
+byr 1923 True
+False
+
+newport
+#### ['hcl:#341e13', 'pid:535175953', 'hgt:63in', 'eyr:2028', 'iyr:2015', 'byr:1999', 'ecl:gry']
+# hcl:#341e13
+# pid:535175953
+# hgt:63in
+# eyr:2028
+# iyr:2015
+# byr:1999
+# ecl:gry
+hcl #341e13 6 True <re.Match object; span=(0, 6), match='341e13'>
+True
+pid 535175953 9 535175953 True
+True
+hgt in 63 True
+True
+eyr 2028 True
+True
+iyr 2015 True
+True
+byr 1999 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['hgt:183cm', 'pid:611738968', 'byr:2001', 'eyr:2020', 'hcl:#a97842', 'iyr:2014', 'ecl:gry']
+# hgt:183cm
+# pid:611738968
+# byr:2001
+# eyr:2020
+# hcl:#a97842
+# iyr:2014
+# ecl:gry
+hgt cm 183 True
+True
+pid 611738968 9 611738968 True
+True
+byr 2001 True
+True
+eyr 2020 True
+True
+hcl #a97842 6 True <re.Match object; span=(0, 6), match='a97842'>
+True
+iyr 2014 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['eyr:2038', 'ecl:gmt', 'pid:113210210', 'iyr:2012', 'byr:2011', 'hcl:z', 'hgt:157cm']
+# eyr:2038
+# ecl:gmt
+# pid:113210210
+# iyr:2012
+# byr:2011
+# hcl:z
+# hgt:157cm
+eyr 2038 False
+True
+ecl gmt ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+pid 113210210 9 113210210 True
+True
+iyr 2012 True
+True
+byr 2011 False
+True
+True
+hgt cm 157 True
+True
+
+newport
+#### ['hgt:157cm', 'pid:699449127', 'iyr:2014', 'ecl:gry', 'byr:1980', 'hcl:#fffffd', 'eyr:2029']
+# hgt:157cm
+# pid:699449127
+# iyr:2014
+# ecl:gry
+# byr:1980
+# hcl:#fffffd
+# eyr:2029
+hgt cm 157 True
+True
+pid 699449127 9 699449127 True
+True
+iyr 2014 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1980 True
+True
+hcl #fffffd 6 True <re.Match object; span=(0, 6), match='fffffd'>
+True
+eyr 2029 True
+True
+
+newport
+#### ['iyr:2028', 'hcl:z', 'pid:152cm', 'eyr:2039', 'ecl:#4760fb', 'hgt:177in', 'byr:2017']
+# iyr:2028
+# hcl:z
+# pid:152cm
+# eyr:2039
+# ecl:#4760fb
+# hgt:177in
+# byr:2017
+iyr 2028 False
+True
+True
+True
+eyr 2039 False
+True
+ecl #4760fb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+hgt in 177 False
+True
+byr 2017 False
+True
+
+newport
+#### ['eyr:2026', 'hcl:#efcc98', 'iyr:2020', 'hgt:180cm', 'ecl:hzl', 'pid:747449965', 'byr:2016']
+# eyr:2026
+# hcl:#efcc98
+# iyr:2020
+# hgt:180cm
+# ecl:hzl
+# pid:747449965
+# byr:2016
+eyr 2026 True
+True
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+True
+iyr 2020 True
+True
+hgt cm 180 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 747449965 9 747449965 True
+True
+byr 2016 False
+True
+
+newport
+#### ['byr:1974', 'iyr:2019', 'cid:89', 'eyr:2023', 'pid:421418405', 'hcl:#fffffd', 'hgt:192cm', 'ecl:gry']
+# byr:1974
+# iyr:2019
+# cid:89
+# eyr:2023
+# pid:421418405
+# hcl:#fffffd
+# hgt:192cm
+# ecl:gry
+byr 1974 True
+True
+iyr 2019 True
+True
+True
+eyr 2023 True
+True
+pid 421418405 9 421418405 True
+True
+hcl #fffffd 6 True <re.Match object; span=(0, 6), match='fffffd'>
+True
+hgt cm 192 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['hcl:26c2ef', 'eyr:2029', 'cid:309', 'byr:1931', 'ecl:grn', 'pid:#4eb099', 'iyr:2024', 'hgt:174cm']
+# hcl:26c2ef
+# eyr:2029
+# cid:309
+# byr:1931
+# ecl:grn
+# pid:#4eb099
+# iyr:2024
+# hgt:174cm
+True
+eyr 2029 True
+True
+True
+byr 1931 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+iyr 2024 False
+True
+hgt cm 174 True
+True
+
+newport
+#### ['ecl:gry', 'hgt:183cm', 'cid:281', 'eyr:2022', 'pid:050492569', 'byr:1968', 'hcl:c88145', 'iyr:2015']
+# ecl:gry
+# hgt:183cm
+# cid:281
+# eyr:2022
+# pid:050492569
+# byr:1968
+# hcl:c88145
+# iyr:2015
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 183 True
+True
+True
+eyr 2022 True
+True
+pid 50492569 9 050492569 True
+True
+byr 1968 True
+True
+True
+iyr 2015 True
+True
+
+newport
+#### ['eyr:2028', 'iyr:2014', 'pid:712984515', 'hgt:187cm', 'cid:206', 'hcl:#866857', 'byr:1927', 'ecl:brn']
+# eyr:2028
+# iyr:2014
+# pid:712984515
+# hgt:187cm
+# cid:206
+# hcl:#866857
+# byr:1927
+# ecl:brn
+eyr 2028 True
+True
+iyr 2014 True
+True
+pid 712984515 9 712984515 True
+True
+hgt cm 187 True
+True
+True
+hcl #866857 6 True <re.Match object; span=(0, 6), match='866857'>
+True
+byr 1927 True
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['byr:1936', 'hgt:61in', 'ecl:oth', 'iyr:2012', 'pid:447813841', 'hcl:#c0946f', 'cid:126', 'eyr:2021']
+# byr:1936
+# hgt:61in
+# ecl:oth
+# iyr:2012
+# pid:447813841
+# hcl:#c0946f
+# cid:126
+# eyr:2021
+byr 1936 True
+True
+hgt in 61 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2012 True
+True
+pid 447813841 9 447813841 True
+True
+hcl #c0946f 6 True <re.Match object; span=(0, 6), match='c0946f'>
+True
+True
+eyr 2021 True
+True
+
+newport
+#### ['ecl:gry', 'pid:791970272', 'eyr:2020', 'byr:1932', 'hcl:#623a2f', 'hgt:161cm', 'iyr:2015']
+# ecl:gry
+# pid:791970272
+# eyr:2020
+# byr:1932
+# hcl:#623a2f
+# hgt:161cm
+# iyr:2015
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 791970272 9 791970272 True
+True
+eyr 2020 True
+True
+byr 1932 True
+True
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+hgt cm 161 True
+True
+iyr 2015 True
+True
+
+newport
+#### ['hcl:#c0946f', 'byr:1935', 'pid:721144576', 'eyr:2025', 'hgt:162cm', 'iyr:2017', 'ecl:oth']
+# hcl:#c0946f
+# byr:1935
+# pid:721144576
+# eyr:2025
+# hgt:162cm
+# iyr:2017
+# ecl:oth
+hcl #c0946f 6 True <re.Match object; span=(0, 6), match='c0946f'>
+True
+byr 1935 True
+True
+pid 721144576 9 721144576 True
+True
+eyr 2025 True
+True
+hgt cm 162 True
+True
+iyr 2017 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['byr:1959', 'pid:551109135', 'ecl:hzl', 'hgt:68in', 'eyr:1977', 'hcl:#888785', 'iyr:1955', 'cid:100']
+# byr:1959
+# pid:551109135
+# ecl:hzl
+# hgt:68in
+# eyr:1977
+# hcl:#888785
+# iyr:1955
+# cid:100
+byr 1959 True
+True
+pid 551109135 9 551109135 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt in 68 True
+True
+eyr 1977 False
+True
+hcl #888785 6 True <re.Match object; span=(0, 6), match='888785'>
+True
+iyr 1955 False
+True
+True
+
+newport
+#### ['hgt:190in', 'eyr:1993', 'pid:8358180772', 'iyr:1975', 'ecl:oth', 'byr:2024', 'hcl:3de172']
+# hgt:190in
+# eyr:1993
+# pid:8358180772
+# iyr:1975
+# ecl:oth
+# byr:2024
+# hcl:3de172
+hgt in 190 False
+True
+eyr 1993 False
+True
+pid 8358180772 10 8358180772 False
+True
+iyr 1975 False
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 2024 False
+True
+True
+
+newport
+#### ['eyr:2030', 'hgt:190cm', 'hcl:#a40ef3', 'byr:1935', 'pid:484932501', 'ecl:amb', 'iyr:2016']
+# eyr:2030
+# hgt:190cm
+# hcl:#a40ef3
+# byr:1935
+# pid:484932501
+# ecl:amb
+# iyr:2016
+eyr 2030 True
+True
+hgt cm 190 True
+True
+hcl #a40ef3 6 True <re.Match object; span=(0, 6), match='a40ef3'>
+True
+byr 1935 True
+True
+pid 484932501 9 484932501 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2016 True
+True
+
+newport
+#### ['iyr:2015', 'byr:1964', 'hgt:176cm', 'pid:819552732', 'hcl:#c0946f', 'ecl:amb', 'cid:263', 'eyr:2024']
+# iyr:2015
+# byr:1964
+# hgt:176cm
+# pid:819552732
+# hcl:#c0946f
+# ecl:amb
+# cid:263
+# eyr:2024
+iyr 2015 True
+True
+byr 1964 True
+True
+hgt cm 176 True
+True
+pid 819552732 9 819552732 True
+True
+hcl #c0946f 6 True <re.Match object; span=(0, 6), match='c0946f'>
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+eyr 2024 True
+True
+
+newport
+#### ['hgt:65cm', 'cid:59', 'eyr:2027', 'pid:074880819', 'ecl:utc', 'iyr:2023', 'byr:1954', 'hcl:#623a2f']
+# hgt:65cm
+# cid:59
+# eyr:2027
+# pid:074880819
+# ecl:utc
+# iyr:2023
+# byr:1954
+# hcl:#623a2f
+hgt cm 65 False
+True
+True
+eyr 2027 True
+True
+pid 74880819 9 074880819 True
+True
+ecl utc ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+iyr 2023 False
+True
+byr 1954 True
+True
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+
+newport
+#### ['byr:1954', 'hgt:167cm', 'iyr:2020', 'eyr:2023', 'hcl:#602927', 'pid:280295309', 'ecl:hzl', 'cid:168']
+# byr:1954
+# hgt:167cm
+# iyr:2020
+# eyr:2023
+# hcl:#602927
+# pid:280295309
+# ecl:hzl
+# cid:168
+byr 1954 True
+True
+hgt cm 167 True
+True
+iyr 2020 True
+True
+eyr 2023 True
+True
+hcl #602927 6 True <re.Match object; span=(0, 6), match='602927'>
+True
+pid 280295309 9 280295309 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+
+newport
+#### ['hgt:168cm', 'pid:311043701', 'iyr:2017', 'byr:1965', 'ecl:hzl', 'eyr:2026', 'hcl:#fffffd']
+# hgt:168cm
+# pid:311043701
+# iyr:2017
+# byr:1965
+# ecl:hzl
+# eyr:2026
+# hcl:#fffffd
+hgt cm 168 True
+True
+pid 311043701 9 311043701 True
+True
+iyr 2017 True
+True
+byr 1965 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2026 True
+True
+hcl #fffffd 6 True <re.Match object; span=(0, 6), match='fffffd'>
+True
+
+newport
+#### ['hcl:#fffffd', 'ecl:grn', 'pid:672987232', 'iyr:2012', 'eyr:2022', 'hgt:66in']
+# hcl:#fffffd
+# ecl:grn
+# pid:672987232
+# iyr:2012
+# eyr:2022
+# hgt:66in
+FALSE: hcl:#fffffd ecl:grn pid:672987232 iyr:2012 eyr:2022 hgt:66in #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#fffffd ecl:grn pid:672987232 iyr:2012 eyr:2022 hgt:66in #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#fffffd ecl:grn pid:672987232 iyr:2012 eyr:2022 hgt:66in #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#fffffd ecl:grn pid:672987232 iyr:2012 eyr:2022 hgt:66in #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#fffffd ecl:grn pid:672987232 iyr:2012 eyr:2022 hgt:66in #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#fffffd ecl:grn pid:672987232 iyr:2012 eyr:2022 hgt:66in #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+hcl #fffffd 6 True <re.Match object; span=(0, 6), match='fffffd'>
+False
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+pid 672987232 9 672987232 True
+False
+iyr 2012 True
+False
+eyr 2022 True
+False
+hgt in 66 True
+False
+
+newport
+#### ['iyr:2012', 'ecl:#6f4f9f', 'hgt:133', 'byr:1937', 'eyr:1953', 'pid:7177768428', 'hcl:#602927']
+# iyr:2012
+# ecl:#6f4f9f
+# hgt:133
+# byr:1937
+# eyr:1953
+# pid:7177768428
+# hcl:#602927
+iyr 2012 True
+True
+ecl #6f4f9f ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+True
+byr 1937 True
+True
+eyr 1953 False
+True
+pid 7177768428 10 7177768428 False
+True
+hcl #602927 6 True <re.Match object; span=(0, 6), match='602927'>
+True
+
+newport
+#### ['iyr:2010', 'byr:1922', 'hcl:#c0946f', 'eyr:2029', 'ecl:gry', 'hgt:165cm', 'pid:893045052']
+# iyr:2010
+# byr:1922
+# hcl:#c0946f
+# eyr:2029
+# ecl:gry
+# hgt:165cm
+# pid:893045052
+iyr 2010 True
+True
+byr 1922 True
+True
+hcl #c0946f 6 True <re.Match object; span=(0, 6), match='c0946f'>
+True
+eyr 2029 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 165 True
+True
+pid 893045052 9 893045052 True
+True
+
+newport
+#### ['iyr:2013', 'eyr:2028', 'hcl:#866857', 'pid:137143403', 'ecl:brn', 'hgt:170cm', 'byr:1940', 'cid:194']
+# iyr:2013
+# eyr:2028
+# hcl:#866857
+# pid:137143403
+# ecl:brn
+# hgt:170cm
+# byr:1940
+# cid:194
+iyr 2013 True
+True
+eyr 2028 True
+True
+hcl #866857 6 True <re.Match object; span=(0, 6), match='866857'>
+True
+pid 137143403 9 137143403 True
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 170 True
+True
+byr 1940 True
+True
+True
+
+newport
+#### ['hgt:161cm', 'eyr:2027', 'pid:3966920279', 'ecl:gry', 'iyr:2015', 'byr:1997', 'hcl:#cfa07d']
+# hgt:161cm
+# eyr:2027
+# pid:3966920279
+# ecl:gry
+# iyr:2015
+# byr:1997
+# hcl:#cfa07d
+hgt cm 161 True
+True
+eyr 2027 True
+True
+pid 3966920279 10 3966920279 False
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2015 True
+True
+byr 1997 True
+True
+hcl #cfa07d 6 True <re.Match object; span=(0, 6), match='cfa07d'>
+True
+
+newport
+#### ['ecl:amb', 'hgt:157cm', 'byr:1971', 'pid:562746894', 'cid:305', 'hcl:#0b0e1a', 'eyr:2021', 'iyr:2016']
+# ecl:amb
+# hgt:157cm
+# byr:1971
+# pid:562746894
+# cid:305
+# hcl:#0b0e1a
+# eyr:2021
+# iyr:2016
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 157 True
+True
+byr 1971 True
+True
+pid 562746894 9 562746894 True
+True
+True
+hcl #0b0e1a 6 True <re.Match object; span=(0, 6), match='0b0e1a'>
+True
+eyr 2021 True
+True
+iyr 2016 True
+True
+
+newport
+#### ['hcl:8b821d', 'hgt:157cm', 'pid:187cm', 'cid:298', 'eyr:1926', 'iyr:2019', 'ecl:amb', 'byr:2030']
+# hcl:8b821d
+# hgt:157cm
+# pid:187cm
+# cid:298
+# eyr:1926
+# iyr:2019
+# ecl:amb
+# byr:2030
+True
+hgt cm 157 True
+True
+True
+True
+eyr 1926 False
+True
+iyr 2019 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 2030 False
+True
+
+newport
+#### ['hgt:155cm', 'hcl:#341e13', 'byr:1924', 'pid:779847670', 'ecl:hzl', 'iyr:2015', 'eyr:2024']
+# hgt:155cm
+# hcl:#341e13
+# byr:1924
+# pid:779847670
+# ecl:hzl
+# iyr:2015
+# eyr:2024
+hgt cm 155 True
+True
+hcl #341e13 6 True <re.Match object; span=(0, 6), match='341e13'>
+True
+byr 1924 True
+True
+pid 779847670 9 779847670 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2015 True
+True
+eyr 2024 True
+True
+
+newport
+#### ['pid:768590475', 'hcl:#a97842', 'iyr:2014', 'cid:128', 'eyr:2029', 'ecl:oth', 'hgt:164cm', 'byr:1990']
+# pid:768590475
+# hcl:#a97842
+# iyr:2014
+# cid:128
+# eyr:2029
+# ecl:oth
+# hgt:164cm
+# byr:1990
+pid 768590475 9 768590475 True
+True
+hcl #a97842 6 True <re.Match object; span=(0, 6), match='a97842'>
+True
+iyr 2014 True
+True
+True
+eyr 2029 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 164 True
+True
+byr 1990 True
+True
+
+newport
+#### ['iyr:2019', 'hgt:181cm', 'cid:342', 'eyr:2020', 'ecl:gry', 'byr:2001', 'hcl:#623a2f', 'pid:473165431']
+# iyr:2019
+# hgt:181cm
+# cid:342
+# eyr:2020
+# ecl:gry
+# byr:2001
+# hcl:#623a2f
+# pid:473165431
+iyr 2019 True
+True
+hgt cm 181 True
+True
+True
+eyr 2020 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 2001 True
+True
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+pid 473165431 9 473165431 True
+True
+
+newport
+#### ['byr:1928', 'eyr:2026', 'hcl:#42a9cb', 'iyr:2010', 'ecl:grn', 'hgt:157cm', 'pid:638074984']
+# byr:1928
+# eyr:2026
+# hcl:#42a9cb
+# iyr:2010
+# ecl:grn
+# hgt:157cm
+# pid:638074984
+byr 1928 True
+True
+eyr 2026 True
+True
+hcl #42a9cb 6 True <re.Match object; span=(0, 6), match='42a9cb'>
+True
+iyr 2010 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 157 True
+True
+pid 638074984 9 638074984 True
+True
+
+newport
+#### ['eyr:2028', 'byr:1951', 'pid:239781647', 'iyr:2020', 'hgt:156cm', 'ecl:hzl', 'cid:215', 'hcl:#efcc98']
+# eyr:2028
+# byr:1951
+# pid:239781647
+# iyr:2020
+# hgt:156cm
+# ecl:hzl
+# cid:215
+# hcl:#efcc98
+eyr 2028 True
+True
+byr 1951 True
+True
+pid 239781647 9 239781647 True
+True
+iyr 2020 True
+True
+hgt cm 156 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+True
+
+newport
+#### ['pid:636605355', 'ecl:hzl', 'iyr:2017', 'cid:323', 'eyr:2025', 'byr:1995', 'hcl:#18171d', 'hgt:187cm']
+# pid:636605355
+# ecl:hzl
+# iyr:2017
+# cid:323
+# eyr:2025
+# byr:1995
+# hcl:#18171d
+# hgt:187cm
+pid 636605355 9 636605355 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2017 True
+True
+True
+eyr 2025 True
+True
+byr 1995 True
+True
+hcl #18171d 6 True <re.Match object; span=(0, 6), match='18171d'>
+True
+hgt cm 187 True
+True
+
+newport
+#### ['byr:1933', 'hcl:#866857', 'hgt:152cm', 'ecl:oth', 'iyr:2014', 'pid:900790914', 'eyr:2030', 'cid:267']
+# byr:1933
+# hcl:#866857
+# hgt:152cm
+# ecl:oth
+# iyr:2014
+# pid:900790914
+# eyr:2030
+# cid:267
+byr 1933 True
+True
+hcl #866857 6 True <re.Match object; span=(0, 6), match='866857'>
+True
+hgt cm 152 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2014 True
+True
+pid 900790914 9 900790914 True
+True
+eyr 2030 True
+True
+True
+
+newport
+#### ['ecl:brn', 'byr:1999', 'eyr:2027', 'hcl:#623a2f', 'iyr:2017', 'pid:853165955', 'hgt:152cm']
+# ecl:brn
+# byr:1999
+# eyr:2027
+# hcl:#623a2f
+# iyr:2017
+# pid:853165955
+# hgt:152cm
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1999 True
+True
+eyr 2027 True
+True
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+iyr 2017 True
+True
+pid 853165955 9 853165955 True
+True
+hgt cm 152 True
+True
+
+newport
+#### ['eyr:2030', 'pid:316704688', 'hcl:#c0946f', 'ecl:brn', 'iyr:2014', 'hgt:193cm']
+# eyr:2030
+# pid:316704688
+# hcl:#c0946f
+# ecl:brn
+# iyr:2014
+# hgt:193cm
+FALSE: eyr:2030 pid:316704688 hcl:#c0946f ecl:brn iyr:2014 hgt:193cm #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2030 pid:316704688 hcl:#c0946f ecl:brn iyr:2014 hgt:193cm #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2030 pid:316704688 hcl:#c0946f ecl:brn iyr:2014 hgt:193cm #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2030 pid:316704688 hcl:#c0946f ecl:brn iyr:2014 hgt:193cm #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2030 pid:316704688 hcl:#c0946f ecl:brn iyr:2014 hgt:193cm #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2030 pid:316704688 hcl:#c0946f ecl:brn iyr:2014 hgt:193cm #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+eyr 2030 True
+False
+pid 316704688 9 316704688 True
+False
+hcl #c0946f 6 True <re.Match object; span=(0, 6), match='c0946f'>
+False
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+iyr 2014 True
+False
+hgt cm 193 True
+False
+
+newport
+#### ['iyr:2012', 'byr:1928', 'hgt:154cm', 'pid:570535769', 'hcl:#623a2f', 'eyr:2026', 'ecl:hzl']
+# iyr:2012
+# byr:1928
+# hgt:154cm
+# pid:570535769
+# hcl:#623a2f
+# eyr:2026
+# ecl:hzl
+iyr 2012 True
+True
+byr 1928 True
+True
+hgt cm 154 True
+True
+pid 570535769 9 570535769 True
+True
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+eyr 2026 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['iyr:2016', 'cid:252', 'eyr:2030', 'hcl:#888785', 'hgt:177cm', 'ecl:grn', 'byr:2002', 'pid:568715162']
+# iyr:2016
+# cid:252
+# eyr:2030
+# hcl:#888785
+# hgt:177cm
+# ecl:grn
+# byr:2002
+# pid:568715162
+iyr 2016 True
+True
+True
+eyr 2030 True
+True
+hcl #888785 6 True <re.Match object; span=(0, 6), match='888785'>
+True
+hgt cm 177 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 2002 True
+True
+pid 568715162 9 568715162 True
+True
+
+newport
+#### ['pid:570999226', 'iyr:2012', 'hgt:150cm', 'byr:2024', 'ecl:brn', 'hcl:z', 'eyr:2029']
+# pid:570999226
+# iyr:2012
+# hgt:150cm
+# byr:2024
+# ecl:brn
+# hcl:z
+# eyr:2029
+pid 570999226 9 570999226 True
+True
+iyr 2012 True
+True
+hgt cm 150 True
+True
+byr 2024 False
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+eyr 2029 True
+True
+
+newport
+#### ['pid:174002299', 'iyr:2019', 'hcl:#cfa07d', 'ecl:brn', 'byr:1927', 'cid:77', 'hgt:159cm', 'eyr:2027']
+# pid:174002299
+# iyr:2019
+# hcl:#cfa07d
+# ecl:brn
+# byr:1927
+# cid:77
+# hgt:159cm
+# eyr:2027
+pid 174002299 9 174002299 True
+True
+iyr 2019 True
+True
+hcl #cfa07d 6 True <re.Match object; span=(0, 6), match='cfa07d'>
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1927 True
+True
+True
+hgt cm 159 True
+True
+eyr 2027 True
+True
+
+newport
+#### ['ecl:#d16191', 'eyr:2022', 'pid:166cm', 'hgt:165cm', 'hcl:#18171d', 'iyr:2015']
+# ecl:#d16191
+# eyr:2022
+# pid:166cm
+# hgt:165cm
+# hcl:#18171d
+# iyr:2015
+FALSE: ecl:#d16191 eyr:2022 pid:166cm hgt:165cm hcl:#18171d iyr:2015 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:#d16191 eyr:2022 pid:166cm hgt:165cm hcl:#18171d iyr:2015 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:#d16191 eyr:2022 pid:166cm hgt:165cm hcl:#18171d iyr:2015 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:#d16191 eyr:2022 pid:166cm hgt:165cm hcl:#18171d iyr:2015 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:#d16191 eyr:2022 pid:166cm hgt:165cm hcl:#18171d iyr:2015 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:#d16191 eyr:2022 pid:166cm hgt:165cm hcl:#18171d iyr:2015 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+ecl #d16191 ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+False
+eyr 2022 True
+False
+False
+hgt cm 165 True
+False
+hcl #18171d 6 True <re.Match object; span=(0, 6), match='18171d'>
+False
+iyr 2015 True
+False
+
+newport
+#### ['pid:112585759', 'hcl:#341e13', 'eyr:2025', 'byr:1962', 'hgt:164cm', 'ecl:hzl', 'iyr:2018']
+# pid:112585759
+# hcl:#341e13
+# eyr:2025
+# byr:1962
+# hgt:164cm
+# ecl:hzl
+# iyr:2018
+pid 112585759 9 112585759 True
+True
+hcl #341e13 6 True <re.Match object; span=(0, 6), match='341e13'>
+True
+eyr 2025 True
+True
+byr 1962 True
+True
+hgt cm 164 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2018 True
+True
+
+newport
+#### ['pid:478415905', 'eyr:2025', 'cid:315', 'ecl:amb', 'hgt:91', 'iyr:2014', 'hcl:#cc9d80', 'byr:1985']
+# pid:478415905
+# eyr:2025
+# cid:315
+# ecl:amb
+# hgt:91
+# iyr:2014
+# hcl:#cc9d80
+# byr:1985
+pid 478415905 9 478415905 True
+True
+eyr 2025 True
+True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+iyr 2014 True
+True
+hcl #cc9d80 6 True <re.Match object; span=(0, 6), match='cc9d80'>
+True
+byr 1985 True
+True
+
+newport
+#### ['pid:561885837', 'hcl:#7d3b0c', 'hgt:169cm', 'byr:1921', 'iyr:2014', 'cid:178', 'eyr:2022', 'ecl:gry']
+# pid:561885837
+# hcl:#7d3b0c
+# hgt:169cm
+# byr:1921
+# iyr:2014
+# cid:178
+# eyr:2022
+# ecl:gry
+pid 561885837 9 561885837 True
+True
+hcl #7d3b0c 6 True <re.Match object; span=(0, 6), match='7d3b0c'>
+True
+hgt cm 169 True
+True
+byr 1921 True
+True
+iyr 2014 True
+True
+True
+eyr 2022 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['ecl:#c87497', 'hcl:5321a2', 'eyr:2020', 'hgt:74in', 'pid:#7a62c6', 'iyr:1976']
+# ecl:#c87497
+# hcl:5321a2
+# eyr:2020
+# hgt:74in
+# pid:#7a62c6
+# iyr:1976
+FALSE: ecl:#c87497 hcl:5321a2 eyr:2020 hgt:74in
+pid:#7a62c6 iyr:1976 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:#c87497 hcl:5321a2 eyr:2020 hgt:74in
+pid:#7a62c6 iyr:1976 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:#c87497 hcl:5321a2 eyr:2020 hgt:74in
+pid:#7a62c6 iyr:1976 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:#c87497 hcl:5321a2 eyr:2020 hgt:74in
+pid:#7a62c6 iyr:1976 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:#c87497 hcl:5321a2 eyr:2020 hgt:74in
+pid:#7a62c6 iyr:1976 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:#c87497 hcl:5321a2 eyr:2020 hgt:74in
+pid:#7a62c6 iyr:1976 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+ecl #c87497 ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+False
+False
+eyr 2020 True
+False
+hgt in 74 True
+False
+False
+iyr 1976 False
+False
+
+newport
+#### ['eyr:2037', 'pid:858202391', 'hgt:162cm', 'ecl:grn', 'byr:2003', 'cid:278', 'iyr:2010', 'hcl:cbf662']
+# eyr:2037
+# pid:858202391
+# hgt:162cm
+# ecl:grn
+# byr:2003
+# cid:278
+# iyr:2010
+# hcl:cbf662
+eyr 2037 False
+True
+pid 858202391 9 858202391 True
+True
+hgt cm 162 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 2003 False
+True
+True
+iyr 2010 True
+True
+True
+
+newport
+#### ['ecl:blu', 'iyr:2012', 'hgt:183cm', 'hcl:#623a2f', 'pid:848200472', 'byr:1997', 'eyr:2027']
+# ecl:blu
+# iyr:2012
+# hgt:183cm
+# hcl:#623a2f
+# pid:848200472
+# byr:1997
+# eyr:2027
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2012 True
+True
+hgt cm 183 True
+True
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+pid 848200472 9 848200472 True
+True
+byr 1997 True
+True
+eyr 2027 True
+True
+
+newport
+#### ['byr:1942', 'hgt:164cm', 'pid:464257339', 'iyr:2016', 'hcl:#7d3b0c', 'ecl:gry']
+# byr:1942
+# hgt:164cm
+# pid:464257339
+# iyr:2016
+# hcl:#7d3b0c
+# ecl:gry
+FALSE: byr:1942
+hgt:164cm
+pid:464257339
+iyr:2016
+hcl:#7d3b0c ecl:gry #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:1942
+hgt:164cm
+pid:464257339
+iyr:2016
+hcl:#7d3b0c ecl:gry #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:1942
+hgt:164cm
+pid:464257339
+iyr:2016
+hcl:#7d3b0c ecl:gry #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:1942
+hgt:164cm
+pid:464257339
+iyr:2016
+hcl:#7d3b0c ecl:gry #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:1942
+hgt:164cm
+pid:464257339
+iyr:2016
+hcl:#7d3b0c ecl:gry #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: byr:1942
+hgt:164cm
+pid:464257339
+iyr:2016
+hcl:#7d3b0c ecl:gry #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+byr 1942 True
+False
+hgt cm 164 True
+False
+pid 464257339 9 464257339 True
+False
+iyr 2016 True
+False
+hcl #7d3b0c 6 True <re.Match object; span=(0, 6), match='7d3b0c'>
+False
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+
+newport
+#### ['iyr:2012', 'hcl:#ceb3a1', 'hgt:193cm', 'ecl:amb', 'pid:667987561', 'eyr:2024', 'byr:1960']
+# iyr:2012
+# hcl:#ceb3a1
+# hgt:193cm
+# ecl:amb
+# pid:667987561
+# eyr:2024
+# byr:1960
+iyr 2012 True
+True
+hcl #ceb3a1 6 True <re.Match object; span=(0, 6), match='ceb3a1'>
+True
+hgt cm 193 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 667987561 9 667987561 True
+True
+eyr 2024 True
+True
+byr 1960 True
+True
+
+newport
+#### ['hgt:187cm', 'pid:222340640', 'iyr:2018', 'eyr:2022', 'ecl:oth', 'byr:1957', 'hcl:#336667', 'cid:83']
+# hgt:187cm
+# pid:222340640
+# iyr:2018
+# eyr:2022
+# ecl:oth
+# byr:1957
+# hcl:#336667
+# cid:83
+hgt cm 187 True
+True
+pid 222340640 9 222340640 True
+True
+iyr 2018 True
+True
+eyr 2022 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1957 True
+True
+hcl #336667 6 True <re.Match object; span=(0, 6), match='336667'>
+True
+True
+
+newport
+#### ['eyr:2025', 'iyr:2015', 'hcl:#733820', 'ecl:brn', 'pid:131195653']
+# eyr:2025
+# iyr:2015
+# hcl:#733820
+# ecl:brn
+# pid:131195653
+FALSE: eyr:2025 iyr:2015 hcl:#733820
+ecl:brn
+pid:131195653 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2025 iyr:2015 hcl:#733820
+ecl:brn
+pid:131195653 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2025 iyr:2015 hcl:#733820
+ecl:brn
+pid:131195653 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2025 iyr:2015 hcl:#733820
+ecl:brn
+pid:131195653 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2025 iyr:2015 hcl:#733820
+ecl:brn
+pid:131195653 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+eyr 2025 True
+False
+iyr 2015 True
+False
+hcl #733820 6 True <re.Match object; span=(0, 6), match='733820'>
+False
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+pid 131195653 9 131195653 True
+False
+
+newport
+#### ['hgt:185cm', 'eyr:2026', 'ecl:amb', 'byr:1998', 'pid:938587659', 'hcl:#733820', 'iyr:2016']
+# hgt:185cm
+# eyr:2026
+# ecl:amb
+# byr:1998
+# pid:938587659
+# hcl:#733820
+# iyr:2016
+hgt cm 185 True
+True
+eyr 2026 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1998 True
+True
+pid 938587659 9 938587659 True
+True
+hcl #733820 6 True <re.Match object; span=(0, 6), match='733820'>
+True
+iyr 2016 True
+True
+
+newport
+#### ['ecl:oth', 'pid:300949722', 'eyr:2028', 'iyr:2016', 'byr:1933', 'hgt:179cm', 'hcl:#cfa07d']
+# ecl:oth
+# pid:300949722
+# eyr:2028
+# iyr:2016
+# byr:1933
+# hgt:179cm
+# hcl:#cfa07d
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 300949722 9 300949722 True
+True
+eyr 2028 True
+True
+iyr 2016 True
+True
+byr 1933 True
+True
+hgt cm 179 True
+True
+hcl #cfa07d 6 True <re.Match object; span=(0, 6), match='cfa07d'>
+True
+
+newport
+#### ['byr:1974', 'iyr:2019', 'ecl:hzl', 'hcl:#c0946f', 'eyr:2024', 'pid:484547079', 'cid:112', 'hgt:185cm']
+# byr:1974
+# iyr:2019
+# ecl:hzl
+# hcl:#c0946f
+# eyr:2024
+# pid:484547079
+# cid:112
+# hgt:185cm
+byr 1974 True
+True
+iyr 2019 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #c0946f 6 True <re.Match object; span=(0, 6), match='c0946f'>
+True
+eyr 2024 True
+True
+pid 484547079 9 484547079 True
+True
+True
+hgt cm 185 True
+True
+
+newport
+#### ['eyr:2022', 'iyr:2018', 'hcl:#fffffd', 'pid:118568279', 'hgt:153cm', 'ecl:gry', 'byr:1941', 'cid:341']
+# eyr:2022
+# iyr:2018
+# hcl:#fffffd
+# pid:118568279
+# hgt:153cm
+# ecl:gry
+# byr:1941
+# cid:341
+eyr 2022 True
+True
+iyr 2018 True
+True
+hcl #fffffd 6 True <re.Match object; span=(0, 6), match='fffffd'>
+True
+pid 118568279 9 118568279 True
+True
+hgt cm 153 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1941 True
+True
+True
+
+newport
+#### ['iyr:2018', 'eyr:2027', 'hcl:#888785', 'byr:1970', 'hgt:165cm', 'pid:773715893', 'ecl:amb']
+# iyr:2018
+# eyr:2027
+# hcl:#888785
+# byr:1970
+# hgt:165cm
+# pid:773715893
+# ecl:amb
+iyr 2018 True
+True
+eyr 2027 True
+True
+hcl #888785 6 True <re.Match object; span=(0, 6), match='888785'>
+True
+byr 1970 True
+True
+hgt cm 165 True
+True
+pid 773715893 9 773715893 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['hcl:#623a2f', 'hgt:156cm', 'byr:1938', 'iyr:2012', 'pid:745046822', 'ecl:amb', 'eyr:2030']
+# hcl:#623a2f
+# hgt:156cm
+# byr:1938
+# iyr:2012
+# pid:745046822
+# ecl:amb
+# eyr:2030
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+hgt cm 156 True
+True
+byr 1938 True
+True
+iyr 2012 True
+True
+pid 745046822 9 745046822 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2030 True
+True
+
+newport
+#### ['iyr:2012', 'pid:097961857', 'eyr:2023', 'hgt:66in', 'hcl:#fffffd', 'byr:1962', 'ecl:utc']
+# iyr:2012
+# pid:097961857
+# eyr:2023
+# hgt:66in
+# hcl:#fffffd
+# byr:1962
+# ecl:utc
+iyr 2012 True
+True
+pid 97961857 9 097961857 True
+True
+eyr 2023 True
+True
+hgt in 66 True
+True
+hcl #fffffd 6 True <re.Match object; span=(0, 6), match='fffffd'>
+True
+byr 1962 True
+True
+ecl utc ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+
+newport
+#### ['byr:1943', 'hgt:150cm', 'iyr:2012', 'pid:740693353', 'eyr:2023', 'hcl:#18171d', 'cid:101', 'ecl:blu']
+# byr:1943
+# hgt:150cm
+# iyr:2012
+# pid:740693353
+# eyr:2023
+# hcl:#18171d
+# cid:101
+# ecl:blu
+byr 1943 True
+True
+hgt cm 150 True
+True
+iyr 2012 True
+True
+pid 740693353 9 740693353 True
+True
+eyr 2023 True
+True
+hcl #18171d 6 True <re.Match object; span=(0, 6), match='18171d'>
+True
+True
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['iyr:2018', 'pid:183728523', 'byr:1924', 'hgt:154cm', 'eyr:2030', 'cid:167', 'ecl:blu', 'hcl:#ceb3a1']
+# iyr:2018
+# pid:183728523
+# byr:1924
+# hgt:154cm
+# eyr:2030
+# cid:167
+# ecl:blu
+# hcl:#ceb3a1
+iyr 2018 True
+True
+pid 183728523 9 183728523 True
+True
+byr 1924 True
+True
+hgt cm 154 True
+True
+eyr 2030 True
+True
+True
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #ceb3a1 6 True <re.Match object; span=(0, 6), match='ceb3a1'>
+True
+
+newport
+#### ['hgt:69cm', 'eyr:2025', 'hcl:z', 'ecl:brn', 'byr:1982', 'pid:250782159', 'iyr:2011']
+# hgt:69cm
+# eyr:2025
+# hcl:z
+# ecl:brn
+# byr:1982
+# pid:250782159
+# iyr:2011
+hgt cm 69 False
+True
+eyr 2025 True
+True
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1982 True
+True
+pid 250782159 9 250782159 True
+True
+iyr 2011 True
+True
+
+newport
+#### ['byr:1998', 'iyr:2018', 'hcl:#341e13', 'eyr:2022', 'hgt:157cm', 'pid:497100444', 'cid:266', 'ecl:gry']
+# byr:1998
+# iyr:2018
+# hcl:#341e13
+# eyr:2022
+# hgt:157cm
+# pid:497100444
+# cid:266
+# ecl:gry
+byr 1998 True
+True
+iyr 2018 True
+True
+hcl #341e13 6 True <re.Match object; span=(0, 6), match='341e13'>
+True
+eyr 2022 True
+True
+hgt cm 157 True
+True
+pid 497100444 9 497100444 True
+True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['eyr:2027', 'iyr:2011', 'hcl:#6b5442', 'hgt:156cm', 'pid:494073085', 'byr:1998', 'ecl:hzl']
+# eyr:2027
+# iyr:2011
+# hcl:#6b5442
+# hgt:156cm
+# pid:494073085
+# byr:1998
+# ecl:hzl
+eyr 2027 True
+True
+iyr 2011 True
+True
+hcl #6b5442 6 True <re.Match object; span=(0, 6), match='6b5442'>
+True
+hgt cm 156 True
+True
+pid 494073085 9 494073085 True
+True
+byr 1998 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['byr:1947', 'hcl:#b6652a', 'iyr:2011', 'pid:228986686', 'eyr:2030', 'hgt:175cm', 'cid:70', 'ecl:brn']
+# byr:1947
+# hcl:#b6652a
+# iyr:2011
+# pid:228986686
+# eyr:2030
+# hgt:175cm
+# cid:70
+# ecl:brn
+byr 1947 True
+True
+hcl #b6652a 6 True <re.Match object; span=(0, 6), match='b6652a'>
+True
+iyr 2011 True
+True
+pid 228986686 9 228986686 True
+True
+eyr 2030 True
+True
+hgt cm 175 True
+True
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['eyr:2026', 'hgt:159cm', 'byr:1946', 'pid:534291476', 'iyr:2018', 'ecl:gry', 'cid:225', 'hcl:#18171d']
+# eyr:2026
+# hgt:159cm
+# byr:1946
+# pid:534291476
+# iyr:2018
+# ecl:gry
+# cid:225
+# hcl:#18171d
+eyr 2026 True
+True
+hgt cm 159 True
+True
+byr 1946 True
+True
+pid 534291476 9 534291476 True
+True
+iyr 2018 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+hcl #18171d 6 True <re.Match object; span=(0, 6), match='18171d'>
+True
+
+newport
+#### ['pid:439665905', 'cid:311', 'ecl:amb', 'iyr:2018', 'eyr:2030', 'hgt:186cm', 'byr:1950', 'hcl:#cfa07d']
+# pid:439665905
+# cid:311
+# ecl:amb
+# iyr:2018
+# eyr:2030
+# hgt:186cm
+# byr:1950
+# hcl:#cfa07d
+pid 439665905 9 439665905 True
+True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2018 True
+True
+eyr 2030 True
+True
+hgt cm 186 True
+True
+byr 1950 True
+True
+hcl #cfa07d 6 True <re.Match object; span=(0, 6), match='cfa07d'>
+True
+
+newport
+#### ['pid:250175056', 'hcl:#efcc98', 'byr:1981', 'cid:262', 'hgt:154cm', 'ecl:gry', 'iyr:2020', 'eyr:2027']
+# pid:250175056
+# hcl:#efcc98
+# byr:1981
+# cid:262
+# hgt:154cm
+# ecl:gry
+# iyr:2020
+# eyr:2027
+pid 250175056 9 250175056 True
+True
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+True
+byr 1981 True
+True
+True
+hgt cm 154 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2020 True
+True
+eyr 2027 True
+True
+
+newport
+#### ['pid:461335515', 'iyr:2014', 'hcl:#f1cf00', 'hgt:180cm', 'ecl:amb', 'eyr:2027', 'byr:1956']
+# pid:461335515
+# iyr:2014
+# hcl:#f1cf00
+# hgt:180cm
+# ecl:amb
+# eyr:2027
+# byr:1956
+pid 461335515 9 461335515 True
+True
+iyr 2014 True
+True
+hcl #f1cf00 6 True <re.Match object; span=(0, 6), match='f1cf00'>
+True
+hgt cm 180 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2027 True
+True
+byr 1956 True
+True
+
+newport
+#### ['iyr:2014', 'eyr:2030', 'cid:194', 'pid:234623720', 'hcl:#733820', 'hgt:164cm', 'byr:1929', 'ecl:blu']
+# iyr:2014
+# eyr:2030
+# cid:194
+# pid:234623720
+# hcl:#733820
+# hgt:164cm
+# byr:1929
+# ecl:blu
+iyr 2014 True
+True
+eyr 2030 True
+True
+True
+pid 234623720 9 234623720 True
+True
+hcl #733820 6 True <re.Match object; span=(0, 6), match='733820'>
+True
+hgt cm 164 True
+True
+byr 1929 True
+True
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['byr:1992', 'eyr:2024', 'hcl:#ef8161', 'cid:216', 'ecl:brn', 'hgt:177cm', 'iyr:2018', 'pid:101726770']
+# byr:1992
+# eyr:2024
+# hcl:#ef8161
+# cid:216
+# ecl:brn
+# hgt:177cm
+# iyr:2018
+# pid:101726770
+byr 1992 True
+True
+eyr 2024 True
+True
+hcl #ef8161 6 True <re.Match object; span=(0, 6), match='ef8161'>
+True
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 177 True
+True
+iyr 2018 True
+True
+pid 101726770 9 101726770 True
+True
+
+newport
+#### ['hcl:#341e13', 'hgt:178cm', 'iyr:2016', 'eyr:2029', 'byr:1945', 'pid:045325957', 'ecl:grn', 'cid:99']
+# hcl:#341e13
+# hgt:178cm
+# iyr:2016
+# eyr:2029
+# byr:1945
+# pid:045325957
+# ecl:grn
+# cid:99
+hcl #341e13 6 True <re.Match object; span=(0, 6), match='341e13'>
+True
+hgt cm 178 True
+True
+iyr 2016 True
+True
+eyr 2029 True
+True
+byr 1945 True
+True
+pid 45325957 9 045325957 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+
+newport
+#### ['ecl:gry', 'iyr:2012', 'cid:52', 'hgt:168cm', 'byr:1943', 'hcl:#cfa07d', 'pid:899608935', 'eyr:2030']
+# ecl:gry
+# iyr:2012
+# cid:52
+# hgt:168cm
+# byr:1943
+# hcl:#cfa07d
+# pid:899608935
+# eyr:2030
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2012 True
+True
+True
+hgt cm 168 True
+True
+byr 1943 True
+True
+hcl #cfa07d 6 True <re.Match object; span=(0, 6), match='cfa07d'>
+True
+pid 899608935 9 899608935 True
+True
+eyr 2030 True
+True
+
+newport
+#### ['cid:241', 'byr:1934', 'hgt:161cm', 'eyr:2027', 'iyr:2011', 'hcl:#c0946f', 'ecl:amb', 'pid:346857644']
+# cid:241
+# byr:1934
+# hgt:161cm
+# eyr:2027
+# iyr:2011
+# hcl:#c0946f
+# ecl:amb
+# pid:346857644
+True
+byr 1934 True
+True
+hgt cm 161 True
+True
+eyr 2027 True
+True
+iyr 2011 True
+True
+hcl #c0946f 6 True <re.Match object; span=(0, 6), match='c0946f'>
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 346857644 9 346857644 True
+True
+
+newport
+#### ['iyr:2019', 'hgt:178cm', 'hcl:#c0946f', 'byr:1957', 'eyr:2026', 'ecl:brn', 'pid:222885240']
+# iyr:2019
+# hgt:178cm
+# hcl:#c0946f
+# byr:1957
+# eyr:2026
+# ecl:brn
+# pid:222885240
+iyr 2019 True
+True
+hgt cm 178 True
+True
+hcl #c0946f 6 True <re.Match object; span=(0, 6), match='c0946f'>
+True
+byr 1957 True
+True
+eyr 2026 True
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 222885240 9 222885240 True
+True
+
+newport
+#### ['ecl:blu', 'eyr:2021', 'cid:312', 'hcl:#733820', 'hgt:186cm', 'iyr:2012', 'byr:1969', 'pid:821704316']
+# ecl:blu
+# eyr:2021
+# cid:312
+# hcl:#733820
+# hgt:186cm
+# iyr:2012
+# byr:1969
+# pid:821704316
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2021 True
+True
+True
+hcl #733820 6 True <re.Match object; span=(0, 6), match='733820'>
+True
+hgt cm 186 True
+True
+iyr 2012 True
+True
+byr 1969 True
+True
+pid 821704316 9 821704316 True
+True
+
+newport
+#### ['hcl:#6b5442', 'cid:159', 'hgt:180cm', 'iyr:2018', 'eyr:2028', 'ecl:hzl', 'byr:1966', 'pid:#e0238e']
+# hcl:#6b5442
+# cid:159
+# hgt:180cm
+# iyr:2018
+# eyr:2028
+# ecl:hzl
+# byr:1966
+# pid:#e0238e
+hcl #6b5442 6 True <re.Match object; span=(0, 6), match='6b5442'>
+True
+True
+hgt cm 180 True
+True
+iyr 2018 True
+True
+eyr 2028 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1966 True
+True
+True
+
+newport
+#### ['pid:622400994', 'eyr:2022', 'hcl:#5b6635', 'iyr:2012', 'byr:1980', 'hgt:190cm', 'ecl:oth']
+# pid:622400994
+# eyr:2022
+# hcl:#5b6635
+# iyr:2012
+# byr:1980
+# hgt:190cm
+# ecl:oth
+pid 622400994 9 622400994 True
+True
+eyr 2022 True
+True
+hcl #5b6635 6 True <re.Match object; span=(0, 6), match='5b6635'>
+True
+iyr 2012 True
+True
+byr 1980 True
+True
+hgt cm 190 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['byr:1976', 'ecl:gry', 'eyr:2020', 'iyr:2020', 'hgt:171cm', 'pid:219878671', 'hcl:#6b5442']
+# byr:1976
+# ecl:gry
+# eyr:2020
+# iyr:2020
+# hgt:171cm
+# pid:219878671
+# hcl:#6b5442
+byr 1976 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2020 True
+True
+iyr 2020 True
+True
+hgt cm 171 True
+True
+pid 219878671 9 219878671 True
+True
+hcl #6b5442 6 True <re.Match object; span=(0, 6), match='6b5442'>
+True
+
+newport
+#### ['hgt:163cm', 'byr:1968', 'pid:003521394', 'ecl:oth', 'iyr:2010', 'cid:61', 'hcl:#888785']
+# hgt:163cm
+# byr:1968
+# pid:003521394
+# ecl:oth
+# iyr:2010
+# cid:61
+# hcl:#888785
+FALSE: hgt:163cm byr:1968
+pid:003521394 ecl:oth
+iyr:2010
+cid:61 hcl:#888785 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hgt:163cm byr:1968
+pid:003521394 ecl:oth
+iyr:2010
+cid:61 hcl:#888785 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hgt:163cm byr:1968
+pid:003521394 ecl:oth
+iyr:2010
+cid:61 hcl:#888785 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hgt:163cm byr:1968
+pid:003521394 ecl:oth
+iyr:2010
+cid:61 hcl:#888785 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hgt:163cm byr:1968
+pid:003521394 ecl:oth
+iyr:2010
+cid:61 hcl:#888785 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hgt:163cm byr:1968
+pid:003521394 ecl:oth
+iyr:2010
+cid:61 hcl:#888785 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hgt:163cm byr:1968
+pid:003521394 ecl:oth
+iyr:2010
+cid:61 hcl:#888785 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+hgt cm 163 True
+False
+byr 1968 True
+False
+pid 3521394 9 003521394 True
+False
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+iyr 2010 True
+False
+False
+hcl #888785 6 True <re.Match object; span=(0, 6), match='888785'>
+False
+
+newport
+#### ['cid:115', 'pid:810722029', 'hgt:166cm', 'byr:1955', 'ecl:blu', 'eyr:2030', 'iyr:2018']
+# cid:115
+# pid:810722029
+# hgt:166cm
+# byr:1955
+# ecl:blu
+# eyr:2030
+# iyr:2018
+FALSE: cid:115 pid:810722029 hgt:166cm byr:1955
+ecl:blu eyr:2030 iyr:2018 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:115 pid:810722029 hgt:166cm byr:1955
+ecl:blu eyr:2030 iyr:2018 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:115 pid:810722029 hgt:166cm byr:1955
+ecl:blu eyr:2030 iyr:2018 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:115 pid:810722029 hgt:166cm byr:1955
+ecl:blu eyr:2030 iyr:2018 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:115 pid:810722029 hgt:166cm byr:1955
+ecl:blu eyr:2030 iyr:2018 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:115 pid:810722029 hgt:166cm byr:1955
+ecl:blu eyr:2030 iyr:2018 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:115 pid:810722029 hgt:166cm byr:1955
+ecl:blu eyr:2030 iyr:2018 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+False
+pid 810722029 9 810722029 True
+False
+hgt cm 166 True
+False
+byr 1955 True
+False
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+eyr 2030 True
+False
+iyr 2018 True
+False
+
+newport
+#### ['hgt:176cm', 'eyr:2025', 'pid:617393532', 'hcl:#733820', 'byr:1975', 'iyr:2018', 'ecl:grn']
+# hgt:176cm
+# eyr:2025
+# pid:617393532
+# hcl:#733820
+# byr:1975
+# iyr:2018
+# ecl:grn
+hgt cm 176 True
+True
+eyr 2025 True
+True
+pid 617393532 9 617393532 True
+True
+hcl #733820 6 True <re.Match object; span=(0, 6), match='733820'>
+True
+byr 1975 True
+True
+iyr 2018 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['hcl:#733820', 'byr:1979', 'pid:838168666', 'hgt:190cm', 'ecl:oth', 'cid:330', 'eyr:2029', 'iyr:2018']
+# hcl:#733820
+# byr:1979
+# pid:838168666
+# hgt:190cm
+# ecl:oth
+# cid:330
+# eyr:2029
+# iyr:2018
+hcl #733820 6 True <re.Match object; span=(0, 6), match='733820'>
+True
+byr 1979 True
+True
+pid 838168666 9 838168666 True
+True
+hgt cm 190 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+eyr 2029 True
+True
+iyr 2018 True
+True
+
+newport
+#### ['eyr:1940', 'hgt:67cm', 'iyr:2009', 'ecl:gry', 'pid:#e76a62', 'byr:2020', 'hcl:z']
+# eyr:1940
+# hgt:67cm
+# iyr:2009
+# ecl:gry
+# pid:#e76a62
+# byr:2020
+# hcl:z
+eyr 1940 False
+True
+hgt cm 67 False
+True
+iyr 2009 False
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+byr 2020 False
+True
+True
+
+newport
+#### ['hgt:190cm', 'ecl:brn', 'pid:396113351', 'byr:1956', 'iyr:2010', 'hcl:#6b5442', 'eyr:2024', 'cid:256']
+# hgt:190cm
+# ecl:brn
+# pid:396113351
+# byr:1956
+# iyr:2010
+# hcl:#6b5442
+# eyr:2024
+# cid:256
+hgt cm 190 True
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 396113351 9 396113351 True
+True
+byr 1956 True
+True
+iyr 2010 True
+True
+hcl #6b5442 6 True <re.Match object; span=(0, 6), match='6b5442'>
+True
+eyr 2024 True
+True
+True
+
+newport
+#### ['hcl:#efcc98', 'hgt:178cm', 'byr:1984', 'iyr:2013', 'pid:752620212', 'eyr:2021', 'ecl:gry']
+# hcl:#efcc98
+# hgt:178cm
+# byr:1984
+# iyr:2013
+# pid:752620212
+# eyr:2021
+# ecl:gry
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+True
+hgt cm 178 True
+True
+byr 1984 True
+True
+iyr 2013 True
+True
+pid 752620212 9 752620212 True
+True
+eyr 2021 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['iyr:2014', 'hcl:#a97842', 'hgt:166cm', 'ecl:blu', 'eyr:2024', 'byr:1935', 'pid:836748873']
+# iyr:2014
+# hcl:#a97842
+# hgt:166cm
+# ecl:blu
+# eyr:2024
+# byr:1935
+# pid:836748873
+iyr 2014 True
+True
+hcl #a97842 6 True <re.Match object; span=(0, 6), match='a97842'>
+True
+hgt cm 166 True
+True
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2024 True
+True
+byr 1935 True
+True
+pid 836748873 9 836748873 True
+True
+
+newport
+#### ['cid:236', 'ecl:amb', 'hgt:168cm', 'iyr:2010', 'hcl:#602927', 'byr:1950', 'eyr:2026', 'pid:404810674']
+# cid:236
+# ecl:amb
+# hgt:168cm
+# iyr:2010
+# hcl:#602927
+# byr:1950
+# eyr:2026
+# pid:404810674
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 168 True
+True
+iyr 2010 True
+True
+hcl #602927 6 True <re.Match object; span=(0, 6), match='602927'>
+True
+byr 1950 True
+True
+eyr 2026 True
+True
+pid 404810674 9 404810674 True
+True
+
+newport
+#### ['eyr:2030', 'ecl:grn', 'byr:1975', 'pid:064596263', 'hgt:193cm', 'iyr:2019', 'cid:71', 'hcl:#a97842']
+# eyr:2030
+# ecl:grn
+# byr:1975
+# pid:064596263
+# hgt:193cm
+# iyr:2019
+# cid:71
+# hcl:#a97842
+eyr 2030 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1975 True
+True
+pid 64596263 9 064596263 True
+True
+hgt cm 193 True
+True
+iyr 2019 True
+True
+True
+hcl #a97842 6 True <re.Match object; span=(0, 6), match='a97842'>
+True
+
+newport
+#### ['iyr:2014', 'pid:298386733', 'hcl:#c0946f', 'hgt:180cm', 'ecl:hzl', 'cid:115', 'byr:1940', 'eyr:2023']
+# iyr:2014
+# pid:298386733
+# hcl:#c0946f
+# hgt:180cm
+# ecl:hzl
+# cid:115
+# byr:1940
+# eyr:2023
+iyr 2014 True
+True
+pid 298386733 9 298386733 True
+True
+hcl #c0946f 6 True <re.Match object; span=(0, 6), match='c0946f'>
+True
+hgt cm 180 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+byr 1940 True
+True
+eyr 2023 True
+True
+
+newport
+#### ['iyr:1960', 'hgt:139', 'ecl:#9db7b8', 'byr:1980', 'pid:#ef597b', 'cid:54', 'eyr:2028', 'hcl:fdcda3']
+# iyr:1960
+# hgt:139
+# ecl:#9db7b8
+# byr:1980
+# pid:#ef597b
+# cid:54
+# eyr:2028
+# hcl:fdcda3
+iyr 1960 False
+True
+True
+ecl #9db7b8 ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+byr 1980 True
+True
+True
+True
+eyr 2028 True
+True
+True
+
+newport
+#### ['iyr:2015', 'byr:1954', 'ecl:blu', 'hgt:62in', 'hcl:#ceb3a1', 'pid:253593755', 'eyr:2028']
+# iyr:2015
+# byr:1954
+# ecl:blu
+# hgt:62in
+# hcl:#ceb3a1
+# pid:253593755
+# eyr:2028
+iyr 2015 True
+True
+byr 1954 True
+True
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt in 62 True
+True
+hcl #ceb3a1 6 True <re.Match object; span=(0, 6), match='ceb3a1'>
+True
+pid 253593755 9 253593755 True
+True
+eyr 2028 True
+True
+
+newport
+#### ['eyr:2025', 'ecl:blu', 'pid:216388098', 'iyr:2017', 'byr:1968', 'hgt:151cm', 'hcl:#602927']
+# eyr:2025
+# ecl:blu
+# pid:216388098
+# iyr:2017
+# byr:1968
+# hgt:151cm
+# hcl:#602927
+eyr 2025 True
+True
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 216388098 9 216388098 True
+True
+iyr 2017 True
+True
+byr 1968 True
+True
+hgt cm 151 True
+True
+hcl #602927 6 True <re.Match object; span=(0, 6), match='602927'>
+True
+
+newport
+#### ['eyr:2022', 'hcl:#a97842', 'pid:606979543', 'iyr:2013', 'ecl:grn', 'cid:63', 'hgt:186cm', 'byr:1992']
+# eyr:2022
+# hcl:#a97842
+# pid:606979543
+# iyr:2013
+# ecl:grn
+# cid:63
+# hgt:186cm
+# byr:1992
+eyr 2022 True
+True
+hcl #a97842 6 True <re.Match object; span=(0, 6), match='a97842'>
+True
+pid 606979543 9 606979543 True
+True
+iyr 2013 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+hgt cm 186 True
+True
+byr 1992 True
+True
+
+newport
+#### ['ecl:gry', 'hgt:168cm', 'hcl:#18171d', 'iyr:2017', 'pid:670898814', 'byr:1983', 'eyr:2022']
+# ecl:gry
+# hgt:168cm
+# hcl:#18171d
+# iyr:2017
+# pid:670898814
+# byr:1983
+# eyr:2022
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 168 True
+True
+hcl #18171d 6 True <re.Match object; span=(0, 6), match='18171d'>
+True
+iyr 2017 True
+True
+pid 670898814 9 670898814 True
+True
+byr 1983 True
+True
+eyr 2022 True
+True
+
+newport
+#### ['hgt:155cm', 'ecl:grn', 'iyr:2012', 'pid:837979074', 'eyr:2024', 'hcl:#888785', 'byr:1972']
+# hgt:155cm
+# ecl:grn
+# iyr:2012
+# pid:837979074
+# eyr:2024
+# hcl:#888785
+# byr:1972
+hgt cm 155 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2012 True
+True
+pid 837979074 9 837979074 True
+True
+eyr 2024 True
+True
+hcl #888785 6 True <re.Match object; span=(0, 6), match='888785'>
+True
+byr 1972 True
+True
+
+newport
+#### ['iyr:2015', 'pid:970743533', 'hcl:#866857', 'eyr:2027', 'byr:1921', 'ecl:brn']
+# iyr:2015
+# pid:970743533
+# hcl:#866857
+# eyr:2027
+# byr:1921
+# ecl:brn
+FALSE: iyr:2015 pid:970743533 hcl:#866857 eyr:2027
+byr:1921 ecl:brn #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2015 pid:970743533 hcl:#866857 eyr:2027
+byr:1921 ecl:brn #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2015 pid:970743533 hcl:#866857 eyr:2027
+byr:1921 ecl:brn #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2015 pid:970743533 hcl:#866857 eyr:2027
+byr:1921 ecl:brn #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2015 pid:970743533 hcl:#866857 eyr:2027
+byr:1921 ecl:brn #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: iyr:2015 pid:970743533 hcl:#866857 eyr:2027
+byr:1921 ecl:brn #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+iyr 2015 True
+False
+pid 970743533 9 970743533 True
+False
+hcl #866857 6 True <re.Match object; span=(0, 6), match='866857'>
+False
+eyr 2027 True
+False
+byr 1921 True
+False
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+
+newport
+#### ['eyr:2022', 'hgt:160cm', 'byr:1964', 'hcl:#efcc98', 'iyr:2019', 'ecl:oth', 'pid:141923637']
+# eyr:2022
+# hgt:160cm
+# byr:1964
+# hcl:#efcc98
+# iyr:2019
+# ecl:oth
+# pid:141923637
+eyr 2022 True
+True
+hgt cm 160 True
+True
+byr 1964 True
+True
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+True
+iyr 2019 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 141923637 9 141923637 True
+True
+
+newport
+#### ['byr:2029', 'pid:3313111652', 'ecl:brn', 'eyr:2034', 'iyr:2013', 'hgt:193cm', 'hcl:z']
+# byr:2029
+# pid:3313111652
+# ecl:brn
+# eyr:2034
+# iyr:2013
+# hgt:193cm
+# hcl:z
+byr 2029 False
+True
+pid 3313111652 10 3313111652 False
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2034 False
+True
+iyr 2013 True
+True
+hgt cm 193 True
+True
+True
+
+newport
+#### ['pid:853890227', 'eyr:2029', 'hcl:#efcc98', 'iyr:2021', 'byr:2003', 'ecl:#037c39', 'hgt:160cm']
+# pid:853890227
+# eyr:2029
+# hcl:#efcc98
+# iyr:2021
+# byr:2003
+# ecl:#037c39
+# hgt:160cm
+pid 853890227 9 853890227 True
+True
+eyr 2029 True
+True
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+True
+iyr 2021 False
+True
+byr 2003 False
+True
+ecl #037c39 ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+hgt cm 160 True
+True
+
+newport
+#### ['iyr:1927', 'byr:1992', 'eyr:2030', 'hcl:#efcc98', 'ecl:amb', 'hgt:152cm', 'pid:436765906']
+# iyr:1927
+# byr:1992
+# eyr:2030
+# hcl:#efcc98
+# ecl:amb
+# hgt:152cm
+# pid:436765906
+iyr 1927 False
+True
+byr 1992 True
+True
+eyr 2030 True
+True
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 152 True
+True
+pid 436765906 9 436765906 True
+True
+
+newport
+#### ['iyr:2014', 'hcl:#c0946f', 'pid:207052381', 'eyr:2024', 'ecl:hzl', 'hgt:177cm', 'byr:1923']
+# iyr:2014
+# hcl:#c0946f
+# pid:207052381
+# eyr:2024
+# ecl:hzl
+# hgt:177cm
+# byr:1923
+iyr 2014 True
+True
+hcl #c0946f 6 True <re.Match object; span=(0, 6), match='c0946f'>
+True
+pid 207052381 9 207052381 True
+True
+eyr 2024 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 177 True
+True
+byr 1923 True
+True
+
+newport
+#### ['ecl:blu', 'iyr:2014', 'eyr:2025', 'hgt:165cm', 'hcl:#733820', 'pid:343011857', 'byr:1967']
+# ecl:blu
+# iyr:2014
+# eyr:2025
+# hgt:165cm
+# hcl:#733820
+# pid:343011857
+# byr:1967
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2014 True
+True
+eyr 2025 True
+True
+hgt cm 165 True
+True
+hcl #733820 6 True <re.Match object; span=(0, 6), match='733820'>
+True
+pid 343011857 9 343011857 True
+True
+byr 1967 True
+True
+
+newport
+#### ['ecl:xry', 'eyr:2028', 'iyr:2011', 'hgt:166in', 'hcl:#c0946f', 'pid:805297331', 'cid:167', 'byr:1926']
+# ecl:xry
+# eyr:2028
+# iyr:2011
+# hgt:166in
+# hcl:#c0946f
+# pid:805297331
+# cid:167
+# byr:1926
+ecl xry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+eyr 2028 True
+True
+iyr 2011 True
+True
+hgt in 166 False
+True
+hcl #c0946f 6 True <re.Match object; span=(0, 6), match='c0946f'>
+True
+pid 805297331 9 805297331 True
+True
+True
+byr 1926 True
+True
+
+newport
+#### ['byr:1947', 'pid:468012954', 'eyr:2026', 'ecl:oth', 'iyr:2018', 'hgt:170cm', 'hcl:#b6652a']
+# byr:1947
+# pid:468012954
+# eyr:2026
+# ecl:oth
+# iyr:2018
+# hgt:170cm
+# hcl:#b6652a
+byr 1947 True
+True
+pid 468012954 9 468012954 True
+True
+eyr 2026 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2018 True
+True
+hgt cm 170 True
+True
+hcl #b6652a 6 True <re.Match object; span=(0, 6), match='b6652a'>
+True
+
+newport
+#### ['hcl:#6b5442', 'ecl:brn', 'hgt:180cm', 'cid:233', 'pid:029789713', 'byr:1920', 'iyr:2010', 'eyr:2024']
+# hcl:#6b5442
+# ecl:brn
+# hgt:180cm
+# cid:233
+# pid:029789713
+# byr:1920
+# iyr:2010
+# eyr:2024
+hcl #6b5442 6 True <re.Match object; span=(0, 6), match='6b5442'>
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 180 True
+True
+True
+pid 29789713 9 029789713 True
+True
+byr 1920 True
+True
+iyr 2010 True
+True
+eyr 2024 True
+True
+
+newport
+#### ['iyr:2010', 'eyr:2027', 'hgt:156cm', 'hcl:#c0946f', 'byr:1960', 'pid:312723130', 'ecl:hzl']
+# iyr:2010
+# eyr:2027
+# hgt:156cm
+# hcl:#c0946f
+# byr:1960
+# pid:312723130
+# ecl:hzl
+iyr 2010 True
+True
+eyr 2027 True
+True
+hgt cm 156 True
+True
+hcl #c0946f 6 True <re.Match object; span=(0, 6), match='c0946f'>
+True
+byr 1960 True
+True
+pid 312723130 9 312723130 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['eyr:2023', 'byr:1959', 'iyr:2010', 'hgt:186cm', 'pid:066768932', 'ecl:grn', 'hcl:#602927', 'cid:310']
+# eyr:2023
+# byr:1959
+# iyr:2010
+# hgt:186cm
+# pid:066768932
+# ecl:grn
+# hcl:#602927
+# cid:310
+eyr 2023 True
+True
+byr 1959 True
+True
+iyr 2010 True
+True
+hgt cm 186 True
+True
+pid 66768932 9 066768932 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #602927 6 True <re.Match object; span=(0, 6), match='602927'>
+True
+True
+
+newport
+#### ['eyr:2030', 'pid:460535178', 'hgt:171cm', 'ecl:gry', 'iyr:2020', 'byr:1934', 'hcl:#888785']
+# eyr:2030
+# pid:460535178
+# hgt:171cm
+# ecl:gry
+# iyr:2020
+# byr:1934
+# hcl:#888785
+eyr 2030 True
+True
+pid 460535178 9 460535178 True
+True
+hgt cm 171 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2020 True
+True
+byr 1934 True
+True
+hcl #888785 6 True <re.Match object; span=(0, 6), match='888785'>
+True
+
+newport
+#### ['hgt:64cm', 'eyr:2021', 'byr:1995', 'cid:336', 'ecl:gmt', 'pid:926714223', 'iyr:2017', 'hcl:#18171d']
+# hgt:64cm
+# eyr:2021
+# byr:1995
+# cid:336
+# ecl:gmt
+# pid:926714223
+# iyr:2017
+# hcl:#18171d
+hgt cm 64 False
+True
+eyr 2021 True
+True
+byr 1995 True
+True
+True
+ecl gmt ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+pid 926714223 9 926714223 True
+True
+iyr 2017 True
+True
+hcl #18171d 6 True <re.Match object; span=(0, 6), match='18171d'>
+True
+
+newport
+#### ['eyr:2022', 'iyr:2010', 'ecl:grn', 'pid:285994301', 'cid:215', 'hgt:186cm', 'byr:1978']
+# eyr:2022
+# iyr:2010
+# ecl:grn
+# pid:285994301
+# cid:215
+# hgt:186cm
+# byr:1978
+FALSE: eyr:2022 iyr:2010
+ecl:grn pid:285994301 cid:215
+hgt:186cm byr:1978 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2022 iyr:2010
+ecl:grn pid:285994301 cid:215
+hgt:186cm byr:1978 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2022 iyr:2010
+ecl:grn pid:285994301 cid:215
+hgt:186cm byr:1978 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2022 iyr:2010
+ecl:grn pid:285994301 cid:215
+hgt:186cm byr:1978 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2022 iyr:2010
+ecl:grn pid:285994301 cid:215
+hgt:186cm byr:1978 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2022 iyr:2010
+ecl:grn pid:285994301 cid:215
+hgt:186cm byr:1978 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: eyr:2022 iyr:2010
+ecl:grn pid:285994301 cid:215
+hgt:186cm byr:1978 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+eyr 2022 True
+False
+iyr 2010 True
+False
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+pid 285994301 9 285994301 True
+False
+False
+hgt cm 186 True
+False
+byr 1978 True
+False
+
+newport
+#### ['hgt:63in', 'hcl:#866857', 'pid:386128445', 'iyr:2020', 'byr:1971', 'eyr:2021', 'ecl:gry']
+# hgt:63in
+# hcl:#866857
+# pid:386128445
+# iyr:2020
+# byr:1971
+# eyr:2021
+# ecl:gry
+hgt in 63 True
+True
+hcl #866857 6 True <re.Match object; span=(0, 6), match='866857'>
+True
+pid 386128445 9 386128445 True
+True
+iyr 2020 True
+True
+byr 1971 True
+True
+eyr 2021 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['hgt:183cm', 'hcl:#733820', 'iyr:2015', 'ecl:blu', 'pid:216205626', 'eyr:2022', 'byr:1941']
+# hgt:183cm
+# hcl:#733820
+# iyr:2015
+# ecl:blu
+# pid:216205626
+# eyr:2022
+# byr:1941
+hgt cm 183 True
+True
+hcl #733820 6 True <re.Match object; span=(0, 6), match='733820'>
+True
+iyr 2015 True
+True
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 216205626 9 216205626 True
+True
+eyr 2022 True
+True
+byr 1941 True
+True
+
+newport
+#### ['cid:150', 'ecl:amb', 'pid:872515243', 'byr:1926', 'eyr:1996', 'hcl:#dedc39', 'hgt:67in', 'iyr:2020']
+# cid:150
+# ecl:amb
+# pid:872515243
+# byr:1926
+# eyr:1996
+# hcl:#dedc39
+# hgt:67in
+# iyr:2020
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 872515243 9 872515243 True
+True
+byr 1926 True
+True
+eyr 1996 False
+True
+hcl #dedc39 6 True <re.Match object; span=(0, 6), match='dedc39'>
+True
+hgt in 67 True
+True
+iyr 2020 True
+True
+
+newport
+#### ['byr:1927', 'ecl:brn', 'cid:153', 'iyr:2011', 'pid:165190810', 'hcl:#fffffd', 'eyr:2028', 'hgt:64in']
+# byr:1927
+# ecl:brn
+# cid:153
+# iyr:2011
+# pid:165190810
+# hcl:#fffffd
+# eyr:2028
+# hgt:64in
+byr 1927 True
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+iyr 2011 True
+True
+pid 165190810 9 165190810 True
+True
+hcl #fffffd 6 True <re.Match object; span=(0, 6), match='fffffd'>
+True
+eyr 2028 True
+True
+hgt in 64 True
+True
+
+newport
+#### ['pid:502603734', 'byr:1966', 'iyr:2015', 'hgt:176cm', 'cid:205', 'ecl:brn', 'hcl:#fffffd', 'eyr:2021']
+# pid:502603734
+# byr:1966
+# iyr:2015
+# hgt:176cm
+# cid:205
+# ecl:brn
+# hcl:#fffffd
+# eyr:2021
+pid 502603734 9 502603734 True
+True
+byr 1966 True
+True
+iyr 2015 True
+True
+hgt cm 176 True
+True
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #fffffd 6 True <re.Match object; span=(0, 6), match='fffffd'>
+True
+eyr 2021 True
+True
+
+newport
+#### ['hcl:#18171d', 'hgt:158cm', 'byr:1943', 'iyr:2019', 'pid:058840094', 'eyr:2023']
+# hcl:#18171d
+# hgt:158cm
+# byr:1943
+# iyr:2019
+# pid:058840094
+# eyr:2023
+FALSE: hcl:#18171d hgt:158cm byr:1943 iyr:2019
+pid:058840094
+eyr:2023 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#18171d hgt:158cm byr:1943 iyr:2019
+pid:058840094
+eyr:2023 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#18171d hgt:158cm byr:1943 iyr:2019
+pid:058840094
+eyr:2023 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#18171d hgt:158cm byr:1943 iyr:2019
+pid:058840094
+eyr:2023 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#18171d hgt:158cm byr:1943 iyr:2019
+pid:058840094
+eyr:2023 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#18171d hgt:158cm byr:1943 iyr:2019
+pid:058840094
+eyr:2023 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+hcl #18171d 6 True <re.Match object; span=(0, 6), match='18171d'>
+False
+hgt cm 158 True
+False
+byr 1943 True
+False
+iyr 2019 True
+False
+pid 58840094 9 058840094 True
+False
+eyr 2023 True
+False
+
+newport
+#### ['byr:1962', 'hcl:#b6652a', 'ecl:grn', 'cid:297', 'iyr:2010', 'pid:990422650', 'hgt:154cm', 'eyr:2020']
+# byr:1962
+# hcl:#b6652a
+# ecl:grn
+# cid:297
+# iyr:2010
+# pid:990422650
+# hgt:154cm
+# eyr:2020
+byr 1962 True
+True
+hcl #b6652a 6 True <re.Match object; span=(0, 6), match='b6652a'>
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+iyr 2010 True
+True
+pid 990422650 9 990422650 True
+True
+hgt cm 154 True
+True
+eyr 2020 True
+True
+
+newport
+#### ['eyr:1934', 'iyr:2011', 'ecl:gry', 'hcl:z', 'byr:2004', 'hgt:63cm', 'pid:6173356201']
+# eyr:1934
+# iyr:2011
+# ecl:gry
+# hcl:z
+# byr:2004
+# hgt:63cm
+# pid:6173356201
+eyr 1934 False
+True
+iyr 2011 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+byr 2004 False
+True
+hgt cm 63 False
+True
+pid 6173356201 10 6173356201 False
+True
+
+newport
+#### ['pid:329432364', 'eyr:2029', 'ecl:grn', 'hcl:#18171d', 'iyr:2013', 'hgt:158cm', 'byr:1960']
+# pid:329432364
+# eyr:2029
+# ecl:grn
+# hcl:#18171d
+# iyr:2013
+# hgt:158cm
+# byr:1960
+pid 329432364 9 329432364 True
+True
+eyr 2029 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #18171d 6 True <re.Match object; span=(0, 6), match='18171d'>
+True
+iyr 2013 True
+True
+hgt cm 158 True
+True
+byr 1960 True
+True
+
+newport
+#### ['hcl:#efcc98', 'iyr:2016', 'hgt:186cm', 'cid:215', 'pid:852781253', 'eyr:2027', 'ecl:blu', 'byr:1937']
+# hcl:#efcc98
+# iyr:2016
+# hgt:186cm
+# cid:215
+# pid:852781253
+# eyr:2027
+# ecl:blu
+# byr:1937
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+True
+iyr 2016 True
+True
+hgt cm 186 True
+True
+True
+pid 852781253 9 852781253 True
+True
+eyr 2027 True
+True
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1937 True
+True
+
+newport
+#### ['hcl:#623a2f', 'ecl:gry', 'iyr:2020', 'byr:1972', 'hgt:182cm', 'pid:073426952', 'eyr:2027']
+# hcl:#623a2f
+# ecl:gry
+# iyr:2020
+# byr:1972
+# hgt:182cm
+# pid:073426952
+# eyr:2027
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2020 True
+True
+byr 1972 True
+True
+hgt cm 182 True
+True
+pid 73426952 9 073426952 True
+True
+eyr 2027 True
+True
+
+newport
+#### ['hcl:#3317b9', 'byr:1950', 'pid:304511418', 'hgt:177cm', 'cid:124', 'eyr:2020', 'ecl:hzl', 'iyr:2014']
+# hcl:#3317b9
+# byr:1950
+# pid:304511418
+# hgt:177cm
+# cid:124
+# eyr:2020
+# ecl:hzl
+# iyr:2014
+hcl #3317b9 6 True <re.Match object; span=(0, 6), match='3317b9'>
+True
+byr 1950 True
+True
+pid 304511418 9 304511418 True
+True
+hgt cm 177 True
+True
+True
+eyr 2020 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2014 True
+True
+
+newport
+#### ['eyr:2029', 'pid:034754507', 'byr:1936', 'cid:265', 'ecl:#b50997', 'hgt:183cm', 'hcl:#623a2f', 'iyr:1924']
+# eyr:2029
+# pid:034754507
+# byr:1936
+# cid:265
+# ecl:#b50997
+# hgt:183cm
+# hcl:#623a2f
+# iyr:1924
+eyr 2029 True
+True
+pid 34754507 9 034754507 True
+True
+byr 1936 True
+True
+True
+ecl #b50997 ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+hgt cm 183 True
+True
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+iyr 1924 False
+True
+
+newport
+#### ['eyr:2024', 'byr:1927', 'cid:243', 'ecl:gry', 'hcl:#6b5442', 'pid:714355627', 'hgt:160cm', 'iyr:2016']
+# eyr:2024
+# byr:1927
+# cid:243
+# ecl:gry
+# hcl:#6b5442
+# pid:714355627
+# hgt:160cm
+# iyr:2016
+eyr 2024 True
+True
+byr 1927 True
+True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #6b5442 6 True <re.Match object; span=(0, 6), match='6b5442'>
+True
+pid 714355627 9 714355627 True
+True
+hgt cm 160 True
+True
+iyr 2016 True
+True
+
+newport
+#### ['hgt:152cm', 'ecl:gry', 'hcl:#a97842', 'eyr:2029', 'byr:1952', 'pid:555308923', 'iyr:2010']
+# hgt:152cm
+# ecl:gry
+# hcl:#a97842
+# eyr:2029
+# byr:1952
+# pid:555308923
+# iyr:2010
+hgt cm 152 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #a97842 6 True <re.Match object; span=(0, 6), match='a97842'>
+True
+eyr 2029 True
+True
+byr 1952 True
+True
+pid 555308923 9 555308923 True
+True
+iyr 2010 True
+True
+
+newport
+#### ['byr:2008', 'pid:19681314', 'hgt:180in', 'iyr:2030', 'ecl:gry', 'cid:272', 'eyr:2023', 'hcl:#b6652a']
+# byr:2008
+# pid:19681314
+# hgt:180in
+# iyr:2030
+# ecl:gry
+# cid:272
+# eyr:2023
+# hcl:#b6652a
+byr 2008 False
+True
+pid 19681314 8 19681314 False
+True
+hgt in 180 False
+True
+iyr 2030 False
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+eyr 2023 True
+True
+hcl #b6652a 6 True <re.Match object; span=(0, 6), match='b6652a'>
+True
+
+newport
+#### ['cid:234', 'iyr:2014', 'byr:1940', 'ecl:hzl', 'pid:042231105', 'hcl:#3bf69c', 'hgt:172cm', 'eyr:2029']
+# cid:234
+# iyr:2014
+# byr:1940
+# ecl:hzl
+# pid:042231105
+# hcl:#3bf69c
+# hgt:172cm
+# eyr:2029
+True
+iyr 2014 True
+True
+byr 1940 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 42231105 9 042231105 True
+True
+hcl #3bf69c 6 True <re.Match object; span=(0, 6), match='3bf69c'>
+True
+hgt cm 172 True
+True
+eyr 2029 True
+True
+
+newport
+#### ['hcl:#efcc98', 'pid:831567586', 'hgt:190cm', 'iyr:2017', 'byr:1966', 'eyr:2024', 'ecl:blu']
+# hcl:#efcc98
+# pid:831567586
+# hgt:190cm
+# iyr:2017
+# byr:1966
+# eyr:2024
+# ecl:blu
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+True
+pid 831567586 9 831567586 True
+True
+hgt cm 190 True
+True
+iyr 2017 True
+True
+byr 1966 True
+True
+eyr 2024 True
+True
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['hcl:#341e13', 'ecl:blu', 'eyr:2022', 'cid:161', 'pid:197839646', 'iyr:2014']
+# hcl:#341e13
+# ecl:blu
+# eyr:2022
+# cid:161
+# pid:197839646
+# iyr:2014
+FALSE: hcl:#341e13 ecl:blu
+eyr:2022 cid:161 pid:197839646 iyr:2014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#341e13 ecl:blu
+eyr:2022 cid:161 pid:197839646 iyr:2014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#341e13 ecl:blu
+eyr:2022 cid:161 pid:197839646 iyr:2014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#341e13 ecl:blu
+eyr:2022 cid:161 pid:197839646 iyr:2014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#341e13 ecl:blu
+eyr:2022 cid:161 pid:197839646 iyr:2014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: hcl:#341e13 ecl:blu
+eyr:2022 cid:161 pid:197839646 iyr:2014 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+hcl #341e13 6 True <re.Match object; span=(0, 6), match='341e13'>
+False
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+eyr 2022 True
+False
+False
+pid 197839646 9 197839646 True
+False
+iyr 2014 True
+False
+
+newport
+#### ['hcl:#cfa07d', 'byr:1957', 'iyr:2019', 'hgt:181cm', 'pid:543775141', 'ecl:oth', 'eyr:2021']
+# hcl:#cfa07d
+# byr:1957
+# iyr:2019
+# hgt:181cm
+# pid:543775141
+# ecl:oth
+# eyr:2021
+hcl #cfa07d 6 True <re.Match object; span=(0, 6), match='cfa07d'>
+True
+byr 1957 True
+True
+iyr 2019 True
+True
+hgt cm 181 True
+True
+pid 543775141 9 543775141 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2021 True
+True
+
+newport
+#### ['hcl:z', 'pid:#596c41', 'eyr:2035', 'byr:2008', 'iyr:1975', 'ecl:#c66ee6', 'hgt:150in']
+# hcl:z
+# pid:#596c41
+# eyr:2035
+# byr:2008
+# iyr:1975
+# ecl:#c66ee6
+# hgt:150in
+True
+True
+eyr 2035 False
+True
+byr 2008 False
+True
+iyr 1975 False
+True
+ecl #c66ee6 ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+hgt in 150 False
+True
+
+newport
+#### ['ecl:grn', 'hcl:#7d3b0c', 'iyr:2016', 'pid:804255369', 'eyr:2028', 'byr:1983', 'hgt:69in', 'cid:82']
+# ecl:grn
+# hcl:#7d3b0c
+# iyr:2016
+# pid:804255369
+# eyr:2028
+# byr:1983
+# hgt:69in
+# cid:82
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #7d3b0c 6 True <re.Match object; span=(0, 6), match='7d3b0c'>
+True
+iyr 2016 True
+True
+pid 804255369 9 804255369 True
+True
+eyr 2028 True
+True
+byr 1983 True
+True
+hgt in 69 True
+True
+True
+
+newport
+#### ['eyr:2022', 'iyr:2013', 'hgt:191cm', 'ecl:gry', 'hcl:#a97842', 'pid:186827268', 'byr:1969']
+# eyr:2022
+# iyr:2013
+# hgt:191cm
+# ecl:gry
+# hcl:#a97842
+# pid:186827268
+# byr:1969
+eyr 2022 True
+True
+iyr 2013 True
+True
+hgt cm 191 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #a97842 6 True <re.Match object; span=(0, 6), match='a97842'>
+True
+pid 186827268 9 186827268 True
+True
+byr 1969 True
+True
+
+newport
+#### ['pid:871672398', 'eyr:2026', 'byr:1946', 'ecl:oth', 'iyr:2015', 'hcl:#866857', 'hgt:185cm']
+# pid:871672398
+# eyr:2026
+# byr:1946
+# ecl:oth
+# iyr:2015
+# hcl:#866857
+# hgt:185cm
+pid 871672398 9 871672398 True
+True
+eyr 2026 True
+True
+byr 1946 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2015 True
+True
+hcl #866857 6 True <re.Match object; span=(0, 6), match='866857'>
+True
+hgt cm 185 True
+True
+
+newport
+#### ['byr:1973', 'hgt:150cm', 'pid:905076707', 'iyr:2017', 'hcl:#2edf01', 'ecl:oth', 'cid:221', 'eyr:2026']
+# byr:1973
+# hgt:150cm
+# pid:905076707
+# iyr:2017
+# hcl:#2edf01
+# ecl:oth
+# cid:221
+# eyr:2026
+byr 1973 True
+True
+hgt cm 150 True
+True
+pid 905076707 9 905076707 True
+True
+iyr 2017 True
+True
+hcl #2edf01 6 True <re.Match object; span=(0, 6), match='2edf01'>
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+eyr 2026 True
+True
+
+newport
+#### ['eyr:2024', 'ecl:grn', 'pid:955444191', 'hcl:z', 'iyr:2015', 'byr:2008', 'hgt:151cm']
+# eyr:2024
+# ecl:grn
+# pid:955444191
+# hcl:z
+# iyr:2015
+# byr:2008
+# hgt:151cm
+eyr 2024 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 955444191 9 955444191 True
+True
+True
+iyr 2015 True
+True
+byr 2008 False
+True
+hgt cm 151 True
+True
+
+newport
+#### ['byr:1958', 'hcl:#fffffd', 'pid:218986541', 'cid:203', 'ecl:brn', 'hgt:154cm', 'iyr:2014', 'eyr:2026']
+# byr:1958
+# hcl:#fffffd
+# pid:218986541
+# cid:203
+# ecl:brn
+# hgt:154cm
+# iyr:2014
+# eyr:2026
+byr 1958 True
+True
+hcl #fffffd 6 True <re.Match object; span=(0, 6), match='fffffd'>
+True
+pid 218986541 9 218986541 True
+True
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 154 True
+True
+iyr 2014 True
+True
+eyr 2026 True
+True
+
+newport
+#### ['hcl:#623a2f', 'byr:1964', 'ecl:oth', 'iyr:2010', 'pid:525843363', 'hgt:164cm', 'eyr:2025']
+# hcl:#623a2f
+# byr:1964
+# ecl:oth
+# iyr:2010
+# pid:525843363
+# hgt:164cm
+# eyr:2025
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+byr 1964 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2010 True
+True
+pid 525843363 9 525843363 True
+True
+hgt cm 164 True
+True
+eyr 2025 True
+True
+
+newport
+#### ['ecl:blu', 'iyr:2013', 'hgt:193cm', 'byr:1990', 'pid:612387132', 'hcl:#18171d', 'cid:280', 'eyr:2028']
+# ecl:blu
+# iyr:2013
+# hgt:193cm
+# byr:1990
+# pid:612387132
+# hcl:#18171d
+# cid:280
+# eyr:2028
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2013 True
+True
+hgt cm 193 True
+True
+byr 1990 True
+True
+pid 612387132 9 612387132 True
+True
+hcl #18171d 6 True <re.Match object; span=(0, 6), match='18171d'>
+True
+True
+eyr 2028 True
+True
+
+newport
+#### ['ecl:oth', 'eyr:2022', 'pid:110447037', 'hgt:187cm', 'byr:1967', 'hcl:#efcc98']
+# ecl:oth
+# eyr:2022
+# pid:110447037
+# hgt:187cm
+# byr:1967
+# hcl:#efcc98
+FALSE: ecl:oth eyr:2022
+pid:110447037 hgt:187cm byr:1967 hcl:#efcc98 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:oth eyr:2022
+pid:110447037 hgt:187cm byr:1967 hcl:#efcc98 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:oth eyr:2022
+pid:110447037 hgt:187cm byr:1967 hcl:#efcc98 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:oth eyr:2022
+pid:110447037 hgt:187cm byr:1967 hcl:#efcc98 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:oth eyr:2022
+pid:110447037 hgt:187cm byr:1967 hcl:#efcc98 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: ecl:oth eyr:2022
+pid:110447037 hgt:187cm byr:1967 hcl:#efcc98 #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+eyr 2022 True
+False
+pid 110447037 9 110447037 True
+False
+hgt cm 187 True
+False
+byr 1967 True
+False
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+False
+
+newport
+#### ['byr:1930', 'eyr:2026', 'hgt:159cm', 'iyr:2011', 'ecl:hzl', 'hcl:#6b5442', 'pid:923471212']
+# byr:1930
+# eyr:2026
+# hgt:159cm
+# iyr:2011
+# ecl:hzl
+# hcl:#6b5442
+# pid:923471212
+byr 1930 True
+True
+eyr 2026 True
+True
+hgt cm 159 True
+True
+iyr 2011 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #6b5442 6 True <re.Match object; span=(0, 6), match='6b5442'>
+True
+pid 923471212 9 923471212 True
+True
+
+newport
+#### ['cid:350', 'eyr:2029', 'pid:823592758', 'iyr:2018', 'ecl:grn', 'byr:1972', 'hgt:167cm', 'hcl:#18171d']
+# cid:350
+# eyr:2029
+# pid:823592758
+# iyr:2018
+# ecl:grn
+# byr:1972
+# hgt:167cm
+# hcl:#18171d
+True
+eyr 2029 True
+True
+pid 823592758 9 823592758 True
+True
+iyr 2018 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1972 True
+True
+hgt cm 167 True
+True
+hcl #18171d 6 True <re.Match object; span=(0, 6), match='18171d'>
+True
+
+newport
+#### ['cid:76', 'eyr:2027', 'hcl:#6b5442', 'pid:099579798', 'byr:1930', 'iyr:2020', 'ecl:gry', 'hgt:153cm']
+# cid:76
+# eyr:2027
+# hcl:#6b5442
+# pid:099579798
+# byr:1930
+# iyr:2020
+# ecl:gry
+# hgt:153cm
+True
+eyr 2027 True
+True
+hcl #6b5442 6 True <re.Match object; span=(0, 6), match='6b5442'>
+True
+pid 99579798 9 099579798 True
+True
+byr 1930 True
+True
+iyr 2020 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hgt cm 153 True
+True
+
+newport
+#### ['byr:1957', 'ecl:brn', 'hcl:z', 'iyr:2016', 'pid:352677969', 'hgt:189cm', 'eyr:2029']
+# byr:1957
+# ecl:brn
+# hcl:z
+# iyr:2016
+# pid:352677969
+# hgt:189cm
+# eyr:2029
+byr 1957 True
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+iyr 2016 True
+True
+pid 352677969 9 352677969 True
+True
+hgt cm 189 True
+True
+eyr 2029 True
+True
+
+newport
+#### ['cid:143', 'eyr:2035', 'pid:602952079', 'ecl:#9b73f0', 'hcl:#602927', 'iyr:2022', 'byr:1975', 'hgt:174cm']
+# cid:143
+# eyr:2035
+# pid:602952079
+# ecl:#9b73f0
+# hcl:#602927
+# iyr:2022
+# byr:1975
+# hgt:174cm
+True
+eyr 2035 False
+True
+pid 602952079 9 602952079 True
+True
+ecl #9b73f0 ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+hcl #602927 6 True <re.Match object; span=(0, 6), match='602927'>
+True
+iyr 2022 False
+True
+byr 1975 True
+True
+hgt cm 174 True
+True
+
+newport
+#### ['byr:1971', 'pid:741305897', 'hgt:192cm', 'ecl:amb', 'hcl:#888785', 'eyr:2028', 'iyr:2011']
+# byr:1971
+# pid:741305897
+# hgt:192cm
+# ecl:amb
+# hcl:#888785
+# eyr:2028
+# iyr:2011
+byr 1971 True
+True
+pid 741305897 9 741305897 True
+True
+hgt cm 192 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #888785 6 True <re.Match object; span=(0, 6), match='888785'>
+True
+eyr 2028 True
+True
+iyr 2011 True
+True
+
+newport
+#### ['ecl:oth', 'iyr:2016', 'byr:1942', 'hgt:189cm', 'hcl:#888785', 'eyr:2024', 'pid:054290182']
+# ecl:oth
+# iyr:2016
+# byr:1942
+# hgt:189cm
+# hcl:#888785
+# eyr:2024
+# pid:054290182
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2016 True
+True
+byr 1942 True
+True
+hgt cm 189 True
+True
+hcl #888785 6 True <re.Match object; span=(0, 6), match='888785'>
+True
+eyr 2024 True
+True
+pid 54290182 9 054290182 True
+True
+
+newport
+#### ['hcl:#a97842', 'byr:1945', 'ecl:amb', 'pid:370849304', 'eyr:2028', 'iyr:2016', 'hgt:168cm']
+# hcl:#a97842
+# byr:1945
+# ecl:amb
+# pid:370849304
+# eyr:2028
+# iyr:2016
+# hgt:168cm
+hcl #a97842 6 True <re.Match object; span=(0, 6), match='a97842'>
+True
+byr 1945 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 370849304 9 370849304 True
+True
+eyr 2028 True
+True
+iyr 2016 True
+True
+hgt cm 168 True
+True
+
+newport
+#### ['hgt:154cm', 'iyr:2015', 'eyr:2030', 'byr:1952', 'ecl:hzl', 'hcl:#341e13', 'pid:996518075']
+# hgt:154cm
+# iyr:2015
+# eyr:2030
+# byr:1952
+# ecl:hzl
+# hcl:#341e13
+# pid:996518075
+hgt cm 154 True
+True
+iyr 2015 True
+True
+eyr 2030 True
+True
+byr 1952 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #341e13 6 True <re.Match object; span=(0, 6), match='341e13'>
+True
+pid 996518075 9 996518075 True
+True
+
+newport
+#### ['byr:1941', 'ecl:amb', 'iyr:2014', 'hcl:#fffffd', 'pid:560990286', 'eyr:2022', 'hgt:173cm']
+# byr:1941
+# ecl:amb
+# iyr:2014
+# hcl:#fffffd
+# pid:560990286
+# eyr:2022
+# hgt:173cm
+byr 1941 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2014 True
+True
+hcl #fffffd 6 True <re.Match object; span=(0, 6), match='fffffd'>
+True
+pid 560990286 9 560990286 True
+True
+eyr 2022 True
+True
+hgt cm 173 True
+True
+
+newport
+#### ['ecl:blu', 'byr:1974', 'hgt:150cm', 'hcl:#ceb3a1', 'eyr:2020', 'iyr:2013', 'pid:827415351']
+# ecl:blu
+# byr:1974
+# hgt:150cm
+# hcl:#ceb3a1
+# eyr:2020
+# iyr:2013
+# pid:827415351
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1974 True
+True
+hgt cm 150 True
+True
+hcl #ceb3a1 6 True <re.Match object; span=(0, 6), match='ceb3a1'>
+True
+eyr 2020 True
+True
+iyr 2013 True
+True
+pid 827415351 9 827415351 True
+True
+
+newport
+#### ['hcl:#623a2f', 'eyr:2027', 'iyr:2011', 'pid:913199234', 'ecl:oth', 'byr:1990', 'hgt:178cm']
+# hcl:#623a2f
+# eyr:2027
+# iyr:2011
+# pid:913199234
+# ecl:oth
+# byr:1990
+# hgt:178cm
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+eyr 2027 True
+True
+iyr 2011 True
+True
+pid 913199234 9 913199234 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1990 True
+True
+hgt cm 178 True
+True
+
+newport
+#### ['ecl:blu', 'byr:1989', 'hcl:#b6652a', 'eyr:2026', 'pid:724881482', 'hgt:185cm', 'iyr:2014']
+# ecl:blu
+# byr:1989
+# hcl:#b6652a
+# eyr:2026
+# pid:724881482
+# hgt:185cm
+# iyr:2014
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1989 True
+True
+hcl #b6652a 6 True <re.Match object; span=(0, 6), match='b6652a'>
+True
+eyr 2026 True
+True
+pid 724881482 9 724881482 True
+True
+hgt cm 185 True
+True
+iyr 2014 True
+True
+
+newport
+#### ['cid:115', 'pid:255002731', 'eyr:2025', 'ecl:amb', 'byr:1934', 'iyr:2020', 'hcl:#7d3b0c']
+# cid:115
+# pid:255002731
+# eyr:2025
+# ecl:amb
+# byr:1934
+# iyr:2020
+# hcl:#7d3b0c
+FALSE: cid:115 pid:255002731 eyr:2025 ecl:amb
+byr:1934 iyr:2020 hcl:#7d3b0c #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:115 pid:255002731 eyr:2025 ecl:amb
+byr:1934 iyr:2020 hcl:#7d3b0c #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:115 pid:255002731 eyr:2025 ecl:amb
+byr:1934 iyr:2020 hcl:#7d3b0c #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:115 pid:255002731 eyr:2025 ecl:amb
+byr:1934 iyr:2020 hcl:#7d3b0c #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:115 pid:255002731 eyr:2025 ecl:amb
+byr:1934 iyr:2020 hcl:#7d3b0c #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:115 pid:255002731 eyr:2025 ecl:amb
+byr:1934 iyr:2020 hcl:#7d3b0c #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+FALSE: cid:115 pid:255002731 eyr:2025 ecl:amb
+byr:1934 iyr:2020 hcl:#7d3b0c #### ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
+False
+pid 255002731 9 255002731 True
+False
+eyr 2025 True
+False
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+False
+byr 1934 True
+False
+iyr 2020 True
+False
+hcl #7d3b0c 6 True <re.Match object; span=(0, 6), match='7d3b0c'>
+False
+
+newport
+#### ['hgt:150cm', 'byr:1969', 'ecl:blu', 'iyr:2023', 'hcl:#866857', 'pid:754288625', 'eyr:2029']
+# hgt:150cm
+# byr:1969
+# ecl:blu
+# iyr:2023
+# hcl:#866857
+# pid:754288625
+# eyr:2029
+hgt cm 150 True
+True
+byr 1969 True
+True
+ecl blu ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2023 False
+True
+hcl #866857 6 True <re.Match object; span=(0, 6), match='866857'>
+True
+pid 754288625 9 754288625 True
+True
+eyr 2029 True
+True
+
+newport
+#### ['iyr:2011', 'hcl:#7d3b0c', 'ecl:hzl', 'byr:1930', 'hgt:188cm', 'eyr:2023', 'pid:256556076', 'cid:136']
+# iyr:2011
+# hcl:#7d3b0c
+# ecl:hzl
+# byr:1930
+# hgt:188cm
+# eyr:2023
+# pid:256556076
+# cid:136
+iyr 2011 True
+True
+hcl #7d3b0c 6 True <re.Match object; span=(0, 6), match='7d3b0c'>
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1930 True
+True
+hgt cm 188 True
+True
+eyr 2023 True
+True
+pid 256556076 9 256556076 True
+True
+True
+
+newport
+#### ['iyr:2025', 'byr:1978', 'ecl:#fe30a9', 'hcl:#efcc98', 'eyr:2029', 'pid:392032459', 'hgt:178cm']
+# iyr:2025
+# byr:1978
+# ecl:#fe30a9
+# hcl:#efcc98
+# eyr:2029
+# pid:392032459
+# hgt:178cm
+iyr 2025 False
+True
+byr 1978 True
+True
+ecl #fe30a9 ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+True
+eyr 2029 True
+True
+pid 392032459 9 392032459 True
+True
+hgt cm 178 True
+True
+
+newport
+#### ['eyr:2027', 'iyr:2017', 'hgt:160in', 'byr:1990', 'pid:131099122', 'hcl:#623a2f', 'ecl:amb']
+# eyr:2027
+# iyr:2017
+# hgt:160in
+# byr:1990
+# pid:131099122
+# hcl:#623a2f
+# ecl:amb
+eyr 2027 True
+True
+iyr 2017 True
+True
+hgt in 160 False
+True
+byr 1990 True
+True
+pid 131099122 9 131099122 True
+True
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['ecl:grn', 'byr:1978', 'eyr:2029', 'hcl:#18171d', 'hgt:165cm', 'pid:172369888', 'cid:93', 'iyr:2011']
+# ecl:grn
+# byr:1978
+# eyr:2029
+# hcl:#18171d
+# hgt:165cm
+# pid:172369888
+# cid:93
+# iyr:2011
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1978 True
+True
+eyr 2029 True
+True
+hcl #18171d 6 True <re.Match object; span=(0, 6), match='18171d'>
+True
+hgt cm 165 True
+True
+pid 172369888 9 172369888 True
+True
+True
+iyr 2011 True
+True
+
+newport
+#### ['ecl:hzl', 'hcl:#733820', 'iyr:2010', 'eyr:2029', 'pid:127253449', 'hgt:156cm', 'byr:1963']
+# ecl:hzl
+# hcl:#733820
+# iyr:2010
+# eyr:2029
+# pid:127253449
+# hgt:156cm
+# byr:1963
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #733820 6 True <re.Match object; span=(0, 6), match='733820'>
+True
+iyr 2010 True
+True
+eyr 2029 True
+True
+pid 127253449 9 127253449 True
+True
+hgt cm 156 True
+True
+byr 1963 True
+True
+
+newport
+#### ['hcl:#6c8530', 'iyr:2020', 'byr:1929', 'eyr:2021', 'hgt:177cm', 'ecl:oth', 'pid:347925482']
+# hcl:#6c8530
+# iyr:2020
+# byr:1929
+# eyr:2021
+# hgt:177cm
+# ecl:oth
+# pid:347925482
+hcl #6c8530 6 True <re.Match object; span=(0, 6), match='6c8530'>
+True
+iyr 2020 True
+True
+byr 1929 True
+True
+eyr 2021 True
+True
+hgt cm 177 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 347925482 9 347925482 True
+True
+
+newport
+#### ['eyr:2037', 'iyr:2026', 'pid:163cm', 'hgt:174in', 'byr:2007', 'hcl:c1305f', 'cid:134', 'ecl:#0cf85c']
+# eyr:2037
+# iyr:2026
+# pid:163cm
+# hgt:174in
+# byr:2007
+# hcl:c1305f
+# cid:134
+# ecl:#0cf85c
+eyr 2037 False
+True
+iyr 2026 False
+True
+True
+hgt in 174 False
+True
+byr 2007 False
+True
+True
+True
+ecl #0cf85c ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+
+newport
+#### ['iyr:2011', 'pid:033811215', 'hcl:#a97842', 'byr:2002', 'eyr:2021', 'hgt:186cm', 'ecl:brn']
+# iyr:2011
+# pid:033811215
+# hcl:#a97842
+# byr:2002
+# eyr:2021
+# hgt:186cm
+# ecl:brn
+iyr 2011 True
+True
+pid 33811215 9 033811215 True
+True
+hcl #a97842 6 True <re.Match object; span=(0, 6), match='a97842'>
+True
+byr 2002 True
+True
+eyr 2021 True
+True
+hgt cm 186 True
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['hcl:#a97842', 'iyr:2020', 'eyr:2029', 'byr:1972', 'pid:535511110', 'hgt:160cm', 'ecl:oth']
+# hcl:#a97842
+# iyr:2020
+# eyr:2029
+# byr:1972
+# pid:535511110
+# hgt:160cm
+# ecl:oth
+hcl #a97842 6 True <re.Match object; span=(0, 6), match='a97842'>
+True
+iyr 2020 True
+True
+eyr 2029 True
+True
+byr 1972 True
+True
+pid 535511110 9 535511110 True
+True
+hgt cm 160 True
+True
+ecl oth ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['ecl:grn', 'cid:89', 'hgt:193cm', 'pid:73793987', 'iyr:2021', 'eyr:2027', 'byr:1939', 'hcl:z']
+# ecl:grn
+# cid:89
+# hgt:193cm
+# pid:73793987
+# iyr:2021
+# eyr:2027
+# byr:1939
+# hcl:z
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+hgt cm 193 True
+True
+pid 73793987 8 73793987 False
+True
+iyr 2021 False
+True
+eyr 2027 True
+True
+byr 1939 True
+True
+True
+
+newport
+#### ['hcl:#623a2f', 'hgt:182cm', 'cid:154', 'pid:873863966', 'iyr:2018', 'byr:1999', 'ecl:brn', 'eyr:2031']
+# hcl:#623a2f
+# hgt:182cm
+# cid:154
+# pid:873863966
+# iyr:2018
+# byr:1999
+# ecl:brn
+# eyr:2031
+hcl #623a2f 6 True <re.Match object; span=(0, 6), match='623a2f'>
+True
+hgt cm 182 True
+True
+True
+pid 873863966 9 873863966 True
+True
+iyr 2018 True
+True
+byr 1999 True
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2031 False
+True
+
+newport
+#### ['iyr:2014', 'eyr:2029', 'cid:71', 'hcl:#fffffd', 'byr:1924', 'hgt:63in', 'ecl:gry', 'pid:897972798']
+# iyr:2014
+# eyr:2029
+# cid:71
+# hcl:#fffffd
+# byr:1924
+# hgt:63in
+# ecl:gry
+# pid:897972798
+iyr 2014 True
+True
+eyr 2029 True
+True
+True
+hcl #fffffd 6 True <re.Match object; span=(0, 6), match='fffffd'>
+True
+byr 1924 True
+True
+hgt in 63 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 897972798 9 897972798 True
+True
+
+newport
+#### ['hgt:76cm', 'hcl:z', 'eyr:1955', 'iyr:2012', 'byr:2001', 'pid:9425090', 'ecl:hzl']
+# hgt:76cm
+# hcl:z
+# eyr:1955
+# iyr:2012
+# byr:2001
+# pid:9425090
+# ecl:hzl
+hgt cm 76 False
+True
+True
+eyr 1955 False
+True
+iyr 2012 True
+True
+byr 2001 True
+True
+pid 9425090 7 9425090 False
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['eyr:2021', 'pid:501861442', 'ecl:grn', 'hcl:#d71ae9', 'byr:1977', 'hgt:167cm', 'iyr:2015']
+# eyr:2021
+# pid:501861442
+# ecl:grn
+# hcl:#d71ae9
+# byr:1977
+# hgt:167cm
+# iyr:2015
+eyr 2021 True
+True
+pid 501861442 9 501861442 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #d71ae9 6 True <re.Match object; span=(0, 6), match='d71ae9'>
+True
+byr 1977 True
+True
+hgt cm 167 True
+True
+iyr 2015 True
+True
+
+newport
+#### ['iyr:2014', 'hgt:170cm', 'ecl:gry', 'byr:1928', 'cid:314', 'hcl:#602927', 'eyr:2029', 'pid:836710987']
+# iyr:2014
+# hgt:170cm
+# ecl:gry
+# byr:1928
+# cid:314
+# hcl:#602927
+# eyr:2029
+# pid:836710987
+iyr 2014 True
+True
+hgt cm 170 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+byr 1928 True
+True
+True
+hcl #602927 6 True <re.Match object; span=(0, 6), match='602927'>
+True
+eyr 2029 True
+True
+pid 836710987 9 836710987 True
+True
+
+newport
+#### ['eyr:2027', 'hcl:#efcc98', 'ecl:amb', 'iyr:2016', 'byr:1995', 'pid:603705616', 'hgt:179cm']
+# eyr:2027
+# hcl:#efcc98
+# ecl:amb
+# iyr:2016
+# byr:1995
+# pid:603705616
+# hgt:179cm
+eyr 2027 True
+True
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2016 True
+True
+byr 1995 True
+True
+pid 603705616 9 603705616 True
+True
+hgt cm 179 True
+True
+
+newport
+#### ['eyr:2030', 'hcl:#602927', 'cid:105', 'byr:1943', 'ecl:hzl', 'pid:381601507', 'hgt:188cm', 'iyr:2020']
+# eyr:2030
+# hcl:#602927
+# cid:105
+# byr:1943
+# ecl:hzl
+# pid:381601507
+# hgt:188cm
+# iyr:2020
+eyr 2030 True
+True
+hcl #602927 6 True <re.Match object; span=(0, 6), match='602927'>
+True
+True
+byr 1943 True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 381601507 9 381601507 True
+True
+hgt cm 188 True
+True
+iyr 2020 True
+True
+
+newport
+#### ['iyr:2011', 'byr:1993', 'hcl:#c0946f', 'pid:292649640', 'hgt:139', 'ecl:hzl', 'cid:268', 'eyr:1999']
+# iyr:2011
+# byr:1993
+# hcl:#c0946f
+# pid:292649640
+# hgt:139
+# ecl:hzl
+# cid:268
+# eyr:1999
+iyr 2011 True
+True
+byr 1993 True
+True
+hcl #c0946f 6 True <re.Match object; span=(0, 6), match='c0946f'>
+True
+pid 292649640 9 292649640 True
+True
+True
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+eyr 1999 False
+True
+
+newport
+#### ['cid:339', 'byr:1928', 'ecl:brn', 'eyr:2022', 'hcl:#733820', 'hgt:191cm', 'pid:282733347', 'iyr:2019']
+# cid:339
+# byr:1928
+# ecl:brn
+# eyr:2022
+# hcl:#733820
+# hgt:191cm
+# pid:282733347
+# iyr:2019
+True
+byr 1928 True
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2022 True
+True
+hcl #733820 6 True <re.Match object; span=(0, 6), match='733820'>
+True
+hgt cm 191 True
+True
+pid 282733347 9 282733347 True
+True
+iyr 2019 True
+True
+
+newport
+#### ['hgt:176cm', 'byr:1935', 'ecl:brn', 'cid:252', 'eyr:2023', 'pid:105060622', 'iyr:2020', 'hcl:#18171d']
+# hgt:176cm
+# byr:1935
+# ecl:brn
+# cid:252
+# eyr:2023
+# pid:105060622
+# iyr:2020
+# hcl:#18171d
+hgt cm 176 True
+True
+byr 1935 True
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+True
+eyr 2023 True
+True
+pid 105060622 9 105060622 True
+True
+iyr 2020 True
+True
+hcl #18171d 6 True <re.Match object; span=(0, 6), match='18171d'>
+True
+
+newport
+#### ['ecl:hzl', 'eyr:2029', 'hgt:193cm', 'pid:770254253', 'hcl:#efcc98', 'iyr:2020', 'byr:1926']
+# ecl:hzl
+# eyr:2029
+# hgt:193cm
+# pid:770254253
+# hcl:#efcc98
+# iyr:2020
+# byr:1926
+ecl hzl ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2029 True
+True
+hgt cm 193 True
+True
+pid 770254253 9 770254253 True
+True
+hcl #efcc98 6 True <re.Match object; span=(0, 6), match='efcc98'>
+True
+iyr 2020 True
+True
+byr 1926 True
+True
+
+newport
+#### ['pid:977785261', 'eyr:2022', 'iyr:2015', 'byr:1978', 'hcl:#733820', 'hgt:172cm', 'ecl:brn']
+# pid:977785261
+# eyr:2022
+# iyr:2015
+# byr:1978
+# hcl:#733820
+# hgt:172cm
+# ecl:brn
+pid 977785261 9 977785261 True
+True
+eyr 2022 True
+True
+iyr 2015 True
+True
+byr 1978 True
+True
+hcl #733820 6 True <re.Match object; span=(0, 6), match='733820'>
+True
+hgt cm 172 True
+True
+ecl brn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['byr:2021', 'hgt:160in', 'ecl:gmt', 'eyr:2032', 'cid:345', 'pid:179cm', 'hcl:8f5c13', 'iyr:2029']
+# byr:2021
+# hgt:160in
+# ecl:gmt
+# eyr:2032
+# cid:345
+# pid:179cm
+# hcl:8f5c13
+# iyr:2029
+byr 2021 False
+True
+hgt in 160 False
+True
+ecl gmt ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+eyr 2032 False
+True
+True
+True
+True
+iyr 2029 False
+True
+
+newport
+#### ['iyr:2018', 'hgt:182cm', 'ecl:gry', 'pid:897076789', 'eyr:2023', 'hcl:#866857', 'byr:1980']
+# iyr:2018
+# hgt:182cm
+# ecl:gry
+# pid:897076789
+# eyr:2023
+# hcl:#866857
+# byr:1980
+iyr 2018 True
+True
+hgt cm 182 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+pid 897076789 9 897076789 True
+True
+eyr 2023 True
+True
+hcl #866857 6 True <re.Match object; span=(0, 6), match='866857'>
+True
+byr 1980 True
+True
+
+newport
+#### ['hgt:88', 'eyr:2039', 'cid:99', 'byr:2007', 'hcl:a1bb42', 'ecl:#a2f6bb', 'pid:2264966188', 'iyr:2022']
+# hgt:88
+# eyr:2039
+# cid:99
+# byr:2007
+# hcl:a1bb42
+# ecl:#a2f6bb
+# pid:2264966188
+# iyr:2022
+True
+eyr 2039 False
+True
+True
+byr 2007 False
+True
+True
+ecl #a2f6bb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] False
+True
+pid 2264966188 10 2264966188 False
+True
+iyr 2022 False
+True
+
+newport
+#### ['iyr:2012', 'cid:59', 'ecl:gry', 'eyr:2021', 'byr:1931', 'hgt:172cm', 'hcl:#7d3b0c', 'pid:862416147']
+# iyr:2012
+# cid:59
+# ecl:gry
+# eyr:2021
+# byr:1931
+# hgt:172cm
+# hcl:#7d3b0c
+# pid:862416147
+iyr 2012 True
+True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2021 True
+True
+byr 1931 True
+True
+hgt cm 172 True
+True
+hcl #7d3b0c 6 True <re.Match object; span=(0, 6), match='7d3b0c'>
+True
+pid 862416147 9 862416147 True
+True
+
+newport
+#### ['byr:1962', 'eyr:2025', 'ecl:grn', 'hcl:#866857', 'hgt:180cm', 'iyr:2014', 'pid:313647071']
+# byr:1962
+# eyr:2025
+# ecl:grn
+# hcl:#866857
+# hgt:180cm
+# iyr:2014
+# pid:313647071
+byr 1962 True
+True
+eyr 2025 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #866857 6 True <re.Match object; span=(0, 6), match='866857'>
+True
+hgt cm 180 True
+True
+iyr 2014 True
+True
+pid 313647071 9 313647071 True
+True
+
+newport
+#### ['eyr:2030', 'hgt:157cm', 'byr:1985', 'iyr:2020', 'hcl:#7d3b0c', 'pid:911544768', 'ecl:grn']
+# eyr:2030
+# hgt:157cm
+# byr:1985
+# iyr:2020
+# hcl:#7d3b0c
+# pid:911544768
+# ecl:grn
+eyr 2030 True
+True
+hgt cm 157 True
+True
+byr 1985 True
+True
+iyr 2020 True
+True
+hcl #7d3b0c 6 True <re.Match object; span=(0, 6), match='7d3b0c'>
+True
+pid 911544768 9 911544768 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+
+newport
+#### ['hgt:175cm', 'byr:1938', 'iyr:2020', 'ecl:amb', 'hcl:#602927', 'eyr:2026', 'pid:144411560']
+# hgt:175cm
+# byr:1938
+# iyr:2020
+# ecl:amb
+# hcl:#602927
+# eyr:2026
+# pid:144411560
+hgt cm 175 True
+True
+byr 1938 True
+True
+iyr 2020 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #602927 6 True <re.Match object; span=(0, 6), match='602927'>
+True
+eyr 2026 True
+True
+pid 144411560 9 144411560 True
+True
+
+newport
+#### ['iyr:2019', 'ecl:amb', 'hcl:#888785', 'eyr:2025', 'hgt:187cm', 'pid:942054361', 'byr:1939']
+# iyr:2019
+# ecl:amb
+# hcl:#888785
+# eyr:2025
+# hgt:187cm
+# pid:942054361
+# byr:1939
+iyr 2019 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+hcl #888785 6 True <re.Match object; span=(0, 6), match='888785'>
+True
+eyr 2025 True
+True
+hgt cm 187 True
+True
+pid 942054361 9 942054361 True
+True
+byr 1939 True
+True
+
+newport
+#### ['cid:168', 'pid:722146139', 'byr:1952', 'ecl:grn', 'iyr:2014', 'hgt:97', 'hcl:z', 'eyr:2023']
+# cid:168
+# pid:722146139
+# byr:1952
+# ecl:grn
+# iyr:2014
+# hgt:97
+# hcl:z
+# eyr:2023
+True
+pid 722146139 9 722146139 True
+True
+byr 1952 True
+True
+ecl grn ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2014 True
+True
+True
+True
+eyr 2023 True
+True
+
+newport
+#### ['eyr:2024', 'pid:567528498', 'ecl:gry', 'iyr:2012', 'byr:1990', 'hcl:#733820', 'hgt:193cm', 'cid:293']
+# eyr:2024
+# pid:567528498
+# ecl:gry
+# iyr:2012
+# byr:1990
+# hcl:#733820
+# hgt:193cm
+# cid:293
+eyr 2024 True
+True
+pid 567528498 9 567528498 True
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2012 True
+True
+byr 1990 True
+True
+hcl #733820 6 True <re.Match object; span=(0, 6), match='733820'>
+True
+hgt cm 193 True
+True
+True
+
+newport
+#### ['hcl:#bc352c', 'pid:321838059', 'byr:1930', 'hgt:178cm', 'cid:213', 'eyr:2023', 'ecl:amb', 'iyr:2017']
+# hcl:#bc352c
+# pid:321838059
+# byr:1930
+# hgt:178cm
+# cid:213
+# eyr:2023
+# ecl:amb
+# iyr:2017
+hcl #bc352c 6 True <re.Match object; span=(0, 6), match='bc352c'>
+True
+pid 321838059 9 321838059 True
+True
+byr 1930 True
+True
+hgt cm 178 True
+True
+True
+eyr 2023 True
+True
+ecl amb ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+iyr 2017 True
+True
+
+newport
+#### ['hgt:173cm', 'byr:1925', 'pid:070222017', 'iyr:2013', 'hcl:#ceb3a1', 'ecl:gry', 'eyr:2024']
+# hgt:173cm
+# byr:1925
+# pid:070222017
+# iyr:2013
+# hcl:#ceb3a1
+# ecl:gry
+# eyr:2024
+hgt cm 173 True
+True
+byr 1925 True
+True
+pid 70222017 9 070222017 True
+True
+iyr 2013 True
+True
+hcl #ceb3a1 6 True <re.Match object; span=(0, 6), match='ceb3a1'>
+True
+ecl gry ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth'] True
+True
+eyr 2024 True
+True
+
+newport
+Part2: 175
