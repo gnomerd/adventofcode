@@ -8,20 +8,18 @@ inp = get_input(4)
 
 newPort = "\n\n"
 
-validPara = ["byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid", "cid"] # NOTE excluade cid later
-
+specialPara =  ["byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"]
+eyecolors = "amb blu brn gry grn hzl oth".split(" ")
 
 ports = inp.split(newPort)
 
-def getPorts(port):
+def getPortsParam(port):
     port = port.replace("\n", " ")
 
     paras = port.split(" ")
     out = []
-    #print("####", paras)
 
     for p in paras:
-        #print("#",p)
         if( p != "" ):
             para = re.match("(\w+):", p).groups()[0]
             out.append(para)
@@ -31,7 +29,7 @@ def getPorts(port):
 def checkPorts(ports, valids, ignore:list = ["cid"]):
     paras = []
     for p in ports:
-        paras.append(getPorts(p))
+        paras.append(getPortsParam(p))
 
     count = 0
 
@@ -43,15 +41,7 @@ def checkPorts(ports, valids, ignore:list = ["cid"]):
 
     return count
 
-            
-
-specialPara =  ["byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"]
-# pcheck = checkPorts(ports, specialPara)
-
-
-# print(pcheck)
-
-def getPortsYes(port):
+def getPortsValParam(port):
     port = port.replace("\n", " ")
 
     paras = port.split(" ")
@@ -64,9 +54,6 @@ def getPortsYes(port):
             out.append([para, val])
 
     return out
-
-
-eyecolors = "amb blu brn gry grn hzl oth".split(" ")
 
 def checkVal(par, val):
     valid = True
@@ -131,29 +118,21 @@ def checkPortsVALID( ports, paras ):
 
 
     for port in ports:
-        ps = getPortsYes(port)
-        parasPort = getPorts(port)
+        ps = getPortsValParam(port)
+        parasPort = getPortsParam(port)
         portsValid = True
         portsValid2 = True
 
-        #for para in ps2:
-
         check2 = all(p in parasPort  for p in paras)
         if( not check2 ):
-            print("FALSE:", parasPort, "####", paras )
             portsValid2 = False
 
         for p in ps:
             if(p != ""):
                 param = p[0]
                 val = p[1]
-                #print("|<", param, val)
 
                 check1 = checkVal(param, val)
-
-
-                #print(check2)
-
                 if(check1 == False):
                     portsValid = False
 
@@ -161,11 +140,10 @@ def checkPortsVALID( ports, paras ):
         if( portsValid == True and portsValid2 == True ):
             count += 1
 
-        print("\nnewport")
-
     return count
 
 check1 = checkPorts(ports, specialPara)
 pcheck2 = checkPortsVALID( ports, specialPara )
 
-print("Part2:", check1, pcheck2)
+print("Part1:", check1)
+print("Part2:", pcheck2)
