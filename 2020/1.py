@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+from aoc import get_input
+
+nums = get_input(1).splitlines() 
+
 
 def getNums(nums):
     numsLen = len(nums)
@@ -22,9 +26,6 @@ def getNumsPart2(nums):
                     return nums[i], nums[j], nums[k]
 
     print("None found")
-
-inp = open("input", "r")
-nums = inp.read().splitlines()
 
 nums = list(map(int, nums))
 print(nums)
