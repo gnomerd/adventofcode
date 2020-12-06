@@ -41,24 +41,18 @@ def countQuestionsAll( group ):
         if( person != "" and person != None ):
             personsLen += 1
             chars = toList(person)
-            print(person, "#", chars)
             for char in chars:
                 if( char and char != "" ):
                     groupQs.append(char)
 
 
-    print("GRP", groupQs)
     allQs = 0
     seenQ = []
     for q in groupQs:
         num = groupQs.count(q)
-        print( "q:", q, "num", num, personsLen, end="" )
         if(num == personsLen and not q in seenQ):
-            print(" valid")
             seenQ.append(q)
             allQs += 1
-        else:
-            print(" not valid")
 
     print(allQs)
 
@@ -77,4 +71,6 @@ for group in groups:
     grpAll += num2
     grpAllList.append(num2)
 
-print("\n", grpCount, grpAll)
+print("----")
+print("Part1:", grpCount)
+print("Part2:", grpAll)
