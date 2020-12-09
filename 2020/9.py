@@ -3,14 +3,14 @@
 from aoc import get_input # AoC
 import re # regex
 
-nums = list(map(int, get_input(9).splitlines() ))
+nums = list(map(int, get_input(9).splitlines()))
 
 
 def checkValid(nums, numsum):
     for num1 in nums:
         for num2 in nums:
             if( num1 + num2 == numsum and num1 != num2 ):
-                return  [num1, num2], numsum
+                return [num1, num2], numsum
 
     return False, numsum
 
@@ -32,20 +32,13 @@ for i in range(len(nums)):
             invalid, invalidindex = valid[1], i
             break
 
-def sumlist(l):
-    ssum = 0
-    for num in l:
-        ssum += num
-    return ssum
-
-
 stop = False
 foundnums = []
 for i in range(len(nums)):
     for rangei in range(len(nums)):
         numlist = nums[i-rangei:i]
         if( not invalid in numlist ):
-            sumnums = sumlist(numlist)
+            sumnums = sum(numlist)
 
             if(sumnums == invalid):
                 foundnums = numlist
