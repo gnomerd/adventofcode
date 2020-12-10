@@ -25,7 +25,6 @@ for i in range(len(jolts)):
 
 diff1, diff3 = diffs.count(1), diffs.count(3)
 part1 = diff1 * diff3
-print(part1)
 
 
 # part 2
@@ -49,5 +48,6 @@ def countCombos(i, count=0):
 
         
 
-count = countCombos(0)
-print("####################", count)
+part2 = countCombos(0)
+
+print(part1, part2)
