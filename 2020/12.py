@@ -140,16 +140,11 @@ def runNavWay( nav, way, pos ):
 
     return pos, way
 
+
+
 for nav in navigation:
     boatpos, boatfacing, boatfacingIndex = runNav(nav, boatpos, boatfacing, boatfacingClock, boatfacingIndex)
-
-#print(f"\nPOS {boatfacing=} {boatpos=}")
-
-
-for nav in navigation:
     boatpos2, waypoint = runNavWay(nav, waypoint, boatpos2)
-
-#print(f"\n POS {boatpos2=} {waypoint=}")
 
 print("Part1:", calcDistance(boatpos))
 print("Part2:", calcDistance(boatpos2))
