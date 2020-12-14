@@ -101,7 +101,6 @@ for i in range( len(data) ):
         dec_val, dec_oldval = bintodec(val), bintodec(oldval)
 
         mem[address] = dec_val
-        membin[address] = val
 
         # apply mask to address
         address = dectobin(int(address))
@@ -119,7 +118,7 @@ memsum, memsum2 = 0, 0
 for addr, val in mem.items():
     memsum += val
 
-for addr, val in mem.items():
+for addr, val in mem2.items():
     memsum2 += val
 
 print("Part1:", memsum)
