@@ -41,10 +41,6 @@ def applyMask( _bin, mask, includeX=False ):
 
     return listToString(newbin)
 
-
-def copyList(lst):
-    return [elem  for elem in lst]
-
 def getallcombs(xlen):
     return [list(i) for i in it.product(["0", "1"], repeat=xlen)]
 
@@ -58,7 +54,7 @@ def getAddressCombos(mask, addr):
 
     for comb in combs:
         xcount = 0
-        newaddrlist = copyList(addrlist)
+        newaddrlist = [addr for addr in addrlist]
         for i in range( len(newaddrlist) ):
             char = newaddrlist[i]
             maskchar = mask[i]
@@ -74,9 +70,7 @@ def getAddressCombos(mask, addr):
     return addrcombos
 
 # Part 1 & 2
-
-curMask = None
-mem, mem2 = dict(), dict()
+mem, mem2, curMask = dict(), dict(), None
 
 for line in data:
     address, val = parseLine(line)
