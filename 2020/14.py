@@ -92,9 +92,7 @@ curMask = None
 mem = dict()
 mem2 = dict()
 
-for i in range( len(data) ):
-    line = data[i]
-
+for line in data:
     address, val = parseLine(line)
     if( address != "mask" ):
         val, oldval = applyMask(val, curMask)
@@ -114,12 +112,7 @@ for i in range( len(data) ):
         curMask = val
         continue
 
-memsum, memsum2 = 0, 0
-for addr, val in mem.items():
-    memsum += val
-
-for addr, val in mem2.items():
-    memsum2 += val
+memsum, memsum2 = sum(mem.values()), sum(mem2.values())
 
 print("Part1:", memsum)
 print("Part2:", memsum2)
