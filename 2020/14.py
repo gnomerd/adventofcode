@@ -31,26 +31,15 @@ def parseLine(line):
         op, mask = line.split(" = ")
         return op, mask
 
-def applyMask( _bin, mask ):
+def applyMask( _bin, mask, includeX=False ):
     newbin = []
     newbin[:0] = _bin
 
     for i in range(len(mask)):
-        if( mask[i] != "X" ):
+        if( mask[i] != "X" or includeX ):
             newbin[i] = mask[i]
 
-    return listToString(newbin), _bin
-
-def applyMask2( addr, mask ):
-    newaddr = []
-    newaddr[:0] = addr
-
-    print(addr, len(addr))
-
-    for i in range(len(mask)):
-        newaddr[i] = mask[i]
-
-    return listToString(newaddr)
+    return listToString(newbin)
 
 
 def copyList(lst):
@@ -62,9 +51,8 @@ def getallcombs(xlen):
 def getAddressCombos(mask, addr):
     addrlist = []
     addrlist[:0] = addr
-    xlen = mask.count("X")
 
-    combs = getallcombs(xlen)
+    combs = getallcombs( mask.count("X") )
 
     addrcombos = []
 
