@@ -85,12 +85,10 @@ def getAddressCombos(mask, addr):
 
     return addrcombos
 
-
 # Part 1 & 2
 
 curMask = None
-mem = dict()
-mem2 = dict()
+mem, mem2 = dict(), dict()
 
 for line in data:
     address, val = parseLine(line)
