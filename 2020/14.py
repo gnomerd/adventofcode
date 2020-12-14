@@ -81,8 +81,8 @@ mem, mem2 = dict(), dict()
 for line in data:
     address, val = parseLine(line)
     if( address != "mask" ):
-        val, oldval = applyMask(val, curMask)
-        dec_val, dec_oldval = bintodec(val), bintodec(oldval)
+        val = applyMask(val, curMask)
+        dec_val = bintodec(val)
 
         mem[address] = dec_val
 
