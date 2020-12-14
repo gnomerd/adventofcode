@@ -2,6 +2,7 @@
 
 from aoc import get_input # AoC
 import re # regex
+import itertools as it
 
 data = get_input(14).splitlines()
 
@@ -52,8 +53,6 @@ def applyMask2( addr, mask ):
     return listToString(newaddr)
 
 
-import itertools as it
-
 def copyList(lst):
     return [elem  for elem in lst]
 
@@ -86,56 +85,42 @@ def getAddressCombos(mask, addr):
 
     return addrcombos
 
-    
+
+# Part 1 & 2
 
 curMask = None
 mem = dict()
-membin = dict()
+mem2 = dict()
 
 for i in range( len(data) ):
     line = data[i]
-    print(line)
-    address, val = parseLine(line)
 
+    address, val = parseLine(line)
     if( address != "mask" ):
+        val, oldval = applyMask(val, curMask)
+        dec_val, dec_oldval = bintodec(val), bintodec(oldval)
+
+        mem[address] = dec_val
+        membin[address] = val
+
         # apply mask to address
         address = dectobin(int(address))
         addrlist = getAddressCombos(curMask, address)
 
         for addr in addrlist:
             decaddr = bintodec(addr)
-            print(f"{decaddr=} : {val=} = {bintodec(val)}")
-            mem[decaddr] = bintodec(val)
+            mem2[decaddr] = bintodec(val)
 
     else:
         curMask = val
+        continue
 
-memsum2 = 0
+memsum, memsum2 = 0, 0
+for addr, val in mem.items():
+    memsum += val
+
 for addr, val in mem.items():
     memsum2 += val
 
-print(memsum2)
-
-# for i in range( len(data) ):
-#     line = data[i]
-
-#     address, val = parseLine(line)
-#     # print( f"{i=}  {address=} {val=}" )
-#     #
-#     if( address != "mask" ):
-#         val, oldval = applyMask(val, curMask)
-#         dec_val, dec_oldval = bintodec(val), bintodec(oldval)
-
-#         mem[address] = dec_val
-#         membin[address] = val
-
-#     else:
-#         curMask = val
-#         continue
-
-# memsum = 0
-# for addr, val in mem.items():
-#     memsum += val
-
-# print(mem)
-# print(memsum)
+print("Part1:", memsum)
+print("Part2:", memsum2)
