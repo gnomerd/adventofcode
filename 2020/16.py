@@ -2,6 +2,7 @@
 
 from aoc import get_input # AoC
 import re # regex
+from collections import defaultdict as dd
 
 data = get_input(16).strip()
 
@@ -14,7 +15,7 @@ tickets.pop(0)
 
 
 def parseParam(param):
-    name, rnga1, rnga2, rngb1, rngb2 = re.match(r"([a-z\ ]+): ([0-9]+)-([0-9]+) or ([0-9]+)-([0-9]+)", param).groups()
+    name, rnga1, rnga2, rngb1, rngb2 = re.match(r"(\w+ *\w*): ([0-9]+)-([0-9]+) or ([0-9]+)-([0-9]+)", param).groups()
 
     rng1 = range(int(rnga1), int(rnga2) + 1)
     rng2 = range(int(rngb1), int(rngb2) + 1)
@@ -30,6 +31,8 @@ for i in range(len(params)):
 
 def parseTicket(ticket):
     return [int(n) for n in ticket.split(",")]
+
+myticket = parseTicket(myticket)
 
 badvals = []
 
@@ -53,11 +56,7 @@ for i in range(len(tickets)):
                 break
 
         if( not valid ):
-            print(f"Bad: {ticket=} {any(checks)=}")
             goodtickets.remove(ticket)
-
-
-print("\nPart1:", sum(badvals))
 
 
 tickets = [parseTicket(t) for t in goodtickets]
@@ -65,85 +64,49 @@ tickets = [parseTicket(t) for t in goodtickets]
 ticketlen = len(tickets[0])
 
 
-# make seen list for param and index
-#
-# go through all indexes, i=0
-# make list of possibleParams for that i
-# # go through all tickets for i
-# # # go through all params
-# # # # check if ticket[i] is in param range
-# # # # # if not then remove param from iparams
-# # # # # else next param
-# take first param
-# exclude param from list and exclude index from list
-# next index
 
-
-
-seenparams = []
-seenindex = []
-
-paramsIndex = dict()
-
-def getPosParams(i):
-    iparams = dict()
-    possibleParams = []
-    for p in params:
-        paramclass, rng1, rng2 = parseParam(p)
-        iparams[paramclass] = (rng1, rng2)
-        possibleParams.append(paramclass)
-
-    for t in goodtickets:
-        ticket = parseTicket(t)
-        num = ticket[i]
-
-        for param, rng in iparams.items():
-
-            check = num in rng[0] or num in rng[1]
-            if(not check and param in possibleParams):
-                possibleParams.remove(param)
-            else:
-                continue
-
-    return possibleParams
-
+works = dd(set)
 
 for i in range(ticketlen):
-    posparam = getPosParams(i)
-    posparam.sort(key=len)
-    print(posparam)
+    clthing = dict()
+    for cl, rng in ranges.items():
+        clthing[cl] = 0
 
-    thisparam = None
+    for ticket in goodtickets:
+        ticket = parseTicket(ticket)
+        num = ticket[i]
 
-    for cl in posparam:
-        if(not cl in seenparams):
-            thisparam = cl
-            seenparams.append(cl)
-            break
+        for cl, rng in ranges.items():
+            clcount = 0
+            if(num in rng[0] or num in rng[1]):
+                clcount += 1
+                clthing[cl] += clcount
 
-    paramsIndex[i] = thisparam
 
-print("####", paramsIndex)
+    for cl, count in clthing.items():
+        if( count == len(goodtickets) ):
+            works[i].add(cl)
+
+
+used = set()
+while( any( [len(paramwork) > 1 for paramwork in works.values()] ) ):
+    for index, cl in works.items():
+        if(len(cl) > 1):
+            works[index] = (cl | used) ^ used
+        else:
+            used.add(next(iter(cl)))
+
 thenums = []
+for i, cl in works.items():
+    num = myticket[i]
+    cl = list(cl)
 
-for i, cl in paramsIndex.items():
-    print(f"{cl}: {parseTicket(myticket)[i]}")
-
-    if(cl):
-        if( "departure" in cl ):
-            thenums.append(parseTicket(myticket)[i])
-
+    if( "departure" in cl[0] ):
+        thenums.append(num)
 
 
-
-print(thenums)
 
 import math
 
-print("  1409959524847 !=")
-print("#",math.prod(thenums))
-print("  21095351239483")
-print("  30145908219919 reverse")
-
-print(sum(thenums))
-
+print("Part 1", sum(badvals))
+print("Part 2:", math.prod(thenums))
