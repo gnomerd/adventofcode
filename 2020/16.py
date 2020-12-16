@@ -34,7 +34,6 @@ def parseTicket(ticket):
 badvals = []
 
 goodtickets = [ti  for ti in tickets]
-badtickets = []
 
 for i in range(len(tickets)):
     if( i > 0 ):
@@ -56,293 +55,86 @@ for i in range(len(tickets)):
         if( not valid ):
             print(f"Bad: {ticket=} {any(checks)=}")
             goodtickets.remove(ticket)
-            badtickets.append(ticket)
 
 
 print("\nPart1:", sum(badvals))
 
-# freeranges = ranges
 
-# def getClass(num):
-#     out = None
-#     for cl, rng in freeranges.items():
-#         check1 = num in rng[0]
-#         check2 = num in rng[1]
-#         check = check1 or check2
+tickets = [parseTicket(t) for t in goodtickets]
 
-#         if(check):
-#             freeranges.pop(cl, None)
-#             out = cl
+ticketlen = len(tickets[0])
 
-#             break
-#         else:
-#             continue
 
-#     return out
+# make seen list for param and index
+#
+# go through all indexes, i=0
+# make list of possibleParams for that i
+# # go through all tickets for i
+# # # go through all params
+# # # # check if ticket[i] is in param range
+# # # # # if not then remove param from iparams
+# # # # # else next param
+# take first param
+# exclude param from list and exclude index from list
+# next index
 
-# def getClass2(num):
-#     out = None
-#     for cl, rng in ranges.items():
-#         check1 = num in rng[0]
-#         check2 = num in rng[1]
-#         check = check1 or check2
 
-#         if(check):
-#             out = cl
 
-#             break
-#         else:
-#             continue
-
-#     return out
-
-# print( getClass(3) )
-# print( getClass(9) )
-# print( getClass(18) )
-# print("\n\n\n")
-
-import itertools
-import operator
-
-def most_common(L):
-    SL = sorted((x, i) for i, x in enumerate(L))
-    groups = itertools.groupby(SL, key=operator.itemgetter(0))
-    def _auxfun(g):
-        item, iterable = g
-        count = 0
-        min_index = len(L)
-        for _, where in iterable:
-            count += 1
-            min_index = min(min_index, where)
-        return count, -min_index
-    return max(groups, key=_auxfun)[0]
-
+seenparams = []
 seenindex = []
-classIndex = dict()
 
-#goodtickets.insert( 0, myticket )
-print("####", len(goodtickets), "/" , len(tickets), "valid")
+paramsIndex = dict()
 
-goodtickets = [ parseTicket(t)  for t in goodtickets ]
+def getPosParams(i):
+    iparams = dict()
+    possibleParams = []
+    for p in params:
+        paramclass, rng1, rng2 = parseParam(p)
+        iparams[paramclass] = (rng1, rng2)
+        possibleParams.append(paramclass)
 
-
-def possibleParams(num):
-    possible = []
-    for cl, rng in ranges.items():
-        check1 = num in rng[0]
-        check2 = num in rng[1]
-        check = check1 or check2
-
-        if(check):
-            print(f"POSSIBLE {num=} {cl=}")
-            possible.append(cl)
-
-    return possible
-
-from collections import defaultdict as dd
-
-probIndex = dd(dict)
-
-#print("22222", goodtickets[0])
-
-
-# go through each param
-# get possible indexs
-# take least from possible
-# add index to seen
-
-print(params)
-
-# for param, rng in ranges.items():
-#     print("\nchecking param", param)
-#     possible = {
-#         0: 0,
-#         1: 0,
-#         2: 0,
-#         3: 0,
-#         4: 0,
-#         5: 0,
-#         6: 0,
-#         7: 0,
-#         8: 0,
-#         9: 0,
-#         10: 0,
-#         11: 0,
-#         12: 0,
-#         13: 0,
-#         14: 0,
-#         15: 0,
-#         16: 0,
-#         17: 0,
-#         18: 0,
-#         19: 0
-#     }
-
-#     for ticket in tickets:
-#         for i in range(len(parseTicket(ticket))):
-#             n = parseTicket(ticket)[i]
-
-#             checks = []
-#             for r in rng:
-#                 checks.append( n in r )
-
-#             valid = any(check  for check in checks)
-
-#             print(f"Possible {rng=} {n=} {i=} {param=}", end="")
-
-#             if(valid):
-#                 print(" +1")
-#                 possible[i] += 1
-#             else:
-#                 print("")
-
-#     probIndex[param] = possible
-
-def numIsValid(num, rng):
-    checks = []
-    for r in rng:
-        checks.append( num in r )
-
-    valid = any(check  for check in checks)
-    return valid
-
-
-for i in range( len(goodtickets[0]) ):
-    validcls = []
-
-    for ticket in goodtickets:
+    for t in goodtickets:
+        ticket = parseTicket(t)
         num = ticket[i]
 
-        for cl, rng in ranges.items():
-            valid = numIsValid(num, rng)
+        for param, rng in iparams.items():
 
-            if(valid):
-                validcls.append(cl)
+            check = num in rng[0] or num in rng[1]
+            if(not check and param in possibleParams):
+                possibleParams.remove(param)
+            else:
+                continue
 
-    probIndex[i] = validcls
-
-    
-seenIndex = []
-seenValid = []
-paramPos = dict()
-print("\n\nTHING")
-
-for chari in range( len(goodtickets[0]) ):
-    if( not chari in seenIndex ):
-        valids = probIndex[chari]
-
-        least = 99999999
-        leastparam = None
-        for v in valids:
-            if( valids.count(v) < least and not v in seenValid ):
-                least = valids.count(v)
-                leastparam = v
-
-        print(f"{least=} {leastparam=} {valids=}")
-
-        paramPos[chari] = leastparam
-
-        seenIndex.append(chari)
-        seenValid.append(leastparam)
-
-print(paramPos)
+    return possibleParams
 
 
-# for param, pos in probIndex.items():
-#     if(param in seen):
-#         continue
+for i in range(ticketlen):
+    posparam = getPosParams(i)
+    posparam.sort(key=len)
+    print(posparam)
 
-#     print("\n", param)
+    thisparam = None
 
-#     for i, val in probIndex[param].items():
-#         print(i, val)
+    for cl in posparam:
+        if(not cl in seenparams):
+            thisparam = cl
+            seenparams.append(cl)
+            break
 
+    paramsIndex[i] = thisparam
 
-print(paramPos)
-
-# for i in range(len(goodtickets[0])):
-#     posParams = [ possibleParams( goodtickets[0][i] ) ]
-
-#     for j in range(1, len(goodtickets)):
-#         tick = goodtickets[j]
-#         n = tick[i]
-#         pos = possibleParams( n )
-
-#         posParams.append(pos)
-
-#     probIndex[i] = posParams
-
-
-# print(len(probIndex[19]))
-
-# def checkParamForIndex(i, p):
-#     params = probIndex[i]
-#     # check = all( p in ticket  for ticket in params )
-#     # print("###############", check, len(params))
-
-
-
-
-# for i in range(len(goodtickets[0])):
-#     num = goodtickets[0][i]
-#     numcl = [ getClass(num) ]
-
-#     for j in range(0, len(goodtickets)):
-#         tick = goodtickets[j]
-#         n = tick[i]
-#         nclass = getClass2(n)
-#         if(nclass):
-#             numcl.append(nclass)
-
-#     common = most_common(numcl)
-#     same_count = numcl.count(common)
-#     r = (same_count / len(goodtickets)) * 100
-#     print(f"{i=} {num=} {common=} {same_count=} {r=}% {numcl[0]=}")
-#     probIndex[common][i] = r
-
-# print(probIndex)
-
-# paramIndex = dict()
-
-# for parameter, probs in probIndex.items():
-#     lastProb = 0
-#     bestIndex = None
-#     for i, prob in probs.items():
-#         if( prob > lastProb ):
-#             lastProb = prob
-#             bestIndex = i
-
-#     paramIndex[parameter] = bestIndex
-
-# print("######", paramIndex)
-
-
-# for ticket in tickets:
-#     if( ticket in badtickets ):
-#         continue
-#     #print(ticket)
-
-#     p = parseTicket(ticket)
-
-#     for i in range(len(p)):
-#         check = not i in seenindex
-
-#         if( check ):
-
-#             num = p[i]
-#             cl = getClass(num)
-#             classIndex[cl] = i
-#             seenindex.append(i)
-
-#             continue
-
-
-myticket = parseTicket(myticket)
+print("####", paramsIndex)
 thenums = []
 
-# for cl, i in paramIndex.items():
-#     if( "departure" in cl ):
-#         thenums.append( myticket[i] )
+for i, cl in paramsIndex.items():
+    print(f"{cl}: {parseTicket(myticket)[i]}")
+
+    if(cl):
+        if( "departure" in cl ):
+            thenums.append(parseTicket(myticket)[i])
+
+
+
 
 print(thenums)
 
@@ -355,4 +147,3 @@ print("  30145908219919 reverse")
 
 print(sum(thenums))
 
-print(classIndex)
