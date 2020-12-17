@@ -12,36 +12,26 @@ for i in range(len(config)):
     newlst[:0] = config[i]
     config[i] = newlst
 
-
-
-
-# network is a simple 3D cube
-
-# x * x * x
-
 initlen = len(config[0])
 
+print("Config:")
 print(np.asarray(config))
-print(f"{initlen=}")
 
 cube = np.asarray([ np.zeros((initlen,initlen), int)  for z in range(initlen) ])
-
 cube4 = np.asarray([[ np.zeros((initlen,initlen), int)  for z in range(initlen) ] for w in range(initlen) ])
 
 #apply config to network
-
 cubelen = initlen
 cubelen4 = initlen
 
-configZ = 1
-#cube[configZ] = config
+cycles = 6
 
 for iy in range(len(config)):
     for ix in range(len(config)):
         if(config[iy][ix] == "."):
-            cube[configZ][iy][ix] = 0
+            cube[1][iy][ix] = 0
         else:
-            cube[configZ][iy][ix] = 1
+            cube[1][iy][ix] = 1
 
 for iy, row in enumerate(config):
     for ix, node in enumerate(row):
@@ -51,7 +41,12 @@ for iy, row in enumerate(config):
 
         cube4[1][1][iy][ix] = val
 
-print(cube4, cube4.shape)
+
+
+print("Part 1: Cube shape:", cube.shape)
+print("Part 2: Hypercube shape:", cube4.shape)
+
+
 
 
 def getpos(x, y, z, net=cube):
@@ -134,20 +129,15 @@ def expandCube(net=cube, expand=1):
 
 
 
-#expandCube(cube, cycles)
-cycles = 6
 def runCycle(net, c=0, maxc=cycles, expand=False, ignoreCfgLayer=False):
     if( not c < maxc ):
-        print("Done")
+        print("6 / 6 Done")
         return net
 
     if(expand):
         net, cubelen = expandCube(net, 1)
     newcube = net.copy()
     cubelen = net.shape[0]
-
-    for z in range(cubelen):
-        printLayer(z, net)
 
 
     for iz in range(cubelen):
@@ -178,7 +168,7 @@ def runCycle(net, c=0, maxc=cycles, expand=False, ignoreCfgLayer=False):
 cycles = 6
 def runCycle4(net, c=0, maxc=cycles, expand=False):
     if( not c < maxc ):
-        print("Done")
+        print("6 / 6 Done")
         return net
 
     if(expand):
@@ -209,14 +199,18 @@ def runCycle4(net, c=0, maxc=cycles, expand=False):
     return runCycle4(net, c+1, expand=True)
 
 # Part 1
+print("\nPart 1...")
 cube, cubelen = expandCube(cube, 10)
 endcube = runCycle(cube)
 
 
 # Part 2
+print("\nPart 2...")
 cube4, cubelen4 = expandCube(cube4, 2)
 endcube4 = runCycle4(cube4)
-print("At least it is faster than compiling Firefox Kappa")
+
 
 print("Part1:", np.sum(endcube))
 print("Part2:", np.sum(endcube4))
+
+print("\nAt least it is faster than compiling Firefox Kappa")
