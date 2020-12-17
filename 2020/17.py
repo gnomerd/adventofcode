@@ -127,19 +127,6 @@ def countaround4D(x, y, z, w, net=cube4):
     return count, checkcount
 
 
-def printLayer(z, net=cube):
-    print("Layer ", z)
-    for l in net[z]:
-        for char in l:
-            #print(f"{char} ", end="")
-            if(char):
-                print("# ", end="")
-            else:
-                print(". ", end="")
-        print("")
-    print("----")
-
-
 def expandCube(net=cube, expand=1):
     net = np.pad(net, pad_width=expand, mode='constant', constant_values=0)
     cubelen = net.shape[0]
@@ -181,27 +168,12 @@ def runCycle(net, c=0, maxc=cycles, expand=False, ignoreCfgLayer=False):
 
                 setpos(ix, iy, iz, newnode, newcube)
 
-                print(f"{c=} : {ix=} {iy=} {iz=} / {cubelen=} : {checkdCount=} : {activeCount=} {node=} {newnode=} : {activeCount in [2,3]=}")
-            print("")
 
-
-        # Print the new layers
-        print("orig", end=" ")
-        printLayer(iz, net)
-        print("new", end=" ")
-        printLayer(iz, newcube)
-    #print(newcube)
-
-    print("New cycle\n")
+    print( c, "/", maxc )
     net = newcube
 
     return runCycle(net, c+1, expand=True, ignoreCfgLayer=ignoreCfgLayer)
 
-# print("###################################")
-# cube, cubelen = expandCube(cube, 10)
-# endcube = runCycle(cube)
-# print(endcube)
-# print( np.sum(endcube) )
 
 cycles = 6
 def runCycle4(net, c=0, maxc=cycles, expand=False):
@@ -231,25 +203,20 @@ def runCycle4(net, c=0, maxc=cycles, expand=False):
 
                     setpos4(ix, iy, iz, iw, newnode, newcube)
 
-                    #print(f"{c=} : {ix=} {iy=} {iz=} {iw=} / {cubelen4=} : {checkdCount=} : {activeCount=} {node=} {newnode=} : {activeCount in [2,3]=}")
-                #print("")
-
-
-            # Print the new layers
-            #print("orig", end=" ")
-            #printLayer(iz, net)
-            #print("new", end=" ")
-            #printLayer(iz, newcube)
-
-    #print(newcube)
-
-    #print("New cycle\n")
     print(c, "/", maxc)
     net = newcube
 
     return runCycle4(net, c+1, expand=True)
 
+# Part 1
+cube, cubelen = expandCube(cube, 10)
+endcube = runCycle(cube)
+
+
+# Part 2
 cube4, cubelen4 = expandCube(cube4, 2)
 endcube4 = runCycle4(cube4)
-print(endcube4)
-print( np.sum(endcube4) )
+print("At least it is faster than compiling Firefox Kappa")
+
+print("Part1:", np.sum(endcube))
+print("Part2:", np.sum(endcube4))
