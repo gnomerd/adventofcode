@@ -110,149 +110,184 @@ def lstToStr(lst):
 def copyList(lst):
     return [elem  for elem in lst]
 
-# def addPars(line:str):
+
+
+# def addParsToSub(line:str):
+#     # this function split the strings addition thing
+#     # no parenthesis here
+
+#     addlines = line.split("*") # each element is an addition
+#     #newline = "("
+#     newline = ""
+
+#     for i in range(len(addlines)):
+#         l = addlines[i]
+#         if( i < 1 ):
+#             newline += f"({l})*"
+#         elif( i >= 1 and i < len(addlines)-1 ):
+#             newline += f"({l})*"
+#         elif( i == len(addlines)-1 ):
+#             newline += f"({l})"
+
+#     #newline += ")"
+
+#     return newline
+
+
+# def getLowestPar(par:dict):
+#     bestdiff = None
+#     bestkey = None
+
+#     for key, val in par.items():
+#         diff = val - key
+
+#         if( bestdiff == None ):
+#             bestdiff = diff
+#             bestkey = key
+#             continue
+
+#         if( diff > bestdiff ):
+#             bestdiff = diff
+#             bestkey = key
+#             continue
+
+#     return bestkey
+
+
+
+# def addPars(line:str, usedPar=[]):
+#     line = line.replace(" ", "")
+#     newline = line
+#     count = 0
+
+#     # Get pars etc
+#     pars = findParens(line)
 #     chars = strToList(line)
-#     plusCount = chars.count("+")
 
-#     seekingEnd = None
-#     parsPos = dict()
+#     print(pars)
 
-#     print("#", line)
-#     for i in range(len(chars)):
-#         char = chars[i]
+#     # Get pars with lowest depth
+#     start = getLowestPar(pars)
+#     end = pars[start]+1
 
-#         if(char == "+"):
-#             parsPos[i-1] = None
-#             seekingEnd = i-1
 
-#         if( (char == "*" and seekingEnd != None) ):
-#             parsPos[seekingEnd] = i
-#             seekingEnd = None
+#     # Enclose addition in pars
+#     subline = lstToStr(chars[start:end])
+#     newsubline = addParsToSub(subline)
 
-#         if( seekingEnd != None and i >= len(chars) - 1 ):
-#             parsPos[seekingEnd] = i+1
-#             seekingEnd = None
+#     newline = newline.replace(subline, newsubline)
 
-#         if( seekingEnd != None and char == ")" ):
-#             parsPos[seekingEnd] = i+1
-#             seekingEnd = None
+#     # for start, end in pars.items():
+#     #     if( not start in usedPar ):
+#     #         x, y = start, end+1
+#     #         subline = lstToStr(chars[x:y])
+#     #         newsubline = addParsToSub(subline)
 
-#         print(f"{i=}:{char=} {parsPos=}")
+#     #         newline.replace(subline, newsubline)
+#     #         print(f"{newsubline=}")
+
+#     print("FINAL", newline)
+#     print(subline, newsubline)
+#     print(addParsToSub(newline))
+
+# def addParsRec(line:str, usedPar=[]):
+#     line = line.replace(" ", "")
+#     newline = line
+
+#     pars = findParens(newline)
+
+
+# def addParsRec(line:str, i=0, it=None):
+#     it = it or line.count("(")
+
+#     if( i < it ):
+#         return addParsRec( addParsToSub(line), i+1, it )
+#     else:
+#         return line
+
+
+# def addPars(chars:list):
+#     curDepth = 0
+#     addDepth = 0
+
+#     isSearching = False
 
 #     offset = 0
-#     needEnd = 0
-#     for pstart, pend in parsPos.items():
-#         print("#", pstart, pend)
+#     for i, char in enumerate(chars):
+#         if( char == "(" ):
+#             curDepth += 1
+#         elif( char == ")" ):
+#             curDepth -= 1
 
-#         if(pend != None):
-#             chars.insert(pstart+offset, "(")
-#             offset += 1
+#         if( char == "+" ):
+#             before = chars[i-1+offset]
+#             if(before == ")" or before == "("):
+#                 chars.insert(i+offset, 0)
+#                 offset += 1
 
-#             chars.insert(pend+offset, ")")
-#             offset += 1
-#         else:
-#             chars.insert(pstart+offset, 0)
-#             offset += 1
-#             printMath(chars)
+#             curDepth2 = curDepth
+#             for di, char2 in enumerate(chars[i+1:]):
 
-#             chars.insert(pstart+offset, "+")
-#             offset += 1
-#             printMath(chars)
+#                 if( char2 == "(" ):
+#                     curDepth2 += 1
+#                 elif( char2 == ")" ):
+#                     curDepth2 -= 1
 
-#             chars.insert(pstart+offset-2, "(")
-#             offset += 1
-#             printMath(chars)
+#                 print(f"{i=} : {di+1=} {char=} {char2=} {curDepth=}/{curDepth2=}")
 
-#             needEnd += 1
+#                 if( char2 == "*" and curDepth == curDepth2 ):
+#                     chars.insert(i+offset+di, ")")
+#                     offset += 1
 
-#     for i in range(needEnd):
-#         chars.append(")")
 
-#     print("RES", end=" ")
-#     printMath(chars)
+
+#         # if( char == "+" and not isSearching ):
+#         #     chars.insert(i-1+offset, "(")
+#         #     addDepth = curDepth
+#         #     isSearching = True
+#         #     offset += 1
+
+#         # elif( char == "*" and curDepth == addDepth ):
+#         #     chars.insert(i+offset, ")")
 
 #     return chars
 
-# import ast
+# addPars( strToList("2*3+(4*5)") )
 
-# def recurse(node):
-#     out = ""
-#     if( isinstance(node, ast.Add) ):
-
-
-# def addPars(line:str):
-#     out = strToList(line)
-
-#     offset = 0
-#     parDepth = 0
-#     seekingClose = False
-
-#     startFound = None
-#     endFound = None
-
-#     for i in range(len(line)):
-#         char = line[i]
-#         prefix = "-----"
-
-#         if( char == "+" and not seekingClose ):
-#             out.insert(i - 1 + offset, "(" )
-#             seekingClose = True
-#             startFound = i-1+offset
-#             offset += 1
-
-
-#             prefix = "start"
-
-#         elif( char == "(" ):
-#             parDepth += 1
-#         elif( char == ")" ):
-#             parDepth -= 1
-
-#         elif( (char == "*") and seekingClose and parDepth == 0 ):
-#             out.insert(i + offset, ")")
-#             offset += 1
-#             seekingClose = False
-#             endFound = i+offset
-
-#             prefix = "close"
-
-
-
-#         math = lstToStr(out)
-#         print(f"{prefix} {i=}:{char=} {math=} {offset=}")
-
-#     return out
-
-def addParsToSub(line:str):
-    # this function split the strings addition thing
-    # no parenthesis here
-
-    addlines = line.split("*") # each element is an addition
-    newline = ""
-
-    for i in range(len(addlines)):
-        l = addlines[i]
-        if( i < 1 ):
-            newline += f"({l})*"
-        elif( i >= 1 and i < len(addlines)-1 ):
-            newline += f"({l})*"
-        elif( i == len(addlines)-1 ):
-            newline += f"({l})"
-
-    return newline
-
-    
-def parseMath2(line):
-    line = line.replace(" ", "")
+def parseMath2(line:str):
+    line =  line.replace(" ", "")
     count = 0
 
+    # calculate all pars  and replace them
+    pars = findParens(line)
+    chars = strToList(line)
+    print(chars)
+
+    for start, end in pars.items():
+        calc = calcMath(chars[start:end+1])
+
+        for j in range(start, end+1):
+            chars[j] = ""
+
+        chars[start] = str(calc)
 
 
+    print("##########3")
+    # remove bad chars
+    chars = list( filter(lambda c: c != "", chars) )
+    print(chars)
 
-problem = mathproblems[0]
-res = parseMath2(problem)
-print("\n--##########################--")
-print( problem, "=", res )
+
+    # calculate the rest
+    count += calcMath(chars)
+
+    return count
+
+
+# problem = mathproblems[0]
+# res = parseMath2(problem)
+# print("\n--##########################--")
+# print( problem, "=", res )
 
 # mathsum = 0
 
