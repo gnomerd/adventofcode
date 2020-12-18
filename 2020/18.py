@@ -206,53 +206,66 @@ def copyList(lst):
 #         return line
 
 
-# def addPars(chars:list):
-#     curDepth = 0
-#     addDepth = 0
+def addPars(chars:list):
+    curDepth = 0
+    addDepth = 0
 
-#     isSearching = False
+    isSearching = False
 
-#     offset = 0
-#     for i, char in enumerate(chars):
-#         if( char == "(" ):
-#             curDepth += 1
-#         elif( char == ")" ):
-#             curDepth -= 1
+    offset = 0
+    for i, char in enumerate(chars):
+        if( char == "(" ):
+            curDepth += 1
+        elif( char == ")" ):
+            curDepth -= 1
 
-#         if( char == "+" ):
-#             before = chars[i-1+offset]
-#             if(before == ")" or before == "("):
-#                 chars.insert(i+offset, 0)
-#                 offset += 1
+        if( char == "+" ):
+            before = chars[i-1+offset]
+            # if(before == ")" or before == "("):
+            #     chars.insert(i+offset, "0")
+            #     offset += 1
 
-#             curDepth2 = curDepth
-#             for di, char2 in enumerate(chars[i+1:]):
+            curDepthSec = curDepth
+            for di, char2 in enumerate(chars[i+1:]):
 
-#                 if( char2 == "(" ):
-#                     curDepth2 += 1
-#                 elif( char2 == ")" ):
-#                     curDepth2 -= 1
+                if( char2 == "(" ):
+                    curDepthSec += 1
+                    continue
+                elif( char2 == ")" ):
+                    curDepthSec -= 1
 
-#                 print(f"{i=} : {di+1=} {char=} {char2=} {curDepth=}/{curDepth2=}")
+                if( curDepthSec != curDepth ):
+                    continue
 
-#                 if( char2 == "*" and curDepth == curDepth2 ):
-#                     chars.insert(i+offset+di, ")")
-#                     offset += 1
+                print(f"{i=} : {di+1+offset=} {char=} {char2=} {curDepth=} : {curDepthSec=}")
+
+                if( char2 == "*" and curDepth == curDepthSec ):
+                    chars.insert(i+offset+di, ")")
+                    offset += 1
 
 
 
-#         # if( char == "+" and not isSearching ):
-#         #     chars.insert(i-1+offset, "(")
-#         #     addDepth = curDepth
-#         #     isSearching = True
-#         #     offset += 1
+        # if( char == "+" and not isSearching ):
+        #     chars.insert(i-1+offset, "(")
+        #     addDepth = curDepth
+        #     isSearching = True
+        #     offset += 1
 
-#         # elif( char == "*" and curDepth == addDepth ):
-#         #     chars.insert(i+offset, ")")
+        # elif( char == "*" and curDepth == addDepth ):
+        #     chars.insert(i+offset, ")")
 
-#     return chars
+    return chars
 
-# addPars( strToList("2*3+(4*5)") )
+class Fusk(int):
+    def __init__(self, value):
+        self.value = value
+
+    def __mul__(self, other):
+        return Fusk(self.value + other.value)
+
+    def __sub__(self, other):
+        return Fusk(self.value * other.value)
+
 
 def parseMath2(line:str):
     line =  line.replace(" ", "")
@@ -285,13 +298,28 @@ def parseMath2(line:str):
 
 
 # problem = mathproblems[0]
+# print(problem.replace(" ", ""))
+# newprob = problem.replace(" ", "")
+
+# probList = addPars( strToList(newprob) )
+# newprob = lstToStr(probList)
+
+#print(newprob)
 # res = parseMath2(problem)
 # print("\n--##########################--")
 # print( problem, "=", res )
 
-# mathsum = 0
+mathsum, mathsum2 = 0, 0
 
-# for maththing in mathproblems:
-#     mathsum += parseMath(maththing)
+for maththing in mathproblems:
+    mathsum += parseMath(maththing)
 
-# print(mathsum)
+    x = str.maketrans({"*": "-", "+": "*"})
+    trans = maththing.translate(x)
+    print("##############", x, trans)
+
+    maththing = re.sub( r"([0-9]+)", r"Fusk(\1)", trans )
+    print(maththing)
+    mathsum2 += eval(maththing)
+
+print(mathsum, mathsum2)
