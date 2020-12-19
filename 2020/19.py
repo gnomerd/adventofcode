@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 from aoc import get_input # AoC
-import regex
 import re
+from functools import lru_cache
 
 data = get_input(19)
 
@@ -17,75 +17,89 @@ for i, rule in enumerate(rules): # make a dict for the rules
 
     rulePrim[int(index)] = val.replace('"', "")
 
-def containsPointers(rule): # function to check if a rule contains a pointer
+#print(rulePrim)
+
+@lru_cache
+def containsPointers(ruleStr): # function to check if a rule contains a pointer
+    return any(char.isnumeric() for char in ruleStr)
+
+@lru_cache
+def getPointersAtPos(string, starti=0):
+    thing = set(re.findall( r"\d+", string[starti:] ))
+
+    return thing
+
+# @lru_cache
+# def genRegex(rule, newrule=None, pointers=None):
+#     #for rule, cont in rulePrim.items(): # replace everything with the chars instead of pointers
+#     #print("New rec")
+#     newrule = newrule or rulePrim[rule]
+#     print("NEW REC")
+
+#     pointers = pointers or getPointersAtPos(newrule)
+
+#     for i, pointer in enumerate(pointers):
+#         pointsTo = rulePrim[int(pointer)]
+#         repl = f"({rulePrim[int(pointer)]})"
+
+#         #print(f"Checking pointer {i}/{len(pointers)-1}", end="\r")
+#         newrule = newrule.replace(str(pointer), repl)
+
+#     #print("")
+#     check = getPointersAtPos(newrule)
+#     if(len(check) > 0):
+#         return genRegex(rule, newrule)
+#     else:
+#         return newrule
+
+@lru_cache
+def genRegex(rule):
     cont = rulePrim[rule]
+    cont = cont.split(" ")
 
-    contains = False
+    reg = "("
     for char in cont:
-        if(char.isnumeric()):
-            contains = True
-            break
+        ispointer = char.isnumeric()
+        if( ispointer ):
+            reg += genRegex(int(char))
+        else:
+            reg += char
+    reg += ")"
 
-    return contains
-
-for rule, cont in rulePrim.items(): # replace everything with the chars instead of pointers
-    check = containsPointers(rule)
-
-    while(check):
-        for i in range(len(rulePrim[rule])):
-            char = rulePrim[rule][i]
-
-            if(char == " "):
-                continue
-
-            if(char.isnumeric()):
-                v = int(char)
-                pointsTo = rulePrim[v]
-                repl = f"{rulePrim[v]}"
-
-                if(len(pointsTo) > 1):
-                    repl = f"({rulePrim[v]})"
-
-                rulePrim[rule] = rulePrim[rule].replace(char, repl)
-
-        check = containsPointers(rule)
-
-    #rulePrim[rule] = rulePrim[rule].replace(" ", "")
+    return reg
 
 
-def findParens(s):
-    toret = dict()
-    pstack = []
+    
+def removeSpaces(rule):
+    # remove spaces because they are evil
+    cont = rulePrim[rule]
+    print("########################", cont)
+    rulePrim[rule] = cont.replace(" ", "")
+    rulePrim[rule] = "^" + rulePrim[rule] + "$"
 
-    for i, c in enumerate(s):
-        if( c == "(" ):
-            pstack.append(i)
-        elif( c == ")" ):
-            if( len(pstack) == 0 ):
-                raise IndexError("No matching closing parens at: " + str(i))
-            toret[pstack.pop()] = i
-
-    if(len(pstack) > 0):
-        raise IndexError("No matching opening parens at: " + str(pstack.pop()))
-
-    return toret
-
-def getHighestParen(parens):
-    bestkey = None
-    bestdiff = None
-
-    for k, v in parens.items():
-        diff = v - k
-        if(bestdiff == None):
-            bestdiff = diff
-            bestkey = k
-            continue
-
-        if(diff > bestdiff):
-            bestdiff = diff
-            bestkey = k
-
-    return bestkey
+    return rulePrim[rule]
 
 
-for rule, val in rulePrim.items():
+# go through all messages and check
+def part1(rulePrim, messages):
+    count = 0
+    mesLen = len(messages)
+    for i, message in enumerate(messages):
+        check = re.match(rulePrim[0], message)
+        print(f"Checking {message} [{i}/{mesLen}]")
+        if(check):
+            print("is valid")
+            count += 1
+
+    print("Part1:", count)
+
+
+
+rulePrim[8] = "42 | 42 8"
+rulePrim[11] = "42 31 | 42 11 31"
+rulePrim[0] = genRegex(0)
+print(rulePrim[0])
+
+
+rulePrim[0] = removeSpaces(0)
+part1(rulePrim, messages)
