@@ -3,6 +3,7 @@
 from aoc import get_input # AoC
 import re
 from functools import lru_cache
+from copy import deepcopy as copy
 
 data = get_input(19)
 
@@ -17,7 +18,6 @@ for i, rule in enumerate(rules): # make a dict for the rules
 
     rulePrim[int(index)] = val.replace('"', "")
 
-#print(rulePrim)
 
 @lru_cache
 def containsPointers(ruleStr): # function to check if a rule contains a pointer
@@ -29,31 +29,11 @@ def getPointersAtPos(string, starti=0):
 
     return thing
 
-# @lru_cache
-# def genRegex(rule, newrule=None, pointers=None):
-#     #for rule, cont in rulePrim.items(): # replace everything with the chars instead of pointers
-#     #print("New rec")
-#     newrule = newrule or rulePrim[rule]
-#     print("NEW REC")
-
-#     pointers = pointers or getPointersAtPos(newrule)
-
-#     for i, pointer in enumerate(pointers):
-#         pointsTo = rulePrim[int(pointer)]
-#         repl = f"({rulePrim[int(pointer)]})"
-
-#         #print(f"Checking pointer {i}/{len(pointers)-1}", end="\r")
-#         newrule = newrule.replace(str(pointer), repl)
-
-#     #print("")
-#     check = getPointersAtPos(newrule)
-#     if(len(check) > 0):
-#         return genRegex(rule, newrule)
-#     else:
-#         return newrule
+from sys import setrecursionlimit
+setrecursionlimit(20000)
 
 @lru_cache
-def genRegex(rule):
+def genRegex(rule, loop=False, i=0):
     cont = rulePrim[rule]
     cont = cont.split(" ")
 
@@ -61,24 +41,23 @@ def genRegex(rule):
     for char in cont:
         ispointer = char.isnumeric()
         if( ispointer ):
-            reg += genRegex(int(char))
+            if( i < 498 ):
+                reg += genRegex(int(char), loop, i+1)
+            else:
+                reg += "(\w+)"
         else:
             reg += char
     reg += ")"
 
     return reg
 
-
-    
 def removeSpaces(rule):
     # remove spaces because they are evil
     cont = rulePrim[rule]
-    print("########################", cont)
     rulePrim[rule] = cont.replace(" ", "")
     rulePrim[rule] = "^" + rulePrim[rule] + "$"
 
     return rulePrim[rule]
-
 
 # go through all messages and check
 def part1(rulePrim, messages):
@@ -86,20 +65,34 @@ def part1(rulePrim, messages):
     mesLen = len(messages)
     for i, message in enumerate(messages):
         check = re.match(rulePrim[0], message)
-        print(f"Checking {message} [{i}/{mesLen}]")
         if(check):
-            print("is valid")
             count += 1
+            print(message)
 
     print("Part1:", count)
 
 
 
+
 rulePrim[8] = "42 | 42 8"
 rulePrim[11] = "42 31 | 42 11 31"
+
+
+rulePrim[8] = genRegex(8)
+rulePrim[11] = genRegex(11)
+
+# rulePrim[0] = genRegex(0)
+# rulePrim[0] = removeSpaces(0)
+# part1(rulePrim, messages)
+
+
+# rulePrim[8] = "42 | 42 ([a-b]+)"
+# rulePrim[11] = "42 31 | 42 ([a-b]+) 31"
+
+
+
+
 rulePrim[0] = genRegex(0)
-print(rulePrim[0])
-
-
+print("reg done")
 rulePrim[0] = removeSpaces(0)
 part1(rulePrim, messages)
