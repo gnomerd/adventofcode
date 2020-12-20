@@ -185,7 +185,7 @@ def setPos(pid, x, y, pmap, coords, seen=[]):
 def getPos(x, y, pmap):
     try:
         pid = pmap[y][x]
-        if( pid == "####" ):
+        if( pid == "----" ):
             return None
         else:
             return pid
@@ -200,7 +200,7 @@ def printMap(pmap):
             try:
                 print( row[x], end="  " )
             except:
-                print("####", end="  ")
+                print("----", end="  ")
 
         print("\n")
 
@@ -216,10 +216,17 @@ def findContainer(sid, fits):
 
 corners = []
 cornersPos = dict()
+
+# thingid = "1129"
+# thing = fits[thingid]["U"]
+# fits[thingid]["D"] = thing
+# fits[thingid].pop("U")
+
+
 for pid, cont in fits.items():
-    print(pid, cont)
     if(len(cont) == 2):
         corners.append(pid)
+        print("corner:", pid, cont)
 
 
 prod = 1
@@ -249,7 +256,7 @@ mapW = mapWidth - 1
 
 for y in range(mapWidth):
     for x in range(mapWidth):
-        picmap[y][x] = "####"
+        picmap[y][x] = "----"
 
 seenid = setPos(corners[0], 0, 0, picmap, piccoords, seenid) # some corner
 print("####", corners)
@@ -263,10 +270,23 @@ def rotateDirs(pid, rot, fits):
     irot = getRotIndex(rot)
     cont = fits[pid]
 
+    newcont = copy(cont)
+
     for pos, stuff in cont.items():
         ipos = getRotIndex(pos)
         diff = ipos - irot
 
+        while(diff < 0):
+            diff += 4
+
+        newpos = ["U", "R", "D", "L"][(ipos + diff) % 4]
+        newcont[newpos] = stuff
+
+    fits[pid] = newcont
+    return fits[pid]
+
+# U -> L
+# => new = U -> rotate(L)
 
 def genPicMap(pmap=picmap, pcoords=piccoords, fits=fits, seenid=set()):
     for y in range(mapWidth):
@@ -278,7 +298,8 @@ def genPicMap(pmap=picmap, pcoords=piccoords, fits=fits, seenid=set()):
                 print(f"\n{pidAtPos}: {fit}")
 
                 for pos, child in fit.items():
-                    if(child[0] in seenid):
+                    childID, childRot = child[0], child[1]
+                    if(childID in seenid):
                        continue
 
                     nx, ny = translatePos(pos, x, y)
@@ -288,11 +309,14 @@ def genPicMap(pmap=picmap, pcoords=piccoords, fits=fits, seenid=set()):
                     if(pidInSpace or nx < 0 or ny < 0):
                         continue
 
+                    # update the childs rotation
+                    fits[childID] = rotateDirs(childID, pos, fits)
 
-                    seenid = setPos(child[0], nx, ny, pmap, pcoords, seenid)
+                    # add it to the pos
+                    seenid = setPos(childID, nx, ny, pmap, pcoords, seenid)
 
-genPicMap()
-
-
-print("")
-printMap(picmap)
+while( True ):
+    genPicMap()
+    print("")
+    printMap(picmap)
+    breakpoint()
