@@ -35,7 +35,7 @@ for pid, pic in pics.items():
     pics[pid] = np.asarray(pic)
 
 
-mapWidth = len(pics) ** (1/2)
+mapWidth = int(len(pics) ** (1/2))
 
 def compileBorder(row):
     out = ""
@@ -96,7 +96,7 @@ def borderCheck(border, other):
     else:
         return False, other
 
-fitsDict = dd(dict)
+fitsDict = dd(set)
 
 # fits struc
 #
@@ -106,16 +106,16 @@ fitsDict = dd(dict)
 # rotation is the other that fits rotation to be able to fit
 
 
-def getFits(borders, fits=fitsDict, ignore=[]):
+def getFits(borders, fits=fitsDict, ignore=[], ignoreBorder=[]):
     #print(fits)
     #print("\n#", borders, "\n")
-    ignoreLen = len(ignore)
+    ignoreLen = len(ignoreBorder)
     borLen = len(borders)
 
     print(ignoreLen, borLen)
 
     if(ignoreLen >= borLen):
-        print("goodbye")
+        #print("goodbye")
         return fits # if there is nothing to do then return the result
 
     newborders = copy(borders)
@@ -126,22 +126,25 @@ def getFits(borders, fits=fitsDict, ignore=[]):
 
         for pos, bor in border.items(): # check each border : borders[pid][pos]
 
-            print(f"##Border {pid=} {pos=} {bor=}")
+            #print(f"##Border {pid=} {pos=} {bor=}")
 
             for pid2, border2 in borders.items(): # check for others borders ;  borders[pid2]
-                if(pid2 == pid or pid2 in ignore):
+                if(pid2 == pid or pid2 in ignore or border2 in ignoreBorder):
                     continue
 
                 for pos2, bor2 in border2.items(): # check for other matching border ; borders[pid2][pos2]
 
                     check, newBor2 = borderCheck(bor, bor2)
-                    print(f"####Border2 {pid2=} {pos2=} {bor2=} {newBor2=} {check=}")
+                    #print(f"####Border2 {pid2=} {pos2=} {bor2=} {newBor2=} {check=}")
+                    if( not check ):
+                        continue
 
                     if(check): # if the two borders match:
-                        fits[pid] = dict()
+                        fits[pid] = fits[pid] or dict()
                         fits[pid][pos] = (pid2, pos2)
 
-                        ignore.append(pid)
+                        #ignore.append(pid)
+                        ignoreBorder.append(bor2)
 
         fits[pid] = fits[pid] or {"E": None} # It has to end somewhere
 
@@ -153,27 +156,110 @@ fits = getFits(picBorders, fitsDict)
 print("------------")
 print(fits)
 
-picmap = dd(dict) # inp: coord [][] -> pid
-coords = dict() # inp: pid -> out: coord (tuple)
 
-pidList = fits.keys()
-firstID = None
-for pid in pidList:
-    firstID = pid
-    break
+fitsListKeys = list(fits.keys())
 
-#      y  x
-picmap[0][0] = firstID
-print(firstID)
 
-for pid, fit in fits.items():
-    if(pid == firstID):
-        continue
 
-    for pos, fitin in fit.items():
-        if(pos != "E"):
-            fitID, fitDIR = fitin[0], fitin[1]
+#picmap = [["#" for x in range(mapWidth)] for y in range(mapWidth)] # inp: coord [][] -> pid
+picmap = dd(dict)
+piccoords = dict() # inp: pid -> out: coord (tuple)
 
-            print(f"{pid=} {pos=} : {fitID=} {fitDIR=}")
+seenPics = []
+
+def translatePos(pos, x, y):
+    if(pos == "U"):
+        return x, y-1
+    elif(pos == "D"):
+        return x, y+1
+    elif(pos == "L"):
+        return x-1, y
+    elif(pos == "R"):
+        return x+1, y
+
+
+
+def setPos(pid, x, y, pmap, coords, seen=[]):
+    pmap[y] = pmap[y] or dict()
+    pmap[y][x] = pid
+
+    coords[pid] = (x, y)
+    seen.append(pid)
+    return seen
+
+def printMap(pmap):
+    print(" #---# ")
+    for y in range(mapWidth, -5, -1):
+        row = pmap[y]
+
+        for x in range(-8, mapWidth):
+            try:
+                print( row[x], end=" " )
+            except:
+                print("----", end=" ")
+
+        print("")
+    print(" #---# ")
+
+
+def genTheMap(pmap, coords, seenPID=[], fits=fits):
+    i = 0
+
+    for pid, fit in fits.items():
+        print("#", pid, fit)
+        if( i == 0 ):
+            seenPID = setPos(pid, 0, 0, pmap, coords, seenPID)
+            print(f"{pid} at 0, 0")
+
+            for cpos, child in fit.items():
+                cx, cy = translatePos(cpos, 0, 0)
+                print(f"{child[0]} at {cx} {cy}")
+                seenPID = setPos(child[0], cx, cy, pmap, coords, seenPID)
+
+            i += 1
         else:
-            continue
+            if( pid in seenPID ): # check if pid is in map
+                # if exists then check around it
+                print(f"{pid=} : {fit=}")
+
+                for cpos, child in fit.items():
+                    if(not child[0] in seenPID):
+
+                        x, y = coords[pid]
+                        cx, cy = translatePos(cpos, x, y)
+
+                        print(f"{child=}: {child[0]} at {cx} {cy}")
+
+                        seenPID = setPos(child[0], cx, cy, pmap, coords, seenPID)
+
+            else:
+                print(f"{pid=} : {fit=}")
+
+                for seenp in seenPID: # check if anyone has the PID as a connection
+                    if(seenp == pid): # this should not happen
+                        continue
+
+                    fit2 = fits[seenp]
+
+                    for pos, fit in fit2.items():
+                        fid = fit[0]
+                        if( fid == pid ): # found it
+                            pos = flip(pos) # flip it because it is reversed
+
+                            x, y = coords[seenp] # get the seen ones pos
+                            cx, cy = translatePos(pos, x, y) # get our pos
+
+                            seenPID = setPos(pid, cx, cy, pmap, coords, seenPID)
+
+
+        # NOTE: LOOP AGAIN IF LOST PIDS
+            i += 1
+
+    if(len(pmap) < len(pics)):
+        return genTheMap(pmap, coords, seenPID, fits)
+    else:
+        return fits
+
+genTheMap(picmap, piccoords)
+
+printMap(picmap)
