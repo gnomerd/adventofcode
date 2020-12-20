@@ -96,7 +96,7 @@ def borderCheck(border, other):
     else:
         return False, other
 
-fitsDict = dd(set)
+fitsDict = dd(dict)
 
 # fits struc
 #
@@ -111,8 +111,6 @@ def getFits(borders, fits=fitsDict, ignore=[], ignoreBorder=[]):
     #print("\n#", borders, "\n")
     ignoreLen = len(ignoreBorder)
     borLen = len(borders)
-
-    print(ignoreLen, borLen)
 
     if(ignoreLen >= borLen):
         #print("goodbye")
@@ -141,7 +139,7 @@ def getFits(borders, fits=fitsDict, ignore=[], ignoreBorder=[]):
 
                     if(check): # if the two borders match:
                         fits[pid] = fits[pid] or dict()
-                        fits[pid][pos] = (pid2, pos2)
+                        fits[pid][pos] = [pid2, pos2]
 
                         #ignore.append(pid)
                         ignoreBorder.append(bor2)
@@ -150,11 +148,8 @@ def getFits(borders, fits=fitsDict, ignore=[], ignoreBorder=[]):
 
     return getFits(newborders, fits, ignore) # do the other borders
 
-print(picBorders)
 
 fits = getFits(picBorders, fitsDict)
-print("------------")
-print(fits)
 
 
 fitsListKeys = list(fits.keys())
@@ -184,82 +179,120 @@ def setPos(pid, x, y, pmap, coords, seen=[]):
     pmap[y][x] = pid
 
     coords[pid] = (x, y)
-    seen.append(pid)
+    seen.add(pid)
     return seen
 
+def getPos(x, y, pmap):
+    try:
+        pid = pmap[y][x]
+        if( pid == "####" ):
+            return None
+        else:
+            return pid
+    except:
+        return None
+
 def printMap(pmap):
-    print(" #---# ")
-    for y in range(mapWidth, -5, -1):
+    for y in range(mapWidth):
         row = pmap[y]
 
-        for x in range(-8, mapWidth):
+        for x in range(mapWidth):
             try:
-                print( row[x], end=" " )
+                print( row[x], end="  " )
             except:
-                print("----", end=" ")
+                print("####", end="  ")
 
-        print("")
-    print(" #---# ")
+        print("\n")
 
-
-def genTheMap(pmap, coords, seenPID=[], fits=fits):
-    i = 0
-
+def findContainer(sid, fits):
+    foundContainers = []
     for pid, fit in fits.items():
-        print("#", pid, fit)
-        if( i == 0 ):
-            seenPID = setPos(pid, 0, 0, pmap, coords, seenPID)
-            print(f"{pid} at 0, 0")
+        for f in fit.values():
+            if(sid in f):
+                foundContainers.append(pid)
 
-            for cpos, child in fit.items():
-                cx, cy = translatePos(cpos, 0, 0)
-                print(f"{child[0]} at {cx} {cy}")
-                seenPID = setPos(child[0], cx, cy, pmap, coords, seenPID)
+    return foundContainers
 
-            i += 1
-        else:
-            if( pid in seenPID ): # check if pid is in map
-                # if exists then check around it
-                print(f"{pid=} : {fit=}")
 
-                for cpos, child in fit.items():
-                    if(not child[0] in seenPID):
+corners = []
+cornersPos = dict()
+for pid, cont in fits.items():
+    print(pid, cont)
+    if(len(cont) == 2):
+        corners.append(pid)
 
-                        x, y = coords[pid]
-                        cx, cy = translatePos(cpos, x, y)
 
-                        print(f"{child=}: {child[0]} at {cx} {cy}")
+prod = 1
+for c in corners:
+    prod *= int(c)
 
-                        seenPID = setPos(child[0], cx, cy, pmap, coords, seenPID)
+print("Part1:", prod)
 
-            else:
-                print(f"{pid=} : {fit=}")
+print("\n\n")
 
-                for seenp in seenPID: # check if anyone has the PID as a connection
-                    if(seenp == pid): # this should not happen
+
+seenid = set()
+
+# know the corners
+# start from corner 1 then 2, then update 3 and 4
+#
+# 1---------2
+# |         |
+# |  stuff  |
+# |  here   |
+# |         |
+# 3---------4
+
+# append the first corner at 0, 0
+
+mapW = mapWidth - 1
+
+for y in range(mapWidth):
+    for x in range(mapWidth):
+        picmap[y][x] = "####"
+
+seenid = setPos(corners[0], 0, 0, picmap, piccoords, seenid) # some corner
+print("####", corners)
+
+i = 0
+
+def getRotIndex(rot):
+    return ["U", "R", "D", "L"].index(rot)
+
+def rotateDirs(pid, rot, fits):
+    irot = getRotIndex(rot)
+    cont = fits[pid]
+
+    for pos, stuff in cont.items():
+        ipos = getRotIndex(pos)
+        diff = ipos - irot
+
+
+def genPicMap(pmap=picmap, pcoords=piccoords, fits=fits, seenid=set()):
+    for y in range(mapWidth):
+        for x in range(mapWidth):
+            pidAtPos = getPos(x, y, pmap)
+
+            if(pidAtPos):
+                fit = fits[pidAtPos] # possible connections
+                print(f"\n{pidAtPos}: {fit}")
+
+                for pos, child in fit.items():
+                    if(child[0] in seenid):
+                       continue
+
+                    nx, ny = translatePos(pos, x, y)
+                    pidInSpace = getPos(nx, ny, pmap) # check if there is something there
+                    print(f"{pos=} {child=} : {pidInSpace=} {nx,ny=}")
+
+                    if(pidInSpace or nx < 0 or ny < 0):
                         continue
 
-                    fit2 = fits[seenp]
 
-                    for pos, fit in fit2.items():
-                        fid = fit[0]
-                        if( fid == pid ): # found it
-                            pos = flip(pos) # flip it because it is reversed
+                    seenid = setPos(child[0], nx, ny, pmap, pcoords, seenid)
 
-                            x, y = coords[seenp] # get the seen ones pos
-                            cx, cy = translatePos(pos, x, y) # get our pos
-
-                            seenPID = setPos(pid, cx, cy, pmap, coords, seenPID)
+genPicMap()
 
 
-        # NOTE: LOOP AGAIN IF LOST PIDS
-            i += 1
-
-    if(len(pmap) < len(pics)):
-        return genTheMap(pmap, coords, seenPID, fits)
-    else:
-        return fits
-
-genTheMap(picmap, piccoords)
-
+print("")
 printMap(picmap)
