@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+from collections import defaultdict as dd
 from aoc import get_input # AoC
 import re # regex
 import numpy as np
@@ -89,10 +90,19 @@ def rotateTile(otherside):
 
     return newotherside
 
-def getFits(picid):
+def borderCheck(border, other):
+    other_rev = other[::-1]
+
+    if( border == other or border == other_rev ):
+        return True, border
+    else:
+        return False, other
+
+def getFits(picid, ignoreid):
     borders = picBorders[picid]
 
     seenborders = []
+    attachedTiles = []
 
     # if some border match, i.e. this[2] match other[1] then rotate and/or flip other?
     # dont actually have to arrange the map, just get stuff that fits together and their IDs
@@ -105,48 +115,96 @@ def getFits(picid):
     matchSide = None
     matchFlipped = False
 
+    prevTile = None
+
     for side, border in borders.items(): # TODO: make recursive instead and flip (np.fliplr) (and for up-down)
         # check other borders
         selfSide = side
+
         for pid, bor in picBorders.items():
-            if(pid == picid):
+            if(pid == picid or pid == ignoreid):
                 continue
 
-            #print("Checking", pid)
+            # print("Checking", pid, f"{attachedTiles=}")
 
-            for pos, line in bor.items():
+
+            for pos, line in bor.items(): # top and bottom matching
+                if(not pos in [0, len(bor)-1]):
+                    continue
+
                 if(line in seenborders):
                     continue
 
-                linerev = line[::-1] # reverse line for flipped
-                flipped = False
+                check, newborder = borderCheck(border, line)
+                print("TB Checking border", pos, ":", line, f"{newborder=} {line=} : {border=}")
 
-                #print("Checking border", pos, ":", line, f"{linerev=} {line=} : {border=}")
 
-                if( line == border ):
+                if( check ):
                     matchID = pid
                     matchSide = pos
+                    matchFlipped = line == newborder # flipped from matchSide axis
+
+                    if( newborder != line ):
+                        picBorders[pid][pos] = newborder # flip that border if flipped
+                        otherside = rotateTile(pos)
+                        picBorders[pid][otherside] = picBorders[pid][otherside][::-1] # flip the other side too
 
                     match = True
-
+                    attachedTiles.append(matchID)
                     seenborders.append(line)
+                    prevTile = matchID
+                    print("MATCH")
                     break
 
-                elif( linerev == border ):
+            if(not match):
+
+                border_left, border_right = "", ""
+                for y, line in bor.items():
+                    border_left += line[0]
+                    border_right += line[-1]
+
+                print(f"LR Checking border : {border_left=} {border_right=}")
+                check_left, newborder_left = borderCheck(border_left, line)
+                check_right, newborder_right = borderCheck(border_right, line)
+
+                if(check_left):
+                    pos = 3
                     matchID = pid
                     matchSide = pos
-                    matchFlipped = True # flipped from matchSide axis
+                    matchFlipped = border_left == newborder_left # flipped from matchSide axis
 
-                    picBorders[pid][pos] = linerev # flip that border
-                    otherside = rotateTile(pos)
-                    picBorders[pid][otherside] = picBorders[pid][otherside][::-1] # flip the other side too
+                    if( newborder_left != line ):
+                        picBorders[pid][pos] = newborder_left # flip that border if flipped
+                        otherside = rotateTile(pos)
+                        picBorders[pid][otherside] = picBorders[pid][otherside][::-1] # flip the other side too
 
                     match = True
-
+                    attachedTiles.append(matchID)
                     seenborders.append(line)
+                    prevTile = matchID
+                    print("MATCH")
+                    break
+                elif(check_right):
+                    pos = 1
+                    matchID = pid
+                    matchSide = pos
+                    matchFlipped = border_right == newborder_right # flipped from matchSide axis
+
+                    if( newborder_right != line ):
+                        picBorders[pid][pos] = newborder_right # flip that border if flipped
+                        otherside = rotateTile(pos)
+                        picBorders[pid][otherside] = picBorders[pid][otherside][::-1] # flip the other side too
+
+                    match = True
+                    attachedTiles.append(matchID)
+                    seenborders.append(line)
+                    prevTile = matchID
+                    print("MATCH")
                     break
 
-            if(match):
+
+
+            else:
                 break
 
     if(match):
@@ -155,26 +213,53 @@ def getFits(picid):
 
 mapWidth = int(len(pics) ** (1/2))
 
-tilemap = np.empty([mapWidth**2, mapWidth**2], dtype=str)
+tilemap = np.empty([mapWidth, mapWidth], dtype=str)
 print("")
 print(tilemap)
 
 aligns = dict()
 
-for pid, pic in pics.items():
-    fits = getFits(pid)
-    aligns[pid] = fits
+#for pid, pic in pics.items():
+nextTile = None
+prevTile = None
+
+for key in pics.keys():
+    nextTile = key
+    prevTile = key
+    break
+
+
+seenTiles = []
+loop = False
+while(not loop):
+    fits = getFits(nextTile, prevTile)
+    aligns[nextTile] = fits
+
+    print(fits)
+
+    # prevTile = nextTile
+    # nextTile = fits[1]
+
+    # if(nextTile in seenTiles):
+    #     loop = True
+    #     break
+
+    # seenTiles.append(prevTile)
+    # print(prevTile, nextTile, seenTiles)
 
 print(aligns)
 
 def copyList(ls):
     return [elem for elem in ls]
 
+# ################
+# exit()
+# ################
 
 
-from collections import defaultdict as dd
 
-rotmap = dd(dict)
+
+
 
 def rotateNumTo(numrot, tonum):
     tonum = rotateTile(tonum)
@@ -192,71 +277,100 @@ def rotateNumTo(numrot, tonum):
     return newrot
 
 
+# ----------------------------------------------
+# |    0         1         2            3      |
+# |[selfSide, matchID, matchSide, matchFlipped]|
+# ----------------------------------------------
 
-#     0         1         2            3
-# [selfSide, matchID, matchSide, matchFlipped]
-for pid, fit in aligns.items():
-    fitid = fit[1]
+# for pid, fit in aligns.items():
+#     fitid = fit[1]
 
-    conRot = fit[0]
-    myRot = fit[2]
+#     conRot = fit[0]
+#     myRot = fit[2]
 
-    newrot = rotateNumTo(myRot, conRot)
-    #print(f"{pid=} {fitid=} : {conRot=} {myRot=} : {newrot=}")
+#     newrot = rotateNumTo(myRot, conRot)
+#     #print(f"{pid=} {fitid=} : {conRot=} {myRot=} : {newrot=}")
 
-    aligns[fitid][2] = newrot # make others relative
+#     aligns[fitid][0] = newrot # make others relative
 
-rots = dd(tuple)
+print("\n\n----")
+rotmap = dd(dict) # inp: coords
+rotcoords = dd(tuple) # inp: pid
+
 seenpid = []
-while(len(rots) < len(pics)):
 
-    for pid, fit in aligns.items():
-        # if(pid in seenpid):
-        #     continue
+i = 0
+for pid, align in aligns.items():
+    print(pid, align)
 
+    if( i == 0 ):
+        coords = (0, 0)
+        rotmap[coords[1]][coords[0]] = pid
+        rotcoords[pid] = coords
         seenpid.append(pid)
-
-        if(len(rotmap) <= 0):
-            rotmap[0][0] = pid
-            rots[pid] = (0, 0)
-
-        fitid = fit[1]
-
-        conRot = fit[0]
-        myRot = fit[2]
-
-        coords = rots[pid]
-        print(f"{pid} : {coords} : {fitid} |", end=" ")
-
-        if(len(coords) < 2):
-            print("no coords")
-            continue
-
-        x, y = coords[0], coords[1]
-
-        if(conRot == 0):
-            # put the connected one above it
-            # x y is reversed because lists index and stuff
-            rots[fitid] = (x, y-1)
-            print(f"new coord: {rots[fitid]}")
-
-        elif(conRot == 1):
-            # right of
-            rots[fitid] = (x+1, y)
-            print(f"new coord: {rots[fitid]}")
-
-        elif(conRot == 2):
-            # down of
-            rots[fitid] = (x, y+1)
-            print(f"new coord: {rots[fitid]}")
-
-        elif(conRot == 3):
-            # left of
-            rots[fitid] = (x-1, y)
-            print(f"{fitid} new coord: {rots[fitid]}")
+        continue
 
 
-print(rots)
+
+    selfside = align[0]
+    matchside = align[2]
+
+    matchid = align[1]
+
+
+
+# while(len(rots) < len(pics)):
+
+#     for pid, fit in aligns.items():
+#         if(len(seenpid) >= len(aligns)):
+#             break
+
+#         if(pid in seenpid):
+#             continue
+
+#         seenpid.append(pid)
+
+#         if(len(rotmap) <= 0):
+#             rotmap[0][0] = pid
+#             rots[pid] = (0, 0)
+
+#         fitid = fit[1]
+
+#         conRot = fit[0]
+#         myRot = fit[2]
+
+#         coords = rots[pid]
+#         print(f"{pid} : {coords} : {fitid} |", end=" ")
+
+#         if(len(coords) < 2):
+#             print("no coords")
+#             continue
+
+#         x, y = coords[0], coords[1]
+
+#         if(conRot == 0):
+#             # put the connected one above it
+#             # x y is reversed because lists index and stuff
+#             rots[fitid] = (x, y-1)
+#             print(f"new coord: {rots[fitid]}")
+
+#         elif(conRot == 1):
+#             # right of
+#             rots[fitid] = (x+1, y)
+#             print(f"new coord: {rots[fitid]}")
+
+#         elif(conRot == 2):
+#             # down of
+#             rots[fitid] = (x, y+1)
+#             print(f"new coord: {rots[fitid]}")
+
+#         elif(conRot == 3):
+#             # left of
+#             rots[fitid] = (x-1, y)
+#             print(f"{fitid} new coord: {rots[fitid]}")
+
+
+# print(rots)
 
 # def rotateClock( rots, picRot, face ):
 #     clock = copyList(picRot)
