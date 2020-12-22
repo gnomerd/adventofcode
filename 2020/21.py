@@ -42,46 +42,73 @@ for aller, cont in allerthing.items():
         while(thing in allfood):
             allfood.remove(thing)
 
-#print(len(allfood))
+print(len(allfood))
 
 ignorefoods = set( [food for food in allfood] )
 
 seenaller = set()
 seenfood = set()
 
-thing = dict()
+thing = dd(set)
 
+def getFood(foodList, exclude=set()):
+    food = set(foodList)
+    for ignore in ignorefoods:
+        food.discard(ignore)
+
+    for ex in exclude:
+        food.discard(exclude)
+
+    return food
+
+takenAllers = set()
 for i, food in enumerate(foodlist):
+    food = getFood(food)
     aller = allerlist[i]
-    # why is there no NAND? :(
 
-    for j, food2 in enumerate(foodlist):
-        if(i == j):
-            continue
+    if( len(food) == 1 and len(aller) == 1 ):
+        if( not list(aller)[0] in takenAllers ):
+            thing[list(food)[0]] = list(aller)[0]
+            ignorefoods.add(list(food)[0])
 
-        aller2 = allerlist[j]
-        commonaller = set(aller) & set(aller2)
-
-        commonfood = set(food) & set(food2)
-
-        for ignore in ignorefoods:
-            commonfood.discard(ignore)
-
-        for seen in seenfood:
-            commonfood.discard(seen)
-
-        for al in commonaller:
-            if(al in seenaller):
+    elif(len(food) > 1 and len(aller) > 1):
+        for j, food2 in enumerate(foodlist):
+            if(i == j):
                 continue
 
-            cfList = list(commonfood)
-            caList = list(commonaller)
-            #breakpoint()
-            if( len(commonfood) == 1 and len(commonaller) == 1 ):
+            food2 = getFood(food2)
+            aller2 = allerlist[j]
+
+            commonFood = list(food & food2)
+            commonAller = list(set(aller) & set(aller2))
+
+            for ignore in ignorefoods:
+                while(ignore in commonFood):
+                    commonFood.remove(ignore)
+
+            for ignore in takenAllers:
+                while(ignore in commonAller):
+                    commonAller.remove(ignore)
+
+            print(commonFood, commonAller)
+
+            if(len(commonFood) >= 1 and len(commonAller) >= 1):
+                if( not commonAller[0] in takenAllers ):
+                    thing[commonFood[0]] = commonAller[0]
+                    ignorefoods.add(commonFood[0])
+                    takenAllers.add(commonAller[0])
 
 
-                thing[cfList[0]] = caList[0]
-                seenfood.add(cfList[0])
-                seenaller.add(caList[0])
+
 
 print(thing)
+sortedthing = sorted(thing.items(), key = lambda kv:(kv[1], kv[0]))
+print(sortedthing)
+
+part2 = ""
+for i, sort in enumerate(sortedthing):
+    part2 += f"{sort[0]}"
+    if( i < len(sortedthing)-1 ):
+        part2 += ","
+
+print("###########", part2)
